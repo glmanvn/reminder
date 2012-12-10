@@ -1,17 +1,14 @@
 <!-- Header -->
 <div id="da-header">
-
         <div id="da-header-top">
-
         <!-- Container -->
         <div class="da-container clearfix">
-
             <!-- Logo Container. All images put here will be vertically centere -->
             <div id="da-logo-wrap">
                 <div id="da-logo">
                     <div id="da-logo-img">
-                        <a href="dashboard.html">
-                            <img src="images/logo.png" alt="Dandelion Admin" />
+                        <a href="<?php echo url_for('@homepage')?>">
+                            <img src="/images/logo.png" alt="Ticket reminder" />
                         </a>
                     </div>
                 </div>
