@@ -1,1 +1,0 @@
-(function(a){a(document).ready(function(b){if(a.SyntaxHighlighter){a.SyntaxHighlighter.init({alternateLines:true})}})})(jQuery);

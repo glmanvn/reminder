@@ -6,30 +6,27 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
-    #description:  symfony project
-    #keywords:     symfony, project
-    #language:     en
+    title:        Ticket reminder system
+    description:  Ticket reminder system
+    keywords:     Ticket, reminder system, task
+    language:     en
     #robots:       index, follow
 
-  stylesheets:
+  stylesheets: 
+    - style.css
     - reset.css
-    - fluid.css
-    - dandelion.theme.css
-    - dandelion.css
-    - demo.css
-    - jui/css/jquery.ui.all.css
+    - text.css
+    - layout.css
+    - nav.css
+    - grid.css
+    - formalize.css
+    - main.css
 
   javascripts:
-    - jui/js/jquery-ui-1.8.20.min.js
-    - jui/js/jquery.ui.timepicker.min.js
-    - jui/js/jquery.ui.touch-punch.min.js
-    - jquery.fileinput.js
-    - jquery.placeholder.js
-    - jquery.mousewheel.min.js
-    - jquery.tinyscrollbar.min.js
-    - core/dandelion.core.js
-    - core/dandelion.customizer.js
+    - tiny_mce/tiny_mce.js
+    - /sfTinyMCEImageBrowserPlugin/js/main.js
+    - /sfTinyMCEImageBrowserPlugin/js/popup.js
+    - jquery.tablednd_0_5.js
 
   has_layout:     true
   layout:         layout

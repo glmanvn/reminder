@@ -64,10 +64,10 @@ abstract class BaseTask extends sfDoctrineRecord
              'notnull' => true,
              'default' => 1,
              ));
-        $this->hasColumn('task_name', 'string', 500, array(
+        $this->hasColumn('task_name', 'string', 150, array(
              'type' => 'string',
              'notnull' => true,
-             'length' => 500,
+             'length' => 150,
              ));
         $this->hasColumn('task_description', 'string', null, array(
              'type' => 'string',
@@ -77,10 +77,10 @@ abstract class BaseTask extends sfDoctrineRecord
              'notnull' => true,
              'default' => 1,
              ));
-        $this->hasColumn('assigned_to', 'string', 500, array(
+        $this->hasColumn('assigned_to', 'string', 100, array(
              'type' => 'string',
              'notnull' => false,
-             'length' => 500,
+             'length' => 100,
              ));
         $this->hasColumn('reminded_count', 'integer', null, array(
              'type' => 'integer',

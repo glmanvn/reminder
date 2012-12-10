@@ -10,7 +10,7 @@ Task:
       notnull: true
       default: 1
     task_name:
-      type: string(500)
+      type: string(150)
       notnull: true
     task_description:
       type: string
@@ -19,7 +19,7 @@ Task:
       notnull: true
       default: 1
     assigned_to:
-      type: string(500)
+      type: string(100)
       notnull: false
     reminded_count:
       type: integer

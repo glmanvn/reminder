@@ -1,16 +1,16 @@
 
-<script type="text/javascript">
 
- var _gaq = _gaq || [];
- _gaq.push(['_setAccount', 'UA-25620150-1']);
- _gaq.push(['_trackPageview']);
+  <!-- JavaScript at the bottom for fast page loading -->
 
- (function() {
-   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
- })();
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="/js/plugins.js?v=2"></script>
+  <script src="/js/script.js?v=2"></script>
+  <!-- end scripts-->
 
-</script>
+  <!--[if lt IE 7 ]>
+    <script src="/js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
 </body>
 </html>  

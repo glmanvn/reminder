@@ -1,1 +1,0 @@
-(function(a){a(document).ready(function(b){a(".da-circular-stat").daCircularStat()})})(jQuery);

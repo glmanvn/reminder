@@ -2,7 +2,7 @@
 <?php include_partial('task/assets') ?>
 
 <div id="sf_admin_container">
-  <h1><?php echo __('Xem công việc: %%task_name%%', array('%%task_name%%' => $Task->getTaskName()), 'messages') ?></h1>
+  <h1><?php echo __('Xem yêu cầu công việc: %%task_name%%', array('%%task_name%%' => $Task->getTaskName()), 'messages') ?></h1>
 
   <?php include_partial('task/flashes') ?>
 

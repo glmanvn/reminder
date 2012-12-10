@@ -57,17 +57,17 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListTitle()
   {
-    return 'Công việc';
+    return 'Yêu cầu công việc';
   }
 
   public function getEditTitle()
   {
-    return 'Xem công việc: %%task_name%%';
+    return 'Xem yêu cầu công việc: %%task_name%%';
   }
 
   public function getNewTitle()
   {
-    return 'New Task';
+    return 'Thêm mới yêu cầu công việc';
   }
 
   public function getFilterDisplay()
@@ -100,16 +100,16 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
     return array(
       'id' => array(  'is_link' => true,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'user_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
-      'task_name' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'task_description' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'piriority' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'assigned_to' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'task_name' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Tên công việc',),
+      'task_description' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Mô tả công việc',),
+      'piriority' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Độ ưu tiên',),
+      'assigned_to' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Giao xử lý',),
       'reminded_count' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'remind_1st_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'remind_1st_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Nhắc lần 1 lúc',  'help' => 'Hiển thị màn hình nhắc việc trên web tại thời điểm (mặc định sao 10 phút)',),
       'remind_2rd_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'remind_3th_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
-      'reminder_email1' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Email thông báo 1',  'help' => 'Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 1',  'attributes' =>   array(    'class' => 'foo',  ),),
-      'reminder_email2' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'reminder_email1' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Email thông báo lần 1',  'help' => 'Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 1',),
+      'reminder_email2' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Email thông báo lần 2',  'help' => 'Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 2',),
       'completed_by' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'completed_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Ngày tạo',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),

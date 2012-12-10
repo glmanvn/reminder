@@ -15,19 +15,30 @@ generator:
       actions: ~
       
       fields:
+        task_name:
+          label: Tên công việc
+        task_description:
+          label: Mô tả công việc
+        piriority:
+          label: Độ ưu tiên
+        assigned_to:
+          label: Giao xử lý
+        remind_1st_at:
+          label: Nhắc lần 1 lúc
+          help: Hiển thị màn hình nhắc việc trên web tại thời điểm (mặc định sao 10 phút)
         created_at:
           label: Ngày tạo
-          #help: Fill in the article body
-          #attributes: { class: foo }
           date_format: yyyy/MM/dd hh:mm:ss 
         reminder_email1:
-          label: Email thông báo 1
+          label: Email thông báo lần 1
           help: Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 1
-          attributes: { class: foo }
+        reminder_email2:
+          label: Email thông báo lần 2
+          help: Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 2
           
       list:    
         #layout:  stacked # View all data on one cell
-        title: "Công việc"
+        title: "Yêu cầu công việc"
         display: [=task_name, user_id, task_description, created_at, assigned_to]
         sort: [piriority, asc]
         max_per_page:  20
@@ -40,6 +51,7 @@ generator:
 #          "Thông tin công việc": [task_name, task_description, piriority]
 #          "Giao việc": [assigned_to, remind_1st_at]
       edit:    
-        title: "Xem công việc: %%task_name%%"
+        title: "Xem yêu cầu công việc: %%task_name%%"
       
-      new:     ~
+      new:
+        title: Thêm mới yêu cầu công việc
