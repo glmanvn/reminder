@@ -2085,3 +2085,1718 @@ Dec 10 14:11:32 symfony [info] {sfWebDebugLogger} Factories 53.66 ms (1)
 Dec 10 14:11:32 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 1742.79 ms (1)
 Dec 10 14:11:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1361.31 ms (5)
 Dec 10 14:11:32 symfony [info] {sfWebResponse} Send content (93 o)
+Dec 10 14:47:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 10 14:47:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:47:23 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:47:23 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 14:47:23 symfony [info] {sfBasicSecurityFilter} Action "default/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Dec 10 14:47:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:47:23 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:47:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:47:23 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:47:23 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:47:23 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:47:23 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:47:23 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:47:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Dec 10 14:47:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:47:23 symfony [info] {sfWebDebugLogger} Configuration 394.95 ms (13)
+Dec 10 14:47:23 symfony [info] {sfWebDebugLogger} Factories 165.25 ms (1)
+Dec 10 14:47:23 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 10.97 ms (1)
+Dec 10 14:47:23 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 35.90 ms (1)
+Dec 10 14:47:23 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 5.36 ms (1)
+Dec 10 14:47:23 symfony [info] {sfWebResponse} Send content (36705 o)
+Dec 10 14:47:28 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:47:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:47:29 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:47:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:47:29 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:47:29 symfony [err] {Doctrine_Table_Exception} Unknown method SfGuardUserTable::retrieveByUsername
+Dec 10 14:47:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 14:47:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:47:29 symfony [info] {sfWebDebugLogger} Configuration 15.24 ms (8)
+Dec 10 14:47:29 symfony [info] {sfWebDebugLogger} Factories 49.84 ms (1)
+Dec 10 14:47:29 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 107.16 ms (1)
+Dec 10 14:47:55 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:47:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:47:55 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:47:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:47:55 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:47:55 symfony [err] {Doctrine_Table_Exception} Unknown method SfGuardUserTable::retrieveByUsername
+Dec 10 14:47:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 14:47:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:47:55 symfony [info] {sfWebDebugLogger} Configuration 365.54 ms (8)
+Dec 10 14:47:55 symfony [info] {sfWebDebugLogger} Factories 179.62 ms (1)
+Dec 10 14:47:55 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 91.89 ms (1)
+Dec 10 14:48:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 10 14:48:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:48:05 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:48:05 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 14:48:05 symfony [info] {sfBasicSecurityFilter} Action "default/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Dec 10 14:48:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:48:05 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:48:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:48:05 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:48:05 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:48:05 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:48:05 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:48:05 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:48:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Dec 10 14:48:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:48:05 symfony [info] {sfWebDebugLogger} Configuration 80.07 ms (13)
+Dec 10 14:48:05 symfony [info] {sfWebDebugLogger} Factories 69.43 ms (1)
+Dec 10 14:48:05 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 12.41 ms (1)
+Dec 10 14:48:05 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 47.72 ms (1)
+Dec 10 14:48:05 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 8.24 ms (1)
+Dec 10 14:48:05 symfony [info] {sfWebResponse} Send content (36636 o)
+Dec 10 14:48:10 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:48:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:48:10 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:48:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:48:10 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:48:10 symfony [err] {Doctrine_Table_Exception} Unknown method SfGuardUserTable::retrieveByUsername
+Dec 10 14:48:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 14:48:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:48:10 symfony [info] {sfWebDebugLogger} Configuration 16.73 ms (8)
+Dec 10 14:48:10 symfony [info] {sfWebDebugLogger} Factories 50.68 ms (1)
+Dec 10 14:48:10 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 82.38 ms (1)
+Dec 10 14:50:06 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:50:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:50:06 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:50:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:50:06 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:50:06 symfony [err] {Doctrine_Table_Exception} Unknown method SfGuardUserTable::retrieveByUsername
+Dec 10 14:50:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 14:50:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:50:06 symfony [info] {sfWebDebugLogger} Configuration 364.38 ms (8)
+Dec 10 14:50:06 symfony [info] {sfWebDebugLogger} Factories 173.53 ms (1)
+Dec 10 14:50:06 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 87.22 ms (1)
+Dec 10 14:50:08 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:50:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:50:08 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:50:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:50:08 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:50:08 symfony [err] {Doctrine_Table_Exception} Unknown method SfGuardUserTable::retrieveByUsername
+Dec 10 14:50:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 14:50:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:50:08 symfony [info] {sfWebDebugLogger} Configuration 13.66 ms (8)
+Dec 10 14:50:08 symfony [info] {sfWebDebugLogger} Factories 52.88 ms (1)
+Dec 10 14:50:08 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 98.63 ms (1)
+Dec 10 14:52:07 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:52:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:52:07 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:52:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:52:07 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:52:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:52:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Dec 10 14:52:07 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:52:07 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:52:07 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:07 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:52:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:52:07 symfony [info] {sfWebDebugLogger} Configuration 419.07 ms (9)
+Dec 10 14:52:07 symfony [info] {sfWebDebugLogger} Factories 164.61 ms (1)
+Dec 10 14:52:07 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 263.63 ms (1)
+Dec 10 14:52:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.04 ms (2)
+Dec 10 14:52:07 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 48.23 ms (1)
+Dec 10 14:52:07 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 5.31 ms (1)
+Dec 10 14:52:07 symfony [info] {sfWebResponse} Send content (39913 o)
+Dec 10 14:52:10 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:52:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:52:10 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:52:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:52:10 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:52:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:52:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Dec 10 14:52:10 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:52:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:52:10 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:10 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:52:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:52:10 symfony [info] {sfWebDebugLogger} Configuration 18.53 ms (9)
+Dec 10 14:52:10 symfony [info] {sfWebDebugLogger} Factories 54.75 ms (1)
+Dec 10 14:52:10 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 97.72 ms (1)
+Dec 10 14:52:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.80 ms (2)
+Dec 10 14:52:10 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 19.30 ms (1)
+Dec 10 14:52:10 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 4.80 ms (1)
+Dec 10 14:52:10 symfony [info] {sfWebResponse} Send content (39882 o)
+Dec 10 14:52:15 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:52:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:52:15 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:52:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:52:15 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:52:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:52:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (anld, 1)
+Dec 10 14:52:15 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:52:15 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:52:15 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:15 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:52:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:52:15 symfony [info] {sfWebDebugLogger} Configuration 19.05 ms (9)
+Dec 10 14:52:15 symfony [info] {sfWebDebugLogger} Factories 49.57 ms (1)
+Dec 10 14:52:15 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 91.07 ms (1)
+Dec 10 14:52:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.84 ms (2)
+Dec 10 14:52:15 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 18.84 ms (1)
+Dec 10 14:52:15 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 4.68 ms (1)
+Dec 10 14:52:16 symfony [info] {sfWebResponse} Send content (39877 o)
+Dec 10 14:52:43 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:52:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:52:43 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:52:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:52:43 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:52:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:52:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Dec 10 14:52:43 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:52:43 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:52:43 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:43 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:52:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:52:43 symfony [info] {sfWebDebugLogger} Configuration 17.59 ms (9)
+Dec 10 14:52:43 symfony [info] {sfWebDebugLogger} Factories 51.96 ms (1)
+Dec 10 14:52:43 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 189.24 ms (1)
+Dec 10 14:52:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.65 ms (2)
+Dec 10 14:52:43 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 90.42 ms (1)
+Dec 10 14:52:43 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 35.78 ms (1)
+Dec 10 14:52:43 symfony [info] {sfWebResponse} Send content (39885 o)
+Dec 10 14:52:56 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:52:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:52:56 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:52:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:52:56 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:52:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:52:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Dec 10 14:52:56 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:52:56 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:52:56 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:56 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:52:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:52:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:52:56 symfony [info] {sfWebDebugLogger} Configuration 358.29 ms (9)
+Dec 10 14:52:56 symfony [info] {sfWebDebugLogger} Factories 173.62 ms (1)
+Dec 10 14:52:56 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 73.90 ms (1)
+Dec 10 14:52:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.97 ms (2)
+Dec 10 14:52:56 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 39.66 ms (1)
+Dec 10 14:52:56 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 5.43 ms (1)
+Dec 10 14:52:56 symfony [info] {sfWebResponse} Send content (39917 o)
+Dec 10 14:55:42 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:55:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:55:42 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:55:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:55:42 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:55:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:55:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Dec 10 14:55:42 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:55:42 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:55:42 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:55:42 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:55:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:55:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:55:42 symfony [info] {sfWebDebugLogger} Configuration 363.26 ms (10)
+Dec 10 14:55:42 symfony [info] {sfWebDebugLogger} Factories 172.10 ms (1)
+Dec 10 14:55:42 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 76.59 ms (1)
+Dec 10 14:55:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.87 ms (2)
+Dec 10 14:55:42 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 39.33 ms (1)
+Dec 10 14:55:42 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 5.45 ms (1)
+Dec 10 14:55:42 symfony [info] {sfWebResponse} Send content (39918 o)
+Dec 10 14:55:46 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:55:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:55:46 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:55:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:55:46 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:55:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:55:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Dec 10 14:55:46 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:55:46 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:55:46 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:55:46 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:55:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:55:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:55:46 symfony [info] {sfWebDebugLogger} Configuration 17.68 ms (9)
+Dec 10 14:55:46 symfony [info] {sfWebDebugLogger} Factories 53.35 ms (1)
+Dec 10 14:55:46 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 98.59 ms (1)
+Dec 10 14:55:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.78 ms (2)
+Dec 10 14:55:46 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 18.03 ms (1)
+Dec 10 14:55:46 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 4.49 ms (1)
+Dec 10 14:55:46 symfony [info] {sfWebResponse} Send content (39882 o)
+Dec 10 14:56:33 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:56:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:56:33 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:56:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:56:33 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:56:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:56:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Dec 10 14:56:33 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 10 14:56:33 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 10 14:56:33 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:56:33 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:56:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:56:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:56:33 symfony [info] {sfWebDebugLogger} Configuration 16.25 ms (9)
+Dec 10 14:56:33 symfony [info] {sfWebDebugLogger} Factories 49.80 ms (1)
+Dec 10 14:56:33 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 81.12 ms (1)
+Dec 10 14:56:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.72 ms (2)
+Dec 10 14:56:33 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 23.39 ms (1)
+Dec 10 14:56:33 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 5.19 ms (1)
+Dec 10 14:56:33 symfony [info] {sfWebResponse} Send content (39882 o)
+Dec 10 14:57:50 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 14:57:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:57:50 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:57:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:57:50 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 14:57:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:57:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Dec 10 14:57:50 symfony [info] {myUser} User is authenticated
+Dec 10 14:57:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (1)
+Dec 10 14:57:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (1)
+Dec 10 14:57:50 symfony [info] {myUser} Add credential(s) ""
+Dec 10 14:57:50 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2012-12-10 14:57:50, 2012-12-10 14:57:50, 1)
+Dec 10 14:57:50 symfony [info] {sfFrontWebController} Redirect to "http://reminder.local/"
+Dec 10 14:57:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 10 14:57:50 symfony [info] {sfWebResponse} Send header "Location: http://reminder.local/"
+Dec 10 14:57:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:57:50 symfony [info] {sfWebDebugLogger} Configuration 19.61 ms (8)
+Dec 10 14:57:50 symfony [info] {sfWebDebugLogger} Factories 71.28 ms (1)
+Dec 10 14:57:50 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 241.27 ms (1)
+Dec 10 14:57:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 54.25 ms (5)
+Dec 10 14:57:50 symfony [info] {sfWebResponse} Send content (93 o)
+Dec 10 14:58:11 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 14:58:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 14:58:12 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 14:58:12 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 14:58:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 14:58:12 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 14:58:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 14:58:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 14:58:12 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s - ()
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_filters_field.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 14:58:12 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 14:58:12 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:58:12 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 14:58:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 14:58:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Configuration 377.02 ms (12)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Factories 55.72 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Action "task/index" 212.37 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 73.05 ms (3)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 393.14 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 6.02 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 7.83 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.78 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_filters" 178.78 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_filters_field" 113.19 ms (16)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_list" 26.57 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 5.38 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 5.70 ms (1)
+Dec 10 14:58:12 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.23 ms (1)
+Dec 10 14:58:13 symfony [info] {sfWebResponse} Send content (175856 o)
+Dec 10 15:06:10 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 15:06:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:06:10 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:06:10 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:06:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:06:10 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 15:06:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:06:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 15:06:10 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 15:06:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:06:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:06:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 15:06:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 15:06:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 15:06:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 15:06:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 15:06:10 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:06:10 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:06:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:06:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Configuration 286.23 ms (12)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Factories 60.41 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Action "task/index" 50.01 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 12.83 ms (2)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 89.14 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 5.05 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 4.74 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.69 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Partial "task/_list" 17.09 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 13.78 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 5.36 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.62 ms (1)
+Dec 10 15:06:10 symfony [info] {sfWebResponse} Send content (43342 o)
+Dec 10 15:32:56 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 15:32:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:32:56 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:32:56 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:32:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:32:56 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 15:32:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:32:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 15:32:57 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 15:32:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:32:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:32:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 15:32:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 15:32:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 15:32:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 15:32:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 15:32:57 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:32:57 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:32:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:32:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Configuration 25.62 ms (11)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Factories 88.54 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Action "task/index" 493.78 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.62 ms (2)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 150.70 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 2.36 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.93 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.67 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Partial "task/_list" 60.11 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 8.02 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 2.59 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.78 ms (1)
+Dec 10 15:32:57 symfony [info] {sfWebResponse} Send content (43341 o)
+Dec 10 15:33:00 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 15:33:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:33:00 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:33:00 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:33:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:33:00 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 15:33:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:33:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 15:33:00 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 15:33:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:33:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:33:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 15:33:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 15:33:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 15:33:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 15:33:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 15:33:00 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:33:00 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:33:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:33:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Configuration 19.71 ms (11)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Factories 53.02 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Action "task/index" 50.57 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.55 ms (2)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 42.47 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.43 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.45 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.35 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Partial "task/_list" 1.65 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 7.23 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 1.60 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.44 ms (1)
+Dec 10 15:33:00 symfony [info] {sfWebResponse} Send content (43338 o)
+Dec 10 15:33:02 symfony [info] {sfPatternRouting} Match route "task_new" (/task/new.:sf_format) for /task/new with parameters array (  'module' => 'task',  'action' => 'new',  'sf_format' => 'html',)
+Dec 10 15:33:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:33:02 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:33:02 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:33:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:33:02 symfony [info] {taskActions} Call "taskActions->executeNew()"
+Dec 10 15:33:02 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/newSuccess.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:02 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:03 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 15:33:03 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 15:33:03 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:33:03 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:33:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:33:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Configuration 16.77 ms (11)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Factories 50.20 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Action "task/new" 111.83 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} View "Success" for "task/new" 126.20 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.49 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.36 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.75 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Partial "task/_form" 89.95 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 59.33 ms (2)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 32.81 ms (5)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 16.58 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 2.02 ms (1)
+Dec 10 15:33:03 symfony [info] {sfWebResponse} Send content (105815 o)
+Dec 10 15:33:10 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:33:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:33:10 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:33:10 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:33:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:33:10 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:33:10 symfony [info] {taskActions} Change template to "CURRENT/new"
+Dec 10 15:33:10 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/newSuccess.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 15:33:10 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 15:33:10 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:33:10 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:33:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:33:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Configuration 16.27 ms (11)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Factories 47.69 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Action "task/create" 47.46 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} View "Success" for "task/create" 72.09 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.44 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.42 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.44 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Partial "task/_form" 41.39 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 31.32 ms (2)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 25.06 ms (5)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 1.87 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 1.20 ms (1)
+Dec 10 15:33:10 symfony [info] {sfWebResponse} Send content (108815 o)
+Dec 10 15:33:10 symfony [info] {myUser} Remove old flash messages ("error")
+Dec 10 15:33:44 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:33:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:33:44 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:33:44 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:33:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:33:44 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:33:44 symfony [info] {taskActions} Change template to "CURRENT/new"
+Dec 10 15:33:44 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/newSuccess.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 15:33:44 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 15:33:44 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:33:44 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:33:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:33:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Configuration 17.65 ms (11)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Factories 45.33 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Action "task/create" 93.44 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} View "Success" for "task/create" 88.52 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.20 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.21 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.41 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Partial "task/_form" 43.48 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 33.06 ms (2)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 26.58 ms (5)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 1.88 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 1.21 ms (1)
+Dec 10 15:33:44 symfony [info] {sfWebResponse} Send content (108907 o)
+Dec 10 15:33:44 symfony [info] {myUser} Remove old flash messages ("error")
+Dec 10 15:41:20 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:41:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:41:21 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:41:21 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:41:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:41:21 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:41:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:41:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Dec 10 15:41:21 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Record or Doctrine_Null when setting one-to-one references.
+Dec 10 15:41:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 15:41:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:41:21 symfony [info] {sfWebDebugLogger} Configuration 175.10 ms (11)
+Dec 10 15:41:21 symfony [info] {sfWebDebugLogger} Factories 46.44 ms (1)
+Dec 10 15:41:21 symfony [info] {sfWebDebugLogger} Action "task/create" 278.19 ms (1)
+Dec 10 15:41:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.29 ms (2)
+Dec 10 15:41:25 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 15:41:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:41:25 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:41:25 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:41:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:41:25 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 15:41:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:41:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 15:41:25 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 15:41:25 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:41:25 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:41:25 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 15:41:25 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 15:41:25 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 15:41:25 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 15:41:25 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 15:41:25 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:41:25 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:41:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:41:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Configuration 15.25 ms (11)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Factories 53.53 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Action "task/index" 47.16 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.62 ms (2)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 139.76 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 4.51 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 4.42 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.60 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Partial "task/_list" 66.29 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 18.90 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 6.97 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 2.37 ms (1)
+Dec 10 15:41:25 symfony [info] {sfWebResponse} Send content (43458 o)
+Dec 10 15:41:27 symfony [info] {sfPatternRouting} Match route "task_new" (/task/new.:sf_format) for /task/new with parameters array (  'module' => 'task',  'action' => 'new',  'sf_format' => 'html',)
+Dec 10 15:41:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:41:27 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:41:27 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:41:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:41:27 symfony [info] {taskActions} Call "taskActions->executeNew()"
+Dec 10 15:41:27 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/newSuccess.php"
+Dec 10 15:41:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:41:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:41:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 15:41:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 15:41:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:41:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 15:41:28 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 15:41:28 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:41:28 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:41:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:41:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Configuration 12.32 ms (11)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Factories 48.36 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Action "task/new" 54.10 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} View "Success" for "task/new" 103.59 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.44 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.38 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.66 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Partial "task/_form" 68.00 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 51.39 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 38.69 ms (9)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 6.08 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 1.66 ms (1)
+Dec 10 15:41:28 symfony [info] {sfWebResponse} Send content (102320 o)
+Dec 10 15:42:53 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:42:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:42:53 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:42:53 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:42:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:42:53 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:42:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:42:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Dec 10 15:42:53 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Record or Doctrine_Null when setting one-to-one references.
+Dec 10 15:42:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 15:42:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:42:53 symfony [info] {sfWebDebugLogger} Configuration 16.68 ms (10)
+Dec 10 15:42:53 symfony [info] {sfWebDebugLogger} Factories 53.86 ms (1)
+Dec 10 15:42:53 symfony [info] {sfWebDebugLogger} Action "task/create" 200.15 ms (1)
+Dec 10 15:42:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.72 ms (2)
+Dec 10 15:43:10 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:43:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:43:10 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:43:10 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:43:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:43:10 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:43:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:43:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Dec 10 15:43:10 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Record or Doctrine_Null when setting one-to-one references.
+Dec 10 15:43:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 15:43:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:43:11 symfony [info] {sfWebDebugLogger} Configuration 10.70 ms (10)
+Dec 10 15:43:11 symfony [info] {sfWebDebugLogger} Factories 53.35 ms (1)
+Dec 10 15:43:11 symfony [info] {sfWebDebugLogger} Action "task/create" 184.43 ms (1)
+Dec 10 15:43:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.72 ms (2)
+Dec 10 15:43:14 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:43:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:43:14 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:43:14 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:43:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:43:14 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:43:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:43:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Dec 10 15:43:14 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Record or Doctrine_Null when setting one-to-one references.
+Dec 10 15:43:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 15:43:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:43:14 symfony [info] {sfWebDebugLogger} Configuration 13.68 ms (10)
+Dec 10 15:43:14 symfony [info] {sfWebDebugLogger} Factories 48.70 ms (1)
+Dec 10 15:43:14 symfony [info] {sfWebDebugLogger} Action "task/create" 173.95 ms (1)
+Dec 10 15:43:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.85 ms (2)
+Dec 10 15:43:49 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:43:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:43:49 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:43:49 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:43:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:43:49 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:43:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:43:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Dec 10 15:43:49 symfony [err] {sfException} Call to undefined method myUser::getId.
+Dec 10 15:43:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 15:43:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:43:49 symfony [info] {sfWebDebugLogger} Configuration 16.44 ms (10)
+Dec 10 15:43:49 symfony [info] {sfWebDebugLogger} Factories 49.92 ms (1)
+Dec 10 15:43:49 symfony [info] {sfWebDebugLogger} Action "task/create" 219.25 ms (1)
+Dec 10 15:43:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.85 ms (2)
+Dec 10 15:44:39 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:44:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:44:39 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:44:39 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:44:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:44:39 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:44:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:44:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Dec 10 15:44:39 symfony [notice] {sfWebDebugLogger}  Notice at D:\Projects\PHP\reminder\site\lib\form\doctrine\TaskForm.class.php on line 32 (Undefined property: myUser::$id)
+Dec 10 15:44:39 symfony [info] {sfFrontWebController} Redirect to "http://reminder.local/frontend_dev.php/task//edit"
+Dec 10 15:44:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 10 15:44:39 symfony [info] {sfWebResponse} Send header "Location: http://reminder.local/frontend_dev.php/task//edit"
+Dec 10 15:44:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:44:39 symfony [info] {sfWebDebugLogger} Configuration 15.55 ms (10)
+Dec 10 15:44:39 symfony [info] {sfWebDebugLogger} Factories 56.09 ms (1)
+Dec 10 15:44:39 symfony [info] {sfWebDebugLogger} Action "task/create" 97.06 ms (1)
+Dec 10 15:44:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.83 ms (2)
+Dec 10 15:44:39 symfony [info] {sfWebResponse} Send content (120 o)
+Dec 10 15:44:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/edit with parameters array (  'module' => 'task',  'action' => 'edit',)
+Dec 10 15:44:39 symfony [info] {myUser} Flag old flash messages ("notice")
+Dec 10 15:44:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:44:39 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:44:39 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:44:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:44:39 symfony [info] {taskActions} Call "taskActions->executeEdit()"
+Dec 10 15:44:39 symfony [info] {myUser} Remove old flash messages ("notice")
+Dec 10 15:44:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/edit with parameters array (  'module' => 'task',  'action' => 'edit',)
+Dec 10 15:44:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:44:54 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:44:54 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:44:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:44:54 symfony [info] {taskActions} Call "taskActions->executeEdit()"
+Dec 10 15:44:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/edit with parameters array (  'module' => 'task',  'action' => 'edit',)
+Dec 10 15:44:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:44:55 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:44:55 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:44:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:44:55 symfony [info] {taskActions} Call "taskActions->executeEdit()"
+Dec 10 15:44:57 symfony [info] {sfPatternRouting} Match route "task_new" (/task/new.:sf_format) for /task/new with parameters array (  'module' => 'task',  'action' => 'new',  'sf_format' => 'html',)
+Dec 10 15:44:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:44:57 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:44:57 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:44:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:44:57 symfony [info] {taskActions} Call "taskActions->executeNew()"
+Dec 10 15:44:57 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/newSuccess.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 15:44:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 15:44:57 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:44:57 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:44:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:44:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Configuration 16.90 ms (11)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Factories 52.80 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Action "task/new" 54.35 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} View "Success" for "task/new" 99.40 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.53 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.42 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.75 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Partial "task/_form" 65.56 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 43.18 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 35.32 ms (8)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 2.01 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 1.69 ms (1)
+Dec 10 15:44:57 symfony [info] {sfWebResponse} Send content (94962 o)
+Dec 10 15:45:16 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:45:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:45:16 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:45:16 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:45:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:45:16 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:45:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:45:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Dec 10 15:45:16 symfony [info] {sfFrontWebController} Redirect to "http://reminder.local/frontend_dev.php/task//edit"
+Dec 10 15:45:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 10 15:45:16 symfony [info] {sfWebResponse} Send header "Location: http://reminder.local/frontend_dev.php/task//edit"
+Dec 10 15:45:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:45:16 symfony [info] {sfWebDebugLogger} Configuration 15.13 ms (10)
+Dec 10 15:45:16 symfony [info] {sfWebDebugLogger} Factories 50.34 ms (1)
+Dec 10 15:45:16 symfony [info] {sfWebDebugLogger} Action "task/create" 116.48 ms (1)
+Dec 10 15:45:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.91 ms (2)
+Dec 10 15:45:16 symfony [info] {sfWebResponse} Send content (120 o)
+Dec 10 15:45:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/edit with parameters array (  'module' => 'task',  'action' => 'edit',)
+Dec 10 15:45:17 symfony [info] {myUser} Flag old flash messages ("notice")
+Dec 10 15:45:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:45:17 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:45:17 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:45:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:45:17 symfony [info] {taskActions} Call "taskActions->executeEdit()"
+Dec 10 15:45:17 symfony [info] {myUser} Remove old flash messages ("notice")
+Dec 10 15:50:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/edit with parameters array (  'module' => 'task',  'action' => 'edit',)
+Dec 10 15:50:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:50:45 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:50:45 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:50:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:50:45 symfony [info] {taskActions} Call "taskActions->executeEdit()"
+Dec 10 15:50:47 symfony [info] {sfPatternRouting} Match route "task_new" (/task/new.:sf_format) for /task/new with parameters array (  'module' => 'task',  'action' => 'new',  'sf_format' => 'html',)
+Dec 10 15:50:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:50:47 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:50:47 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:50:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:50:47 symfony [info] {taskActions} Call "taskActions->executeNew()"
+Dec 10 15:50:47 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/newSuccess.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 15:50:47 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 15:50:47 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:50:47 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:50:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:50:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Configuration 16.74 ms (11)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Factories 55.06 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Action "task/new" 49.46 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} View "Success" for "task/new" 84.37 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.65 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.51 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.86 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Partial "task/_form" 50.14 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 41.40 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 33.89 ms (8)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 1.96 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 1.79 ms (1)
+Dec 10 15:50:47 symfony [info] {sfWebResponse} Send content (94962 o)
+Dec 10 15:50:59 symfony [info] {sfPatternRouting} Match route "task_create" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'create',  'sf_format' => 'html',)
+Dec 10 15:50:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:50:59 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:50:59 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:50:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:50:59 symfony [info] {taskActions} Call "taskActions->executeCreate()"
+Dec 10 15:50:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:50:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Dec 10 15:50:59 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO task (user_id, piriority, reminded_count, is_deleted, task_name, task_description, assigned_to, reminder_email1, reminder_email2, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (1, 1, 0, 0, asdfqwr, qwrqwerqwerqwr, qwerqwerqwerqwer, anld@isoftco.com, anld@isoftco.com, 2012-12-10 15:50:59, 2012-12-10 15:50:59)
+Dec 10 15:50:59 symfony [info] {sfFrontWebController} Redirect to "http://reminder.local/frontend_dev.php/task/1/edit"
+Dec 10 15:50:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 10 15:50:59 symfony [info] {sfWebResponse} Send header "Location: http://reminder.local/frontend_dev.php/task/1/edit"
+Dec 10 15:50:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Configuration 14.39 ms (10)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Factories 45.90 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Action "task/create" 129.61 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 13.53 ms (3)
+Dec 10 15:50:59 symfony [info] {sfWebResponse} Send content (121 o)
+Dec 10 15:50:59 symfony [info] {sfPatternRouting} Match route "task_edit" (/task/:id/edit.:sf_format) for /task/1/edit with parameters array (  'module' => 'task',  'action' => 'edit',  'sf_format' => 'html',  'id' => '1',)
+Dec 10 15:50:59 symfony [info] {myUser} Flag old flash messages ("notice")
+Dec 10 15:50:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:50:59 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:50:59 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:50:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:50:59 symfony [info] {taskActions} Call "taskActions->executeEdit()"
+Dec 10 15:50:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:50:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t WHERE (t.id = ?) - (1)
+Dec 10 15:50:59 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/editSuccess.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 15:50:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 15:50:59 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:50:59 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:50:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:50:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Configuration 15.60 ms (11)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Factories 47.59 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Action "task/edit" 90.74 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.79 ms (2)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} View "Success" for "task/edit" 87.91 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.49 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.43 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.43 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Partial "task/_form" 51.99 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 41.14 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 33.25 ms (8)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 3.44 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 1.68 ms (1)
+Dec 10 15:50:59 symfony [info] {sfWebResponse} Send content (101301 o)
+Dec 10 15:50:59 symfony [info] {myUser} Remove old flash messages ("notice")
+Dec 10 15:51:55 symfony [info] {sfPatternRouting} Match route "task_edit" (/task/:id/edit.:sf_format) for /task/1/edit with parameters array (  'module' => 'task',  'action' => 'edit',  'sf_format' => 'html',  'id' => '1',)
+Dec 10 15:51:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 15:51:55 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 15:51:55 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 15:51:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 15:51:55 symfony [info] {taskActions} Call "taskActions->executeEdit()"
+Dec 10 15:51:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 15:51:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t WHERE (t.id = ?) - (1)
+Dec 10 15:51:55 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/editSuccess.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 15:51:55 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 15:51:55 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:51:55 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 15:51:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 15:51:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Configuration 14.33 ms (11)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Factories 54.35 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Action "task/edit" 104.33 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.75 ms (2)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} View "Success" for "task/edit" 79.09 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.42 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.29 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.61 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Partial "task/_form" 47.35 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 37.55 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 30.52 ms (8)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 2.80 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 1.89 ms (1)
+Dec 10 15:51:56 symfony [info] {sfWebResponse} Send content (100708 o)
+Dec 10 16:07:41 symfony [info] {sfPatternRouting} Match route "task_edit" (/task/:id/edit.:sf_format) for /task/1/edit with parameters array (  'module' => 'task',  'action' => 'edit',  'sf_format' => 'html',  'id' => '1',)
+Dec 10 16:07:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:07:41 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:07:41 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:07:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:07:41 symfony [info] {taskActions} Call "taskActions->executeEdit()"
+Dec 10 16:07:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 16:07:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t WHERE (t.id = ?) - (1)
+Dec 10 16:07:41 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/editSuccess.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_header.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_fieldset.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_field.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_actions.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_form_footer.php"
+Dec 10 16:07:41 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:07:41 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:07:41 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:07:41 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:07:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:07:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Configuration 138.43 ms (14)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Factories 47.93 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Action "task/edit" 93.45 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.02 ms (2)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} View "Success" for "task/edit" 289.84 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.34 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.44 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "task/_form_header" 1.90 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "task/_form" 52.70 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "task/_form_fieldset" 39.49 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "task/_form_field" 32.05 ms (8)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "task/_form_actions" 3.56 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "task/_form_footer" 1.87 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 1.77 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 0.89 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.75 ms (1)
+Dec 10 16:07:41 symfony [info] {sfWebResponse} Send content (116592 o)
+Dec 10 16:07:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/1/images/pp.jpg with parameters array (  'module' => 'task',  'action' => '1',  'images' => 'pp.jpg',)
+Dec 10 16:07:42 symfony [info] {sfFrontWebController} Action "task/1" does not exist
+Dec 10 16:07:42 symfony [err] {sfError404Exception} Action "task/1" does not exist.
+Dec 10 16:07:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/1/images/logo.png with parameters array (  'module' => 'task',  'action' => '1',  'images' => 'logo.png',)
+Dec 10 16:07:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:07:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:07:42 symfony [info] {sfWebDebugLogger} Configuration 11.22 ms (7)
+Dec 10 16:07:42 symfony [info] {sfWebDebugLogger} Factories 51.72 ms (1)
+Dec 10 16:07:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/1/images/icons/black/16/home.png with parameters array (  'module' => 'task',  'action' => '1',  'images' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:07:42 symfony [info] {sfFrontWebController} Action "task/1" does not exist
+Dec 10 16:07:42 symfony [err] {sfError404Exception} Action "task/1" does not exist.
+Dec 10 16:07:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:07:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:07:42 symfony [info] {sfWebDebugLogger} Configuration 10.30 ms (7)
+Dec 10 16:07:42 symfony [info] {sfWebDebugLogger} Factories 129.20 ms (1)
+Dec 10 16:07:42 symfony [info] {sfFrontWebController} Action "task/1" does not exist
+Dec 10 16:07:42 symfony [err] {sfError404Exception} Action "task/1" does not exist.
+Dec 10 16:07:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:07:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:07:42 symfony [info] {sfWebDebugLogger} Configuration 12.79 ms (7)
+Dec 10 16:07:42 symfony [info] {sfWebDebugLogger} Factories 155.37 ms (1)
+Dec 10 16:07:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/1/images/pp.jpg with parameters array (  'module' => 'task',  'action' => '1',  'images' => 'pp.jpg',)
+Dec 10 16:07:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/1/images/icons/black/16/home.png with parameters array (  'module' => 'task',  'action' => '1',  'images' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:07:43 symfony [info] {sfFrontWebController} Action "task/1" does not exist
+Dec 10 16:07:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /task/1/images/logo.png with parameters array (  'module' => 'task',  'action' => '1',  'images' => 'logo.png',)
+Dec 10 16:07:43 symfony [err] {sfError404Exception} Action "task/1" does not exist.
+Dec 10 16:07:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:07:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:07:43 symfony [info] {sfWebDebugLogger} Configuration 7.72 ms (7)
+Dec 10 16:07:43 symfony [info] {sfWebDebugLogger} Factories 59.19 ms (1)
+Dec 10 16:07:43 symfony [info] {sfFrontWebController} Action "task/1" does not exist
+Dec 10 16:07:43 symfony [err] {sfError404Exception} Action "task/1" does not exist.
+Dec 10 16:07:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:07:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:07:43 symfony [info] {sfWebDebugLogger} Configuration 9.44 ms (7)
+Dec 10 16:07:43 symfony [info] {sfWebDebugLogger} Factories 166.18 ms (1)
+Dec 10 16:07:43 symfony [info] {sfFrontWebController} Action "task/1" does not exist
+Dec 10 16:07:43 symfony [err] {sfError404Exception} Action "task/1" does not exist.
+Dec 10 16:07:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:07:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:07:43 symfony [info] {sfWebDebugLogger} Configuration 8.89 ms (7)
+Dec 10 16:07:43 symfony [info] {sfWebDebugLogger} Factories 314.79 ms (1)
+Dec 10 16:08:06 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 16:08:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:08:06 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:08:06 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:08:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:08:06 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 16:08:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 16:08:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 16:08:06 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_th_tabular.php"
+Dec 10 16:08:06 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t LIMIT 20 - ()
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_batch_actions.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_actions.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 16:08:06 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:08:06 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:08:06 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:08:07 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:08:07 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:08:07 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Configuration 18.73 ms (13)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Factories 57.88 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Action "task/index" 547.43 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.70 ms (3)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 376.65 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.47 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.39 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.61 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list" 297.18 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list_th_tabular" 59.93 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_batch_actions" 17.33 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_tabular" 85.41 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_actions" 12.15 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 2.86 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 1.97 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.55 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 1.82 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 1.44 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 1.07 ms (1)
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send content (73779 o)
+Dec 10 16:08:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Configuration 9.03 ms (5)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Factories 57.41 ms (1)
+Dec 10 16:08:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:08:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Configuration 10.28 ms (5)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Factories 114.58 ms (1)
+Dec 10 16:08:07 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:08:07 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Configuration 10.96 ms (5)
+Dec 10 16:08:07 symfony [info] {sfWebDebugLogger} Factories 103.29 ms (1)
+Dec 10 16:08:20 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 16:08:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:08:20 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:08:20 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:08:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:08:20 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 16:08:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 16:08:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 16:08:21 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_th_tabular.php"
+Dec 10 16:08:21 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:08:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t LIMIT 20 - ()
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_batch_actions.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_actions.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 16:08:21 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:08:21 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:08:21 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:08:21 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Configuration 805.70 ms (13)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Factories 233.98 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Action "task/index" 55.06 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.15 ms (3)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 150.58 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 4.64 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 4.26 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.29 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list" 64.86 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list_th_tabular" 8.39 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_batch_actions" 4.72 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_tabular" 17.08 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_actions" 12.23 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 5.31 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 5.04 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.41 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.12 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 0.89 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.86 ms (1)
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send content (73809 o)
+Dec 10 16:08:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:08:21 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:08:21 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Configuration 11.25 ms (5)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Factories 88.75 ms (1)
+Dec 10 16:08:21 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Configuration 13.96 ms (5)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Factories 269.58 ms (1)
+Dec 10 16:08:21 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Configuration 12.11 ms (5)
+Dec 10 16:08:21 symfony [info] {sfWebDebugLogger} Factories 367.64 ms (1)
+Dec 10 16:08:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:08:22 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:08:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:22 symfony [info] {sfWebDebugLogger} Configuration 10.84 ms (5)
+Dec 10 16:08:22 symfony [info] {sfWebDebugLogger} Factories 92.93 ms (1)
+Dec 10 16:08:22 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:08:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:23 symfony [info] {sfWebDebugLogger} Configuration 28.85 ms (5)
+Dec 10 16:08:23 symfony [info] {sfWebDebugLogger} Factories 148.61 ms (1)
+Dec 10 16:08:23 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:08:23 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:08:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:08:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:08:23 symfony [info] {sfWebDebugLogger} Configuration 7.03 ms (5)
+Dec 10 16:08:23 symfony [info] {sfWebDebugLogger} Factories 276.17 ms (1)
+Dec 10 16:09:57 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 16:09:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:09:57 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:09:57 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:09:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:09:57 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 16:09:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 16:09:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 16:09:57 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_th_tabular.php"
+Dec 10 16:09:57 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:09:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t LIMIT 20 - ()
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_batch_actions.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_actions.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 16:09:57 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:09:57 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:09:57 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:09:57 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:09:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:09:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Configuration 53.09 ms (14)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Factories 47.05 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Action "task/index" 53.53 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.17 ms (3)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 129.07 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.00 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 0.87 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.07 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list" 43.77 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_th_tabular" 5.01 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_batch_actions" 1.13 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_tabular" 13.28 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_actions" 8.11 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 1.36 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 1.34 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.31 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.06 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 1.85 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.99 ms (1)
+Dec 10 16:09:57 symfony [info] {sfWebResponse} Send content (73827 o)
+Dec 10 16:09:58 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:09:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:09:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:09:58 symfony [info] {sfWebDebugLogger} Configuration 11.47 ms (5)
+Dec 10 16:09:58 symfony [info] {sfWebDebugLogger} Factories 98.72 ms (1)
+Dec 10 16:09:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:09:58 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:09:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:09:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:09:58 symfony [info] {sfWebDebugLogger} Configuration 11.02 ms (5)
+Dec 10 16:09:58 symfony [info] {sfWebDebugLogger} Factories 201.40 ms (1)
+Dec 10 16:09:58 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:09:58 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:09:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:09:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:09:58 symfony [info] {sfWebDebugLogger} Configuration 17.25 ms (5)
+Dec 10 16:09:58 symfony [info] {sfWebDebugLogger} Factories 238.46 ms (1)
+Dec 10 16:09:58 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:09:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:09:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:09:58 symfony [info] {sfWebDebugLogger} Configuration 7.16 ms (5)
+Dec 10 16:09:58 symfony [info] {sfWebDebugLogger} Factories 135.95 ms (1)
+Dec 10 16:10:03 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 10 16:10:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:10:03 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:10:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:10:03 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 10 16:10:03 symfony [info] {sfFrontWebController} Redirect to "http://reminder.local/frontend_dev.php/"
+Dec 10 16:10:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 10 16:10:03 symfony [info] {sfWebResponse} Send header "Location: http://reminder.local/frontend_dev.php/"
+Dec 10 16:10:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:10:03 symfony [info] {sfWebDebugLogger} Configuration 52.41 ms (9)
+Dec 10 16:10:03 symfony [info] {sfWebDebugLogger} Factories 65.14 ms (1)
+Dec 10 16:10:03 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 1.18 ms (1)
+Dec 10 16:10:03 symfony [info] {sfWebResponse} Send content (110 o)
+Dec 10 16:10:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 10 16:10:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:10:03 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:10:03 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:10:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:10:03 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 10 16:10:03 symfony [err] {sfException} Call to undefined method myUser::isFirstRequest.
+Dec 10 16:10:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 16:10:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:10:03 symfony [info] {sfWebDebugLogger} Configuration 40.70 ms (9)
+Dec 10 16:10:03 symfony [info] {sfWebDebugLogger} Factories 48.19 ms (1)
+Dec 10 16:10:03 symfony [info] {sfWebDebugLogger} Action "default/index" 37.14 ms (1)
+Dec 10 16:10:12 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 10 16:10:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:10:12 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:10:12 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:10:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:10:12 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 10 16:10:12 symfony [err] {sfException} Call to undefined method myUser::isFirstRequest.
+Dec 10 16:10:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 16:10:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:10:12 symfony [info] {sfWebDebugLogger} Configuration 15.61 ms (8)
+Dec 10 16:10:12 symfony [info] {sfWebDebugLogger} Factories 44.21 ms (1)
+Dec 10 16:10:12 symfony [info] {sfWebDebugLogger} Action "default/index" 38.45 ms (1)
+Dec 10 16:12:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 10 16:12:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:12:03 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:12:03 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:12:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:12:03 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 10 16:12:03 symfony [err] {sfException} Call to undefined method myUser::isFirstRequest.
+Dec 10 16:12:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 10 16:12:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:12:03 symfony [info] {sfWebDebugLogger} Configuration 14.14 ms (8)
+Dec 10 16:12:03 symfony [info] {sfWebDebugLogger} Factories 65.87 ms (1)
+Dec 10 16:12:03 symfony [info] {sfWebDebugLogger} Action "default/index" 42.23 ms (1)
+Dec 10 16:12:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 10 16:12:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:12:41 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:12:41 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:12:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:12:41 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 10 16:12:41 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/indexSuccess.php"
+Dec 10 16:12:41 symfony [notice] {sfWebDebugLogger}  Notice at D:\Projects\PHP\reminder\site\apps\frontend\modules\default\templates\indexSuccess.php on line 31 (Undefined variable: home)
+Dec 10 16:14:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 10 16:14:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:14:29 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:14:29 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:14:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:14:29 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 10 16:14:29 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/indexSuccess.php"
+Dec 10 16:14:29 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:14:29 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:14:29 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:14:29 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:14:29 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:14:29 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:14:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:14:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Configuration 16.48 ms (11)
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Factories 51.20 ms (1)
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Action "default/index" 0.16 ms (1)
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 25.92 ms (1)
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 1.80 ms (1)
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 1.26 ms (1)
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 1.22 ms (1)
+Dec 10 16:14:29 symfony [info] {sfWebResponse} Send content (46437 o)
+Dec 10 16:14:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:14:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:14:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Configuration 10.53 ms (5)
+Dec 10 16:14:29 symfony [info] {sfWebDebugLogger} Factories 97.56 ms (1)
+Dec 10 16:14:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Configuration 16.66 ms (5)
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Factories 176.59 ms (1)
+Dec 10 16:14:30 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:14:30 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Configuration 19.60 ms (5)
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Factories 281.58 ms (1)
+Dec 10 16:14:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:14:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Configuration 11.05 ms (5)
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Factories 100.27 ms (1)
+Dec 10 16:14:30 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:14:30 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Configuration 11.35 ms (5)
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Factories 176.33 ms (1)
+Dec 10 16:14:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Configuration 16.91 ms (5)
+Dec 10 16:14:30 symfony [info] {sfWebDebugLogger} Factories 297.26 ms (1)
+Dec 10 16:14:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 10 16:14:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:14:32 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:14:32 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:14:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:14:32 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 10 16:14:32 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/indexSuccess.php"
+Dec 10 16:14:32 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:14:32 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:14:32 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:14:32 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:14:32 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:14:32 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Configuration 20.91 ms (11)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Factories 44.88 ms (1)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Action "default/index" 0.16 ms (1)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 32.03 ms (1)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 1.68 ms (1)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 1.24 ms (1)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 1.24 ms (1)
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send content (46437 o)
+Dec 10 16:14:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:14:32 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Configuration 20.47 ms (5)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Factories 119.42 ms (1)
+Dec 10 16:14:32 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Configuration 10.00 ms (5)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Factories 252.37 ms (1)
+Dec 10 16:14:32 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:14:32 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Configuration 15.38 ms (5)
+Dec 10 16:14:32 symfony [info] {sfWebDebugLogger} Factories 280.70 ms (1)
+Dec 10 16:14:36 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 16:14:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:14:36 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:14:36 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:14:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:14:36 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 16:14:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 16:14:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 16:14:36 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 16:14:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 16:14:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_th_tabular.php"
+Dec 10 16:14:37 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:14:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t LIMIT 20 - ()
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_batch_actions.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_actions.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 16:14:37 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:14:37 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:14:37 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:14:37 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Configuration 294.04 ms (14)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Factories 44.40 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Action "task/index" 32.68 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.14 ms (3)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 172.28 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 4.07 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 4.84 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.11 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list" 96.59 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list_th_tabular" 15.68 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_batch_actions" 4.64 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_tabular" 21.52 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_actions" 14.79 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 4.88 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 4.96 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.48 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 1.79 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 1.44 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.92 ms (1)
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send content (73828 o)
+Dec 10 16:14:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:14:37 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Configuration 5.39 ms (5)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Factories 163.96 ms (1)
+Dec 10 16:14:37 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Configuration 10.90 ms (5)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Factories 231.09 ms (1)
+Dec 10 16:14:37 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:14:37 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Configuration 39.63 ms (5)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Factories 334.58 ms (1)
+Dec 10 16:14:37 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:14:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Configuration 13.50 ms (5)
+Dec 10 16:14:37 symfony [info] {sfWebDebugLogger} Factories 106.35 ms (1)
+Dec 10 16:21:36 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 16:21:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:21:36 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:21:36 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:21:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:21:36 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 16:21:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 16:21:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 16:21:36 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_th_tabular.php"
+Dec 10 16:21:36 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t LIMIT 20 - ()
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_batch_actions.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_actions.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 16:21:36 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:21:36 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:21:36 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:21:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:21:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:21:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Configuration 43.63 ms (14)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Factories 51.22 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Action "task/index" 60.56 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.19 ms (3)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 115.75 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 0.93 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 0.76 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.08 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list" 41.19 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list_th_tabular" 3.80 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_batch_actions" 0.97 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_tabular" 13.17 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_actions" 8.34 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 1.41 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 1.09 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.34 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.90 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.03 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 1.56 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 1.00 ms (1)
+Dec 10 16:21:36 symfony [info] {sfWebResponse} Send content (75212 o)
+Dec 10 16:21:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:21:37 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:21:37 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:21:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:37 symfony [info] {sfWebDebugLogger} Configuration 10.61 ms (5)
+Dec 10 16:21:37 symfony [info] {sfWebDebugLogger} Factories 64.14 ms (1)
+Dec 10 16:21:37 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:21:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:37 symfony [info] {sfWebDebugLogger} Configuration 12.97 ms (5)
+Dec 10 16:21:37 symfony [info] {sfWebDebugLogger} Factories 161.73 ms (1)
+Dec 10 16:21:37 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:21:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:37 symfony [info] {sfWebDebugLogger} Configuration 8.84 ms (5)
+Dec 10 16:21:37 symfony [info] {sfWebDebugLogger} Factories 225.21 ms (1)
+Dec 10 16:21:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:21:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:21:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:38 symfony [info] {sfWebDebugLogger} Configuration 10.60 ms (5)
+Dec 10 16:21:38 symfony [info] {sfWebDebugLogger} Factories 85.14 ms (1)
+Dec 10 16:21:38 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:21:38 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:21:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:38 symfony [info] {sfWebDebugLogger} Configuration 12.36 ms (5)
+Dec 10 16:21:38 symfony [info] {sfWebDebugLogger} Factories 148.50 ms (1)
+Dec 10 16:21:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:21:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:38 symfony [info] {sfWebDebugLogger} Configuration 23.39 ms (5)
+Dec 10 16:21:38 symfony [info] {sfWebDebugLogger} Factories 186.85 ms (1)
+Dec 10 16:21:51 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 10 16:21:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 10 16:21:51 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 10 16:21:51 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 10 16:21:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 10 16:21:51 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 10 16:21:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 10 16:21:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 10 16:21:51 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_th_tabular.php"
+Dec 10 16:21:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 10 16:21:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t LIMIT 20 - ()
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_batch_actions.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_actions.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 10 16:21:51 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:21:51 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 10 16:21:51 symfony [info] {main} Call "default->executeTopNav()"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 10 16:21:51 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 10 16:21:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 10 16:21:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Configuration 553.28 ms (13)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Factories 162.58 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Action "task/index" 36.33 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.26 ms (3)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 188.14 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 5.23 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 4.60 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.16 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list" 96.14 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list_th_tabular" 9.14 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_batch_actions" 5.27 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_tabular" 28.77 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_actions" 11.37 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 4.97 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 6.44 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 2.02 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.86 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 0.89 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.71 ms (1)
+Dec 10 16:21:51 symfony [info] {sfWebResponse} Send content (75213 o)
+Dec 10 16:21:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:21:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:21:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:52 symfony [info] {sfWebDebugLogger} Configuration 8.25 ms (5)
+Dec 10 16:21:52 symfony [info] {sfWebDebugLogger} Factories 91.00 ms (1)
+Dec 10 16:21:52 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:21:52 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:21:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:52 symfony [info] {sfWebDebugLogger} Configuration 6.00 ms (5)
+Dec 10 16:21:52 symfony [info] {sfWebDebugLogger} Factories 205.90 ms (1)
+Dec 10 16:21:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:21:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:52 symfony [info] {sfWebDebugLogger} Configuration 13.18 ms (5)
+Dec 10 16:21:52 symfony [info] {sfWebDebugLogger} Factories 286.40 ms (1)
+Dec 10 16:21:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icons/black/16/home.png with parameters array (  'module' => 'images',  'action' => 'icons',  'black' => '16',  'home.png' => true,)
+Dec 10 16:21:53 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pp.jpg" (/).
+Dec 10 16:21:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:53 symfony [info] {sfWebDebugLogger} Configuration 5.25 ms (5)
+Dec 10 16:21:53 symfony [info] {sfWebDebugLogger} Factories 77.62 ms (1)
+Dec 10 16:21:53 symfony [info] {sfFrontWebController} Action "images/icons" does not exist
+Dec 10 16:21:53 symfony [err] {sfError404Exception} Action "images/icons" does not exist.
+Dec 10 16:21:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:53 symfony [info] {sfWebDebugLogger} Configuration 7.59 ms (5)
+Dec 10 16:21:53 symfony [info] {sfWebDebugLogger} Factories 220.15 ms (1)
+Dec 10 16:21:53 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+Dec 10 16:21:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 10 16:21:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 10 16:21:53 symfony [info] {sfWebDebugLogger} Configuration 26.16 ms (5)
+Dec 10 16:21:53 symfony [info] {sfWebDebugLogger} Factories 311.06 ms (1)

@@ -12,9 +12,24 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [reset.css, fluid.css, login.css]
+  stylesheets:
+    - reset.css
+    - fluid.css
+    - dandelion.theme.css
+    - dandelion.css
+    - demo.css
+    - jui/css/jquery.ui.all.css
 
-  javascripts:    []
+  javascripts:
+    - jui/js/jquery-ui-1.8.20.min.js
+    - jui/js/jquery.ui.timepicker.min.js
+    - jui/js/jquery.ui.touch-punch.min.js
+    - jquery.fileinput.js
+    - jquery.placeholder.js
+    - jquery.mousewheel.min.js
+    - jquery.tinyscrollbar.min.js
+    - core/dandelion.core.js
+    - core/dandelion.customizer.js
 
   has_layout:     true
   layout:         layout

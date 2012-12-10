@@ -1,0 +1,286 @@
+<?php
+
+/**
+ * task module configuration.
+ *
+ * @package    ##PROJECT_NAME##
+ * @subpackage task
+ * @author     ##AUTHOR_NAME##
+ * @version    SVN: $Id: configuration.php 24171 2009-11-19 16:37:50Z Kris.Wallsmith $
+ */
+abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfiguration
+{
+  public function getActionsDefault()
+  {
+    return array();
+  }
+
+  public function getFormActions()
+  {
+    return array(  '_delete' => NULL,  '_list' => NULL,  '_save' => NULL,  '_save_and_add' => NULL,);
+  }
+
+  public function getNewActions()
+  {
+    return array();
+  }
+
+  public function getEditActions()
+  {
+    return array();
+  }
+
+  public function getListObjectActions()
+  {
+    return array(  '_edit' => NULL,  '_delete' => NULL,);
+  }
+
+  public function getListActions()
+  {
+    return array(  '_new' => NULL,);
+  }
+
+  public function getListBatchActions()
+  {
+    return array(  '_delete' => NULL,);
+  }
+
+  public function getListParams()
+  {
+    return '%%=task_name%% - %%user_id%% - %%task_description%% - %%created_at%% - %%assigned_to%%';
+  }
+
+  public function getListLayout()
+  {
+    return 'tabular';
+  }
+
+  public function getListTitle()
+  {
+    return 'Công việc';
+  }
+
+  public function getEditTitle()
+  {
+    return 'Xem công việc: %%task_name%%';
+  }
+
+  public function getNewTitle()
+  {
+    return 'New Task';
+  }
+
+  public function getFilterDisplay()
+  {
+    return array();
+  }
+
+  public function getFormDisplay()
+  {
+    return array();
+  }
+
+  public function getEditDisplay()
+  {
+    return array();
+  }
+
+  public function getNewDisplay()
+  {
+    return array();
+  }
+
+  public function getListDisplay()
+  {
+    return array(  0 => '=task_name',  1 => 'user_id',  2 => 'task_description',  3 => 'created_at',  4 => 'assigned_to',);
+  }
+
+  public function getFieldsDefault()
+  {
+    return array(
+      'id' => array(  'is_link' => true,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'user_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
+      'task_name' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'task_description' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'piriority' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'assigned_to' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'reminded_count' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'remind_1st_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'remind_2rd_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'remind_3th_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'reminder_email1' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Email thông báo 1',  'help' => 'Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 1',  'attributes' =>   array(    'class' => 'foo',  ),),
+      'reminder_email2' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'completed_by' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'completed_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Ngày tạo',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),
+      'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'is_deleted' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
+    );
+  }
+
+  public function getFieldsList()
+  {
+    return array(
+      'id' => array(),
+      'user_id' => array(),
+      'task_name' => array(),
+      'task_description' => array(),
+      'piriority' => array(),
+      'assigned_to' => array(),
+      'reminded_count' => array(),
+      'remind_1st_at' => array(),
+      'remind_2rd_at' => array(),
+      'remind_3th_at' => array(),
+      'reminder_email1' => array(),
+      'reminder_email2' => array(),
+      'completed_by' => array(),
+      'completed_at' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'is_deleted' => array(),
+    );
+  }
+
+  public function getFieldsFilter()
+  {
+    return array(
+      'id' => array(),
+      'user_id' => array(),
+      'task_name' => array(),
+      'task_description' => array(),
+      'piriority' => array(),
+      'assigned_to' => array(),
+      'reminded_count' => array(),
+      'remind_1st_at' => array(),
+      'remind_2rd_at' => array(),
+      'remind_3th_at' => array(),
+      'reminder_email1' => array(),
+      'reminder_email2' => array(),
+      'completed_by' => array(),
+      'completed_at' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'is_deleted' => array(),
+    );
+  }
+
+  public function getFieldsForm()
+  {
+    return array(
+      'id' => array(),
+      'user_id' => array(),
+      'task_name' => array(),
+      'task_description' => array(),
+      'piriority' => array(),
+      'assigned_to' => array(),
+      'reminded_count' => array(),
+      'remind_1st_at' => array(),
+      'remind_2rd_at' => array(),
+      'remind_3th_at' => array(),
+      'reminder_email1' => array(),
+      'reminder_email2' => array(),
+      'completed_by' => array(),
+      'completed_at' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'is_deleted' => array(),
+    );
+  }
+
+  public function getFieldsEdit()
+  {
+    return array(
+      'id' => array(),
+      'user_id' => array(),
+      'task_name' => array(),
+      'task_description' => array(),
+      'piriority' => array(),
+      'assigned_to' => array(),
+      'reminded_count' => array(),
+      'remind_1st_at' => array(),
+      'remind_2rd_at' => array(),
+      'remind_3th_at' => array(),
+      'reminder_email1' => array(),
+      'reminder_email2' => array(),
+      'completed_by' => array(),
+      'completed_at' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'is_deleted' => array(),
+    );
+  }
+
+  public function getFieldsNew()
+  {
+    return array(
+      'id' => array(),
+      'user_id' => array(),
+      'task_name' => array(),
+      'task_description' => array(),
+      'piriority' => array(),
+      'assigned_to' => array(),
+      'reminded_count' => array(),
+      'remind_1st_at' => array(),
+      'remind_2rd_at' => array(),
+      'remind_3th_at' => array(),
+      'reminder_email1' => array(),
+      'reminder_email2' => array(),
+      'completed_by' => array(),
+      'completed_at' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'is_deleted' => array(),
+    );
+  }
+
+
+  /**
+   * Gets the form class name.
+   *
+   * @return string The form class name
+   */
+  public function getFormClass()
+  {
+    return 'TaskForm';
+  }
+
+  public function hasFilterForm()
+  {
+    return false;
+  }
+
+  /**
+   * Gets the filter form class name
+   *
+   * @return string The filter form class name associated with this generator
+   */
+  public function getFilterFormClass()
+  {
+    return 'TaskFormFilter';
+  }
+
+  public function getPagerClass()
+  {
+    return 'sfDoctrinePager';
+  }
+
+  public function getPagerMaxPerPage()
+  {
+    return 20;
+  }
+
+  public function getDefaultSort()
+  {
+    return array('piriority', 'asc');
+  }
+
+  public function getTableMethod()
+  {
+    return '';
+  }
+
+  public function getTableCountMethod()
+  {
+    return '';
+  }
+}
