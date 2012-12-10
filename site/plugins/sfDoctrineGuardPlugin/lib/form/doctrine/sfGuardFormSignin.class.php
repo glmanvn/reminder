@@ -15,5 +15,7 @@ class sfGuardFormSignin extends BasesfGuardFormSignin
    */
   public function configure()
   {
+      $this->widgetSchema['username']->setAttributes(array('id'=>'da-login-username', 'placeholder'=>'Username'));
+      $this->widgetSchema['username']->setAttributes(array('id'=>'da-login-password', 'placeholder'=>'Password'));
   }
 }
