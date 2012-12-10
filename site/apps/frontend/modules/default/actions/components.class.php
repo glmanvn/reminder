@@ -7,6 +7,11 @@ class defaultComponents extends sfComponents
     
   }
   
+  public function executeLeftNav()
+  {
+    
+  }
+  
   public function executeFooter()
   {
     

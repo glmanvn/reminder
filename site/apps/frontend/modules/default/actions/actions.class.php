@@ -93,32 +93,6 @@ class defaultActions extends sfActions
    */
   public function executeIndex(sfWebRequest $request)
   {
-    // At the first request, set default country into session
-    if ($this->getUser()->isFirstRequest())
-    {
-      $countryCode = sfConfig::get('app_default_country_code2', 'NZ');
-      $this->getUser()->setAttribute('country_code2', $countryCode);
-
-      $country = CountryTable::getInstance()->findOneBy('iso2', $countryCode);
-      /* @var $country Country */
-      if ($country)
-      {
-        $this->getUser()->setAttribute('timezone', $country->timezone);
-        date_default_timezone_set($country->timezone);
-      }
-      
-      $this->getUser()->isFirstRequest(false);
-    }
     
-    $home = StaticPageTable::getInstance()
-            ->findOneBy('name', 'home');
-    /* @var $home StaticPage */
-    $this->home = $home;
-
-    $response = $this->getResponse();
-    /* @var $response sfWebResponse */
-
-    $response->setTitle($home->page_title.' - '.sfConfig::get('app_website_name'));
-    $response->addMeta('description', $home->meta_description, true);
   }
 }
