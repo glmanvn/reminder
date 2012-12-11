@@ -8,33 +8,70 @@
         <div class="sf_admin_form">
             <fieldset id="sf_fieldset_none">
                 <div class="sf_admin_form_row">
-                    <div>
-                        <label id="bold">Tên công việc</label>
-                        <div class="content"><?php echo $task->getTaskName(); ?></div>
+                    <label id="bold">Tên công việc</label>
+                    <div class="content"><?php echo $task->getTaskName(); ?></div>
+                </div>
+                <div class="sf_admin_form_row">
+                    <label id="bold">Mô tả</label>
+                    <div class="content"><?php echo $task->getTaskDescription(); ?></div>
+                </div>
+                <div class="sf_admin_form_row">
+                    <label id="bold">Người tạo</label>
+                    <div class="content">
+                        <?php include_partial("createdBy", array('Task' => $task)); ?> 
+                        [at: <?php echo $task->getCreatedAt(); ?>]
                     </div>
                 </div>
                 <div class="sf_admin_form_row">
-                    <div>
-                        <label id="bold">Mô tả</label>
-                        <div class="content"><?php echo $task->getTaskDescription(); ?></div>
+                    <label id="bold">Độ ưu tiên</label>
+                    <div class="content">
+                        <?php include_partial("piriority", array('Task' => $task)); ?> 
                     </div>
                 </div>
                 <div class="sf_admin_form_row">
-                    <div class="grid_4">
-                        <label id="bold">Ngày tạo</label>
-                        <div class="content"><?php echo $task->getCreatedAt(); ?></div>
-                    </div>
-                    <div class="grid_4">
-                        <label id="bold">Ngày tạo</label>
-                        <div class="content"><?php echo $task->getCreatedAt(); ?></div>
+                    <label id="bold">Trạng thái</label>
+                    <div class="content">
+                        <?php include_partial("status", array('Task' => $task)); ?> 
                     </div>
                 </div>
                 <div class="sf_admin_form_row">
-                    <div>
-                        <label id="bold">Ngày tạo</label>
-                        <div class="content"><?php echo $task->getCreatedAt(); ?></div>
+                    <label id="bold">Nhắc việc lần 1</label>
+                    <div class="content"><?php echo $task->remind_1st_at ? $task->remind_1st_at : "&nbsp;"; ?></div>
+                </div>
+                <?php if($task->remind_2rd_at) { ?>
+                <div class="sf_admin_form_row">
+                    <label id="bold">Nhắc việc lần 2</label>
+                    <div class="content">
+                        <?php echo $task->remind_2rd_at ? $task->remind_2rd_at : "&nbsp;"; ?>
+                        <?php echo $task->getReminderEmail1() ? " - email to: " . $task->getReminderEmail1() : "&nbsp;"; ?>
                     </div>
                 </div>
+                <?php }?>
+                <?php if($task->remind_3th_at) {?>
+                <div class="sf_admin_form_row">
+                    <label id="bold">Nhắc việc lần 3</label>
+                    <div class="content">
+                        <?php echo $task->remind_3th_at ? $task->remind_3th_at : "&nbsp;"; ?>
+                        <?php echo $task->getReminderEmail2() ? " - email to: " . $task->getReminderEmail2() : "&nbsp;"; ?>
+                    </div>
+                </div>
+                <?php }?>
+            </fieldset>
+            <fieldset id="sf_fieldset_none">
+                <div class="sf_admin_form_row">
+                    <h1>Thông tin bổ sung</h1>
+                </div>
+                <?php foreach($taskComments as $comment):?>
+                    <?php if($comment) { ?>
+                    <div class="sf_admin_form_row">
+                        <div> 
+                            <strong><?php echo $comment->getUser()->getFirstName() . " " . $comment->getUser()->getLastName(); ?> </strong>
+                            [<?php echo $comment->getCreatedAt(); ?>] viết: 
+                        </div>
+                        <div style="padding: 10px;"><?php echo $comment->getComment(); ?></div>
+                    </div>
+                    <?php }?>
+                <?php endforeach ?>
             </fieldset>
         </div>
     </div>

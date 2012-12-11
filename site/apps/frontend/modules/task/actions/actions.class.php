@@ -35,11 +35,10 @@ class taskActions extends autoTaskActions {
         $task = TaskTable::getInstance()->findOneBy('id', $taskId);
         if (!$task) $this->forward404('Page not found');
 
-        $taskComments = $task->setTaskComments();
+        $taskComments = $task->getTaskComments();
 
         $this->task = $task;
-        $this->comments = $taskComments;
-//        $this->forward('task', 'viewCommnent');
+        $this->taskComments = $taskComments;
     }
 
 }

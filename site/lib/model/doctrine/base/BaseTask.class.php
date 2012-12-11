@@ -19,38 +19,38 @@
  * @property string $completed_by
  * @property timestamp $completed_at
  * @property sfGuardUser $User
- * @property TaskComment $TaskComments
+ * @property Doctrine_Collection $TaskComments
  * 
- * @method integer     getUserId()           Returns the current record's "user_id" value
- * @method string      getTaskName()         Returns the current record's "task_name" value
- * @method string      getTaskDescription()  Returns the current record's "task_description" value
- * @method integer     getPiriority()        Returns the current record's "piriority" value
- * @method string      getAssignedTo()       Returns the current record's "assigned_to" value
- * @method integer     getRemindedCount()    Returns the current record's "reminded_count" value
- * @method timestamp   getRemind1stAt()      Returns the current record's "remind_1st_at" value
- * @method timestamp   getRemind2rdAt()      Returns the current record's "remind_2rd_at" value
- * @method timestamp   getRemind3thAt()      Returns the current record's "remind_3th_at" value
- * @method string      getReminderEmail1()   Returns the current record's "reminder_email1" value
- * @method string      getReminderEmail2()   Returns the current record's "reminder_email2" value
- * @method string      getCompletedBy()      Returns the current record's "completed_by" value
- * @method timestamp   getCompletedAt()      Returns the current record's "completed_at" value
- * @method sfGuardUser getUser()             Returns the current record's "User" value
- * @method TaskComment getTaskComments()     Returns the current record's "TaskComments" value
- * @method Task        setUserId()           Sets the current record's "user_id" value
- * @method Task        setTaskName()         Sets the current record's "task_name" value
- * @method Task        setTaskDescription()  Sets the current record's "task_description" value
- * @method Task        setPiriority()        Sets the current record's "piriority" value
- * @method Task        setAssignedTo()       Sets the current record's "assigned_to" value
- * @method Task        setRemindedCount()    Sets the current record's "reminded_count" value
- * @method Task        setRemind1stAt()      Sets the current record's "remind_1st_at" value
- * @method Task        setRemind2rdAt()      Sets the current record's "remind_2rd_at" value
- * @method Task        setRemind3thAt()      Sets the current record's "remind_3th_at" value
- * @method Task        setReminderEmail1()   Sets the current record's "reminder_email1" value
- * @method Task        setReminderEmail2()   Sets the current record's "reminder_email2" value
- * @method Task        setCompletedBy()      Sets the current record's "completed_by" value
- * @method Task        setCompletedAt()      Sets the current record's "completed_at" value
- * @method Task        setUser()             Sets the current record's "User" value
- * @method Task        setTaskComments()     Sets the current record's "TaskComments" value
+ * @method integer             getUserId()           Returns the current record's "user_id" value
+ * @method string              getTaskName()         Returns the current record's "task_name" value
+ * @method string              getTaskDescription()  Returns the current record's "task_description" value
+ * @method integer             getPiriority()        Returns the current record's "piriority" value
+ * @method string              getAssignedTo()       Returns the current record's "assigned_to" value
+ * @method integer             getRemindedCount()    Returns the current record's "reminded_count" value
+ * @method timestamp           getRemind1stAt()      Returns the current record's "remind_1st_at" value
+ * @method timestamp           getRemind2rdAt()      Returns the current record's "remind_2rd_at" value
+ * @method timestamp           getRemind3thAt()      Returns the current record's "remind_3th_at" value
+ * @method string              getReminderEmail1()   Returns the current record's "reminder_email1" value
+ * @method string              getReminderEmail2()   Returns the current record's "reminder_email2" value
+ * @method string              getCompletedBy()      Returns the current record's "completed_by" value
+ * @method timestamp           getCompletedAt()      Returns the current record's "completed_at" value
+ * @method sfGuardUser         getUser()             Returns the current record's "User" value
+ * @method Doctrine_Collection getTaskComments()     Returns the current record's "TaskComments" collection
+ * @method Task                setUserId()           Sets the current record's "user_id" value
+ * @method Task                setTaskName()         Sets the current record's "task_name" value
+ * @method Task                setTaskDescription()  Sets the current record's "task_description" value
+ * @method Task                setPiriority()        Sets the current record's "piriority" value
+ * @method Task                setAssignedTo()       Sets the current record's "assigned_to" value
+ * @method Task                setRemindedCount()    Sets the current record's "reminded_count" value
+ * @method Task                setRemind1stAt()      Sets the current record's "remind_1st_at" value
+ * @method Task                setRemind2rdAt()      Sets the current record's "remind_2rd_at" value
+ * @method Task                setRemind3thAt()      Sets the current record's "remind_3th_at" value
+ * @method Task                setReminderEmail1()   Sets the current record's "reminder_email1" value
+ * @method Task                setReminderEmail2()   Sets the current record's "reminder_email2" value
+ * @method Task                setCompletedBy()      Sets the current record's "completed_by" value
+ * @method Task                setCompletedAt()      Sets the current record's "completed_at" value
+ * @method Task                setUser()             Sets the current record's "User" value
+ * @method Task                setTaskComments()     Sets the current record's "TaskComments" collection
  * 
  * @package    reminder
  * @subpackage model
@@ -138,7 +138,7 @@ abstract class BaseTask extends sfDoctrineRecord
              'local' => 'user_id',
              'foreign' => 'id'));
 
-        $this->hasOne('TaskComment as TaskComments', array(
+        $this->hasMany('TaskComment as TaskComments', array(
              'local' => 'id',
              'foreign' => 'task_id'));
 
