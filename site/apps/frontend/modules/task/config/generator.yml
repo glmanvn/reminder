@@ -19,10 +19,12 @@ generator:
           label: Tên công việc
         task_description:
           label: Mô tả công việc
+          attributes: { rows: 5, cols: 80 }
         piriority:
           label: Độ ưu tiên
         assigned_to:
-          label: Giao xử lý
+          label: Người xử lý
+          help: Nhập tên người được giao xử lý
         remind_1st_at:
           label: Nhắc lần 1 lúc
           help: Hiển thị màn hình nhắc việc trên web tại thời điểm (mặc định sao 10 phút)

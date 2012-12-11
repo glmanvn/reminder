@@ -5,3 +5,8 @@
 all:
   sf_guard_plugin:
     routes_register: false
+  
+  reminder:
+    1st_after: 10
+#    email1: anld@isoftco.com
+    email2: anld.agrib@gmail.com

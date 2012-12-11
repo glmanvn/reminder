@@ -30,3 +30,6 @@ default:
 
   has_layout:     true
   layout:         layout
+  
+  components:
+    sidebar: [default, none]

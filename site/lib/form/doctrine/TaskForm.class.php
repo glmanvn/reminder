@@ -10,7 +10,15 @@
  */
 class TaskForm extends BaseTaskForm {
 
+    /**
+     * 
+     */
     public function configure() {
+        
+        // Set user created
+        $user = sfContext::getInstance()->getUser(); /* @var $user myUser */
+        $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
+        
         unset(
                 $this['user_id'], 
                 $this['reminded_count'],
@@ -32,7 +40,7 @@ class TaskForm extends BaseTaskForm {
         $years = range(date('Y'), date('Y') + 5);
         $years_list = array_combine($years, $years);
         
-        $firstReminderAfter = sfConfig::get('app_1st_reminder_after', 10); // minute
+        $firstReminderAfter = sfConfig::get('app_reminder_1st_after', 10); // minute
         $this->widgetSchema['remind_1st_at'] = new sfWidgetFormDateTime(array(
             'date' =>array(
                 'format'=> '%year% / %month% / %day%',
@@ -43,7 +51,7 @@ class TaskForm extends BaseTaskForm {
         )
         );
         
-        $reminder_email_1st = sfConfig::get('app_reminder_email1', ''); // reminder_email_1st
+        $reminder_email_1st = sfConfig::get('app_reminder_email1', $guard_user->getEmailAddress()); // reminder_email_1st
         $reminder_email_2rd = sfConfig::get('app_reminder_email2', ''); // reminder_email_2rd
         $this->setDefault('reminder_email1', $reminder_email_1st);
         $this->setDefault('reminder_email2', $reminder_email_2rd);

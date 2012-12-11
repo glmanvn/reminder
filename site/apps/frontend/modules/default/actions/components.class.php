@@ -11,6 +11,10 @@ class defaultComponents extends sfComponents
   {
     
   }
+  public function executeNone()
+  {
+    
+  }
   
   public function executeFooter()
   {
