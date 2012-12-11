@@ -2,6 +2,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:host=localhost;dbname=reminder'
+      dsn: 'mysql:host=localhost;dbname=task_reminder'
       username: root
       password: '123456'
