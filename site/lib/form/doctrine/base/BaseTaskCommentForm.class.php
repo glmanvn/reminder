@@ -19,6 +19,7 @@ abstract class BaseTaskCommentForm extends BaseFormDoctrine
       'task_id'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Task'), 'add_empty' => false)),
       'user_id'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => false)),
       'comment'    => new sfWidgetFormTextarea(),
+      'can_view'   => new sfWidgetFormInputCheckbox(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
     ));
@@ -28,6 +29,7 @@ abstract class BaseTaskCommentForm extends BaseFormDoctrine
       'task_id'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Task'))),
       'user_id'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('User'))),
       'comment'    => new sfValidatorString(array('max_length' => 500)),
+      'can_view'   => new sfValidatorBoolean(array('required' => false)),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
     ));

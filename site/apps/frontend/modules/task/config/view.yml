@@ -1,4 +1,9 @@
 default:
   layout: layout
+  theme: admin
   components:
     sidebar: [leftpanel, task]
+viewCommentSuccess:
+  stylesheets: 
+    - admin_default.css
+    - admin_global.css

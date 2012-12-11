@@ -50,6 +50,12 @@ Task:
     User:
       class: sfGuardUser
       local: user_id
+    TaskComments:
+      class: TaskComment
+      foreign: task_id
+      local: id
+      foreignAlias: TaskComments
+      
   options:
     orderBy: created_at DESC
     type: MyISAM
@@ -69,7 +75,9 @@ TaskComment:
     comment:
       type: string(500)
       notnull: true
-      
+    can_view:
+      type: boolean
+      notnull: false
   relations:
     User:
       class: sfGuardUser

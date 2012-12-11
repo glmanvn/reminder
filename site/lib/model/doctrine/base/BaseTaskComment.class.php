@@ -8,19 +8,22 @@
  * @property integer $task_id
  * @property integer $user_id
  * @property string $comment
+ * @property boolean $can_view
  * @property sfGuardUser $User
  * @property Task $Task
  * 
- * @method integer     getTaskId()  Returns the current record's "task_id" value
- * @method integer     getUserId()  Returns the current record's "user_id" value
- * @method string      getComment() Returns the current record's "comment" value
- * @method sfGuardUser getUser()    Returns the current record's "User" value
- * @method Task        getTask()    Returns the current record's "Task" value
- * @method TaskComment setTaskId()  Sets the current record's "task_id" value
- * @method TaskComment setUserId()  Sets the current record's "user_id" value
- * @method TaskComment setComment() Sets the current record's "comment" value
- * @method TaskComment setUser()    Sets the current record's "User" value
- * @method TaskComment setTask()    Sets the current record's "Task" value
+ * @method integer     getTaskId()   Returns the current record's "task_id" value
+ * @method integer     getUserId()   Returns the current record's "user_id" value
+ * @method string      getComment()  Returns the current record's "comment" value
+ * @method boolean     getCanView()  Returns the current record's "can_view" value
+ * @method sfGuardUser getUser()     Returns the current record's "User" value
+ * @method Task        getTask()     Returns the current record's "Task" value
+ * @method TaskComment setTaskId()   Sets the current record's "task_id" value
+ * @method TaskComment setUserId()   Sets the current record's "user_id" value
+ * @method TaskComment setComment()  Sets the current record's "comment" value
+ * @method TaskComment setCanView()  Sets the current record's "can_view" value
+ * @method TaskComment setUser()     Sets the current record's "User" value
+ * @method TaskComment setTask()     Sets the current record's "Task" value
  * 
  * @package    reminder
  * @subpackage model
@@ -44,6 +47,10 @@ abstract class BaseTaskComment extends sfDoctrineRecord
              'type' => 'string',
              'notnull' => true,
              'length' => 500,
+             ));
+        $this->hasColumn('can_view', 'boolean', null, array(
+             'type' => 'boolean',
+             'notnull' => false,
              ));
 
         $this->option('orderBy', 'created_at DESC');

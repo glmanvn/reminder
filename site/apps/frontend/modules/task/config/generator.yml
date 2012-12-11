@@ -12,7 +12,12 @@ generator:
     actions_base_class:    sfActions
 
     config:
-      actions: ~
+      actions:
+        _new:     { label: "Tạo mới Công việc" }
+        _edit:    { label: "Sửa" }
+        _delete:  { label: "Xóa" }
+        _list:    { label: "Danh sách" }
+        _save:    { label: "Ghi" }
       
       fields:
         task_name:
@@ -47,7 +52,9 @@ generator:
         sort: [piriority, asc]
         max_per_page:  20
         batch_actions: {}
-        object_actions: {}
+        object_actions:
+          _edit: ~
+          viewComment:   { label: Xem, action: viewComment }
         
       filter:
         class: false
