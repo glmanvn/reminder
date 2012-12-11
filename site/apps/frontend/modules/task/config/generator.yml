@@ -28,6 +28,8 @@ generator:
         remind_1st_at:
           label: Nhắc lần 1 lúc
           help: Hiển thị màn hình nhắc việc trên web tại thời điểm (mặc định sao 10 phút)
+        createdBy:
+          label: Người tạo
         created_at:
           label: Ngày tạo
           date_format: yyyy/MM/dd hh:mm:ss 
@@ -41,10 +43,12 @@ generator:
       list:    
         #layout:  stacked # View all data on one cell
         title: "Yêu cầu công việc"
-        display: [=task_name, user_id, task_description, created_at, assigned_to]
+        display: [=task_name, _createdBy, task_description, _piriority, created_at, assigned_to]
         sort: [piriority, asc]
         max_per_page:  20
-      
+        batch_actions: {}
+        object_actions: {}
+        
       filter:
         class: false
         

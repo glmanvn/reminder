@@ -32,7 +32,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListObjectActions()
   {
-    return array(  '_edit' => NULL,  '_delete' => NULL,);
+    return array();
   }
 
   public function getListActions()
@@ -42,12 +42,12 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListBatchActions()
   {
-    return array(  '_delete' => NULL,);
+    return array();
   }
 
   public function getListParams()
   {
-    return '%%=task_name%% - %%user_id%% - %%task_description%% - %%created_at%% - %%assigned_to%%';
+    return '%%=task_name%% - %%_createdBy%% - %%task_description%% - %%_piriority%% - %%created_at%% - %%assigned_to%%';
   }
 
   public function getListLayout()
@@ -92,7 +92,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListDisplay()
   {
-    return array(  0 => '=task_name',  1 => 'user_id',  2 => 'task_description',  3 => 'created_at',  4 => 'assigned_to',);
+    return array(  0 => '=task_name',  1 => '_createdBy',  2 => 'task_description',  3 => '_piriority',  4 => 'created_at',  5 => 'assigned_to',);
   }
 
   public function getFieldsDefault()
@@ -115,6 +115,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
       'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Ngày tạo',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),
       'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'is_deleted' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
+      'createdBy' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Người tạo',),
     );
   }
 

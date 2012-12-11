@@ -51,3 +51,5 @@ Task:
     User:
       class: sfGuardUser
       local: user_id
+  options:
+    orderBy: created_at DESC

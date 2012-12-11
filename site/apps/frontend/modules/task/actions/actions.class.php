@@ -13,4 +13,15 @@ require_once dirname(__FILE__).'/../lib/taskGeneratorHelper.class.php';
  */
 class taskActions extends autoTaskActions
 {
+    /**
+     * Build custom query
+     * 
+     * @return type
+     */
+    protected function buildQuery() {
+        return parent::buildQuery();
+        
+        // TODO: Tim task do chinh User login tao
+        
+    }
 }

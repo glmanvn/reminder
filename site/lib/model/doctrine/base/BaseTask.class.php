@@ -122,6 +122,8 @@ abstract class BaseTask extends sfDoctrineRecord
              'notnull' => false,
              'length' => 25,
              ));
+
+        $this->option('orderBy', 'created_at DESC');
     }
 
     public function setUp()
