@@ -11016,3 +11016,304 @@ Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Component "default/none" 0.02 
 Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Partial "default/_none" 1.36 ms (1)
 Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 1.02 ms (1)
 Dec 11 14:44:01 symfony [info] {sfWebResponse} Send content (48911 o)
+Dec 11 15:13:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 11 15:13:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:27 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:27 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 11 15:13:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 15:13:27 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 11 15:13:27 symfony [info] {sfPHPView} Set component "sidebar" (default/none)
+Dec 11 15:13:27 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/indexSuccess.php"
+Dec 11 15:13:27 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:27 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 11 15:13:27 symfony [info] {main} Call "default->executeTopNav()"
+Dec 11 15:13:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 11 15:13:27 symfony [info] {main} Call "default->executeNone()"
+Dec 11 15:13:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_none.php"
+Dec 11 15:13:27 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 11 15:13:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 11 15:13:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Configuration 431.67 ms (13)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Factories 186.55 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Action "default/index" 0.17 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 60.45 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 4.09 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 2.21 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Component "default/none" 0.02 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Partial "default/_none" 0.81 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.93 ms (1)
+Dec 11 15:13:27 symfony [info] {sfWebResponse} Send content (40538 o)
+Dec 11 15:13:30 symfony [info] {sfPatternRouting} Match route "sf_guard_signout" (/logout) for /logout with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signout',)
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 15:13:31 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignout()"
+Dec 11 15:13:31 symfony [info] {myUser} User is not authenticated
+Dec 11 15:13:31 symfony [info] {sfFrontWebController} Redirect to "http://reminder.local/frontend_dev.php/"
+Dec 11 15:13:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 11 15:13:31 symfony [info] {sfWebResponse} Send header "Location: http://reminder.local/frontend_dev.php/"
+Dec 11 15:13:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 15:13:31 symfony [info] {sfWebResponse} Send cookie "sfRemember": ""
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Configuration 46.07 ms (9)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Factories 48.84 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signout" 1.66 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebResponse} Send content (110 o)
+Dec 11 15:13:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 11 15:13:31 symfony [info] {sfBasicSecurityFilter} Action "default/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 15:13:31 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 11 15:13:31 symfony [info] {sfPHPView} Set component "sidebar" (default/none)
+Dec 11 15:13:31 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 11 15:13:31 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 11 15:13:31 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:31 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:31 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 11 15:13:31 symfony [info] {main} Call "default->executeTopNav()"
+Dec 11 15:13:31 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 11 15:13:31 symfony [info] {main} Call "default->executeNone()"
+Dec 11 15:13:31 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_none.php"
+Dec 11 15:13:31 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 11 15:13:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Dec 11 15:13:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Configuration 44.84 ms (17)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Factories 46.99 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 10.05 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 109.16 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 5.06 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.22 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 2.02 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Component "default/none" 0.02 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Partial "default/_none" 0.68 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.68 ms (1)
+Dec 11 15:13:31 symfony [info] {sfWebResponse} Send content (47410 o)
+Dec 11 15:13:35 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 11 15:13:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:35 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 15:13:35 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 11 15:13:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 11 15:13:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (anld, 1)
+Dec 11 15:13:36 symfony [info] {myUser} User is authenticated
+Dec 11 15:13:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (2)
+Dec 11 15:13:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (2)
+Dec 11 15:13:36 symfony [info] {myUser} Add credential(s) ""
+Dec 11 15:13:36 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2012-12-11 15:13:36, 2012-12-11 15:13:36, 2)
+Dec 11 15:13:36 symfony [info] {sfFrontWebController} Redirect to "http://reminder.local/frontend_dev.php/"
+Dec 11 15:13:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 11 15:13:36 symfony [info] {sfWebResponse} Send header "Location: http://reminder.local/frontend_dev.php/"
+Dec 11 15:13:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Configuration 15.48 ms (8)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Factories 61.15 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 154.52 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 15.28 ms (5)
+Dec 11 15:13:36 symfony [info] {sfWebResponse} Send content (110 o)
+Dec 11 15:13:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 11 15:13:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:36 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:36 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 11 15:13:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 15:13:36 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 11 15:13:36 symfony [info] {sfPHPView} Set component "sidebar" (default/none)
+Dec 11 15:13:36 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/indexSuccess.php"
+Dec 11 15:13:36 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:36 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 11 15:13:36 symfony [info] {main} Call "default->executeTopNav()"
+Dec 11 15:13:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 11 15:13:36 symfony [info] {main} Call "default->executeNone()"
+Dec 11 15:13:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_none.php"
+Dec 11 15:13:36 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 11 15:13:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 11 15:13:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Configuration 24.02 ms (13)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Factories 59.21 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Action "default/index" 0.21 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 36.46 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.38 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 2.57 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Component "default/none" 0.02 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Partial "default/_none" 0.75 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.71 ms (1)
+Dec 11 15:13:36 symfony [info] {sfWebResponse} Send content (40604 o)
+Dec 11 15:13:38 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 11 15:13:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:39 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:39 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 11 15:13:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 15:13:39 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 11 15:13:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 11 15:13:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 11 15:13:39 symfony [info] {sfPHPView} Set component "sidebar" (leftpanel/task)
+Dec 11 15:13:39 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_th_tabular.php"
+Dec 11 15:13:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t ORDER BY t.created_at DESC LIMIT 20 - ()
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/task/templates/_createdBy.php"
+Dec 11 15:13:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (1)
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/task/templates/_piriority.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/task/templates/_createdBy.php"
+Dec 11 15:13:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (1)
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/task/templates/_piriority.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 11 15:13:39 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:39 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 11 15:13:39 symfony [info] {main} Call "default->executeTopNav()"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 11 15:13:39 symfony [info] {main} Call "leftpanel->executeTask()"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/leftpanel/templates/_task.php"
+Dec 11 15:13:39 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 11 15:13:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 11 15:13:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Configuration 325.51 ms (16)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Factories 55.10 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Action "task/index" 80.45 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 65.06 ms (5)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 193.05 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 4.79 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 4.39 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.14 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_list" 90.45 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_list_th_tabular" 8.23 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_tabular" 41.59 ms (2)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_createdBy" 20.02 ms (2)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_piriority" 2.38 ms (2)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 1.04 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 4.72 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.33 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.62 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 2.64 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Component "leftpanel/task" 0.02 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "leftpanel/_task" 1.47 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.80 ms (1)
+Dec 11 15:13:39 symfony [info] {sfWebResponse} Send content (76531 o)
+Dec 11 15:13:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 11 15:13:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:56 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:56 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 11 15:13:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 15:13:56 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 11 15:13:56 symfony [info] {sfPHPView} Set component "sidebar" (default/none)
+Dec 11 15:13:56 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/indexSuccess.php"
+Dec 11 15:13:56 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:56 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:56 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 11 15:13:56 symfony [info] {main} Call "default->executeTopNav()"
+Dec 11 15:13:56 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 11 15:13:56 symfony [info] {main} Call "default->executeNone()"
+Dec 11 15:13:56 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_none.php"
+Dec 11 15:13:56 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 11 15:13:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 11 15:13:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Configuration 16.91 ms (13)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Factories 45.00 ms (1)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Action "default/index" 0.16 ms (1)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 39.63 ms (1)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.63 ms (1)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 2.44 ms (1)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Component "default/none" 0.02 ms (1)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Partial "default/_none" 1.48 ms (1)
+Dec 11 15:13:56 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 1.27 ms (1)
+Dec 11 15:13:57 symfony [info] {sfWebResponse} Send content (40608 o)
+Dec 11 15:13:58 symfony [info] {sfPatternRouting} Match route "task" (/task.:sf_format) for /task with parameters array (  'module' => 'task',  'action' => 'index',  'sf_format' => 'html',)
+Dec 11 15:13:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 15:13:58 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 15:13:58 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 11 15:13:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 15:13:58 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Dec 11 15:13:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 11 15:13:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM task t - ()
+Dec 11 15:13:58 symfony [info] {sfPHPView} Set component "sidebar" (leftpanel/task)
+Dec 11 15:13:58 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/indexSuccess.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_assets.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_flashes.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_header.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_th_tabular.php"
+Dec 11 15:13:58 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 11 15:13:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.user_id AS t__user_id, t.task_name AS t__task_name, t.task_description AS t__task_description, t.piriority AS t__piriority, t.assigned_to AS t__assigned_to, t.reminded_count AS t__reminded_count, t.remind_1st_at AS t__remind_1st_at, t.remind_2rd_at AS t__remind_2rd_at, t.remind_3th_at AS t__remind_3th_at, t.reminder_email1 AS t__reminder_email1, t.reminder_email2 AS t__reminder_email2, t.completed_by AS t__completed_by, t.completed_at AS t__completed_at, t.created_at AS t__created_at, t.updated_at AS t__updated_at, t.is_deleted AS t__is_deleted FROM task t ORDER BY t.created_at DESC LIMIT 20 - ()
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/task/templates/_createdBy.php"
+Dec 11 15:13:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (1)
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/task/templates/_piriority.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_td_tabular.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/task/templates/_createdBy.php"
+Dec 11 15:13:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (1)
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/task/templates/_piriority.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_batch_actions.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_actions.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\cache\frontend\dev\modules/autoTask/templates/_list_footer.php"
+Dec 11 15:13:58 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:58 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 11 15:13:58 symfony [info] {main} Call "default->executeTopNav()"
+Dec 11 15:13:58 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 11 15:13:59 symfony [info] {main} Call "leftpanel->executeTask()"
+Dec 11 15:13:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/leftpanel/templates/_task.php"
+Dec 11 15:13:59 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 11 15:13:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 11 15:13:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Configuration 20.73 ms (15)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Factories 44.84 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Action "task/index" 56.24 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.32 ms (5)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 131.69 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_assets" 1.60 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_flashes" 1.56 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_list_header" 1.45 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_list" 72.83 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_list_th_tabular" 4.84 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_list_td_tabular" 52.05 ms (2)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_createdBy" 27.92 ms (2)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_piriority" 4.38 ms (2)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_list_batch_actions" 1.54 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_list_actions" 1.83 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "task/_list_footer" 1.57 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.62 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 2.34 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Component "leftpanel/task" 0.02 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "leftpanel/_task" 2.02 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 0.94 ms (1)
+Dec 11 15:13:59 symfony [info] {sfWebResponse} Send content (76530 o)

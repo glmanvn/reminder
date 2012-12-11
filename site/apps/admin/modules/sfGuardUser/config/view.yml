@@ -1,0 +1,4 @@
+default:
+  layout: layout
+  components:
+    sidebar: [leftpanel, user]

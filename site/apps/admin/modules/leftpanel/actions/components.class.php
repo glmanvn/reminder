@@ -3,7 +3,7 @@
 
 class leftpanelComponents extends sfComponents
 {
-  public function executeTask(sfWebRequest $request)
+  public function executeUser(sfWebRequest $request)
   {
     
   }

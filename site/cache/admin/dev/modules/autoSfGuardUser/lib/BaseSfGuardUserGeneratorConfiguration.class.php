@@ -42,7 +42,7 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
 
   public function getListBatchActions()
   {
-    return array(  '_delete' => NULL,);
+    return array();
   }
 
   public function getListParams()
@@ -77,7 +77,7 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
 
   public function getFormDisplay()
   {
-    return array(  'User' =>   array(    0 => 'first_name',    1 => 'last_name',    2 => 'email_address',    3 => 'username',    4 => 'password',    5 => 'password_again',  ),  'Permissions and groups' =>   array(    0 => 'is_active',    1 => 'is_super_admin',    2 => 'groups_list',    3 => 'permissions_list',  ),);
+    return array(  'Thông tin chung' =>   array(    0 => 'first_name',    1 => 'last_name',    2 => 'email_address',    3 => 'username',    4 => 'password',    5 => 'password_again',  ),  'Phân quyền' =>   array(    0 => 'is_active',    1 => 'is_super_admin',  ),);
   }
 
   public function getEditDisplay()

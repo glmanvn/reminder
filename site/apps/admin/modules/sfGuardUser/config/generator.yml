@@ -18,6 +18,7 @@ generator:
       list:
         title:   Danh sách Người sử dụng
         display: [=username, email_address, _userType, created_at, updated_at, last_login]
+        batch_actions: {}
 
       form:
         class: sfGuardUserAdminForm
