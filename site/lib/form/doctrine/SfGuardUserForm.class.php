@@ -12,5 +12,6 @@ class SfGuardUserForm extends BaseSfGuardUserForm
 {
   public function configure()
   {
+      
   }
 }

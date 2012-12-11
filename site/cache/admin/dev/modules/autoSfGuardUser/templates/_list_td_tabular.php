@@ -8,7 +8,7 @@
   <?php echo get_partial('sfGuardUser/userType', array('type' => 'list', 'sf_guard_user' => $sf_guard_user)) ?>
 </td>
 <td class="sf_admin_date sf_admin_list_td_created_at">
-  <?php echo false !== strtotime($sf_guard_user->getCreatedAt()) ? format_date($sf_guard_user->getCreatedAt(), "f") : '&nbsp;' ?>
+  <?php echo false !== strtotime($sf_guard_user->getCreatedAt()) ? format_date($sf_guard_user->getCreatedAt(), "yyyy/MM/dd hh:mm:ss") : '&nbsp;' ?>
 </td>
 <td class="sf_admin_date sf_admin_list_td_updated_at">
   <?php echo false !== strtotime($sf_guard_user->getUpdatedAt()) ? format_date($sf_guard_user->getUpdatedAt(), "f") : '&nbsp;' ?>

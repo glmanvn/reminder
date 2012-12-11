@@ -57,17 +57,17 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
 
   public function getListTitle()
   {
-    return 'User list';
+    return 'Danh sách Người sử dụng';
   }
 
   public function getEditTitle()
   {
-    return 'Editing User "%%username%%"';
+    return 'Sửa thông tin Người sử dụng "%%username%%"';
   }
 
   public function getNewTitle()
   {
-    return 'New User';
+    return 'Tạo mới Người sử dụng';
   }
 
   public function getFilterDisplay()
@@ -109,11 +109,11 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
       'is_active' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
       'is_super_admin' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
       'last_login' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
-      'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),
       'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'groups_list' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'permissions_list' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'password_again' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Password (again)',),
+      'password_again' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Password (confirm)',),
     );
   }
 

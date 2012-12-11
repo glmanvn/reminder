@@ -2,7 +2,7 @@
 <?php include_partial('sfGuardUser/assets') ?>
 
 <div id="sf_admin_container">
-  <h1><?php echo __('User list', array(), 'messages') ?></h1>
+  <h1><?php echo __('Danh sách Người sử dụng', array(), 'messages') ?></h1>
 
   <?php include_partial('sfGuardUser/flashes') ?>
 

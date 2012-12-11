@@ -7,11 +7,6 @@ $isAdmin = $sf_guard_user->getIsSuperAdmin();
 if($isAdmin){
     echo "Admin";
 }else{
-    $profile = $sf_guard_user->getProfile();
-    if($profile->getShopName() != ""){
-        echo "Seller";
-    }else{
-        echo "Buyer";
-    }
+    echo "Non-admin";
 }
 ?>

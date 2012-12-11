@@ -10950,3 +10950,69 @@ Dec 11 10:01:27 symfony [info] {sfWebDebugLogger} Factories 52.26 ms (1)
 Dec 11 10:01:27 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 1339.45 ms (1)
 Dec 11 10:01:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 614.25 ms (5)
 Dec 11 10:01:27 symfony [info] {sfWebResponse} Send content (93 o)
+Dec 11 14:42:35 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 11 14:42:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 14:42:35 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 14:42:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 11 14:42:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM (SELECT s.id FROM sf_guard_remember_key s INNER JOIN sf_guard_user s2 ON s.user_id = s2.id WHERE s.remember_key = ? GROUP BY s.id) dctrn_count_query - (3sqnz7nmcu4g8gogwssss4wow080ccw)
+Dec 11 14:42:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 14:42:35 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 11 14:42:35 symfony [info] {sfPHPView} Set component "sidebar" (default/none)
+Dec 11 14:42:35 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 11 14:42:35 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 11 14:42:35 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 14:42:35 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 14:42:35 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 11 14:42:35 symfony [info] {main} Call "default->executeTopNav()"
+Dec 11 14:42:35 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 11 14:42:35 symfony [info] {main} Call "default->executeNone()"
+Dec 11 14:42:35 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_none.php"
+Dec 11 14:42:35 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 11 14:42:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Dec 11 14:42:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Configuration 483.95 ms (13)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Factories 158.28 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 383.09 ms (2)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 20.27 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 121.75 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 9.60 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.55 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.02 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 2.29 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Component "default/none" 0.02 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Partial "default/_none" 1.18 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 1.02 ms (1)
+Dec 11 14:42:35 symfony [info] {sfWebResponse} Send content (48914 o)
+Dec 11 14:44:00 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 11 14:44:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 11 14:44:00 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 11 14:44:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 11 14:44:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM (SELECT s.id FROM sf_guard_remember_key s INNER JOIN sf_guard_user s2 ON s.user_id = s2.id WHERE s.remember_key = ? GROUP BY s.id) dctrn_count_query - (3sqnz7nmcu4g8gogwssss4wow080ccw)
+Dec 11 14:44:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 11 14:44:00 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 11 14:44:00 symfony [info] {sfPHPView} Set component "sidebar" (default/none)
+Dec 11 14:44:00 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 11 14:44:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/sfGuardAuth/templates/_signin_form.php"
+Dec 11 14:44:00 symfony [info] {sfPHPView} Decorate content with "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 14:44:00 symfony [info] {sfPHPView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/layout.php"
+Dec 11 14:44:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_header.php"
+Dec 11 14:44:00 symfony [info] {main} Call "default->executeTopNav()"
+Dec 11 14:44:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_topNav.php"
+Dec 11 14:44:00 symfony [info] {main} Call "default->executeNone()"
+Dec 11 14:44:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\modules/default/templates/_none.php"
+Dec 11 14:44:00 symfony [info] {sfPartialView} Render "D:\Projects\PHP\reminder\site\apps\frontend\templates/_layout_footer.php"
+Dec 11 14:44:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Dec 11 14:44:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Configuration 18.01 ms (13)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Factories 44.79 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.82 ms (2)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 10.28 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 46.82 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 6.04 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Partial "global/_layout_header" 2.48 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Component "default/topNav" 0.04 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Partial "default/_topNav" 2.52 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Component "default/none" 0.02 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Partial "default/_none" 1.36 ms (1)
+Dec 11 14:44:00 symfony [info] {sfWebDebugLogger} Partial "global/_layout_footer" 1.02 ms (1)
+Dec 11 14:44:01 symfony [info] {sfWebResponse} Send content (48911 o)

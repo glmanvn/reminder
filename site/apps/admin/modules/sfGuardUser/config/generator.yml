@@ -12,23 +12,24 @@ generator:
 
     config:
       fields:
-        password_again: { label: "Password (again)" }
+        password_again: { label: "Password (confirm)" }
+        created_at: { date_format: yyyy/MM/dd hh:mm:ss }
 
       list:
-        title:   User list
+        title:   Danh sách Người sử dụng
         display: [=username, email_address, _userType, created_at, updated_at, last_login]
 
       form:
         class: sfGuardUserAdminForm
         display:
-          "User":                   [first_name, last_name, email_address, username, password, password_again]
-          "Permissions and groups": [is_active, is_super_admin, groups_list, permissions_list]
+          "Thông tin chung": [first_name, last_name, email_address, username, password, password_again]
+          "Phân quyền": [is_active, is_super_admin]
 
       edit:
-        title: Editing User "%%username%%"
+        title: Sửa thông tin Người sử dụng "%%username%%"
 
       new:
-        title: New User
+        title: Tạo mới Người sử dụng
 
       filter:
         class: false
