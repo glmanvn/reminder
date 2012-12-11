@@ -36,7 +36,7 @@ abstract class BaseTaskForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'               => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'user_id'          => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'required' => false)),
+      'user_id'          => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('User'))),
       'task_name'        => new sfValidatorString(array('max_length' => 150)),
       'task_description' => new sfValidatorString(array('required' => false)),
       'piriority'        => new sfValidatorInteger(array('required' => false)),

@@ -8,7 +8,6 @@ Task:
     user_id:
       type: integer
       notnull: true
-      default: 1
     task_name:
       type: string(150)
       notnull: true
@@ -53,3 +52,33 @@ Task:
       local: user_id
   options:
     orderBy: created_at DESC
+    type: MyISAM
+    collate: utf8_unicode_ci
+    charset: utf8
+    
+TaskComment:
+  actAs:
+    Timestampable:
+  columns:
+    task_id:
+      type: integer
+      notnull: true
+    user_id:
+      type: integer
+      notnull: true
+    comment:
+      type: string(500)
+      notnull: true
+      
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+    Task:
+      class: Task
+      local: task_id
+  options:
+    orderBy: created_at DESC
+    type: MyISAM
+    collate: utf8_unicode_ci
+    charset: utf8

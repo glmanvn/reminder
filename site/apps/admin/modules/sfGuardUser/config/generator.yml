@@ -14,10 +14,12 @@ generator:
       fields:
         password_again: { label: "Password (confirm)" }
         created_at: { date_format: yyyy/MM/dd hh:mm:ss }
+        updated_at: { date_format: yyyy/MM/dd hh:mm:ss }
+        last_login: { date_format: yyyy/MM/dd hh:mm:ss }
 
       list:
         title:   Danh sách Người sử dụng
-        display: [=username, email_address, _userType, created_at, updated_at, last_login]
+        display: [=username, _fullname, email_address, _userType, created_at, updated_at, last_login]
         batch_actions: {}
 
       form:

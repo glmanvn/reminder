@@ -9,6 +9,11 @@
 </th>
 <?php end_slot(); ?>
 <?php include_slot('sf_admin.current_header') ?><?php slot('sf_admin.current_header') ?>
+<th class="sf_admin_text sf_admin_list_th_fullname">
+  <?php echo __('Fullname', array(), 'messages') ?>
+</th>
+<?php end_slot(); ?>
+<?php include_slot('sf_admin.current_header') ?><?php slot('sf_admin.current_header') ?>
 <th class="sf_admin_text sf_admin_list_th_email_address">
   <?php if ('email_address' == $sort[0]): ?>
     <?php echo link_to(__('Email address', array(), 'messages'), '@sf_guard_user', array('query_string' => 'sort=email_address&sort_type='.($sort[1] == 'asc' ? 'desc' : 'asc'))) ?>

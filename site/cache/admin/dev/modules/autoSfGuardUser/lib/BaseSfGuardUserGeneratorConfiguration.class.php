@@ -47,7 +47,7 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
 
   public function getListParams()
   {
-    return '%%=username%% - %%email_address%% - %%_userType%% - %%created_at%% - %%updated_at%% - %%last_login%%';
+    return '%%=username%% - %%_fullname%% - %%email_address%% - %%_userType%% - %%created_at%% - %%updated_at%% - %%last_login%%';
   }
 
   public function getListLayout()
@@ -92,7 +92,7 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
 
   public function getListDisplay()
   {
-    return array(  0 => '=username',  1 => 'email_address',  2 => '_userType',  3 => 'created_at',  4 => 'updated_at',  5 => 'last_login',);
+    return array(  0 => '=username',  1 => '_fullname',  2 => 'email_address',  3 => '_userType',  4 => 'created_at',  5 => 'updated_at',  6 => 'last_login',);
   }
 
   public function getFieldsDefault()
@@ -108,9 +108,9 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
       'password' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'is_active' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
       'is_super_admin' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
-      'last_login' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'last_login' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),
       'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),
-      'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),
       'groups_list' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'permissions_list' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'password_again' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Password (confirm)',),
