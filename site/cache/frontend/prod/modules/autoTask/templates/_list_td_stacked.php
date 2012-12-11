@@ -1,3 +1,0 @@
-<td colspan="6">
-  <?php echo __('%%task_name%% - %%createdBy%% - %%task_description%% - %%piriority%% - %%created_at%% - %%assigned_to%%', array('%%task_name%%' => link_to($Task->getTaskName(), 'task_edit', $Task), '%%createdBy%%' => get_partial('task/createdBy', array('type' => 'list', 'Task' => $Task)), '%%task_description%%' => $Task->getTaskDescription(), '%%piriority%%' => get_partial('task/piriority', array('type' => 'list', 'Task' => $Task)), '%%created_at%%' => false !== strtotime($Task->getCreatedAt()) ? format_date($Task->getCreatedAt(), "yyyy/MM/dd hh:mm:ss") : '&nbsp;', '%%assigned_to%%' => $Task->getAssignedTo()), 'messages') ?>
-</td>

@@ -1,0 +1,35 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Ticket reminder Admin page
+    description:  Ticket reminder Admin page
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets: 
+    - style.css
+    - reset.css
+    - text.css
+    - layout.css
+    - nav.css
+    - grid.css
+    - formalize.css
+    - main.css
+
+  javascripts:
+    - tiny_mce/tiny_mce.js
+    - /sfTinyMCEImageBrowserPlugin/js/main.js
+    - /sfTinyMCEImageBrowserPlugin/js/popup.js
+    - jquery.tablednd_0_5.js
+
+  has_layout:     true
+  layout:         layout
+  
+  components:
+    sidebar: [default, none]
