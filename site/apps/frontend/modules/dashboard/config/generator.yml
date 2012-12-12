@@ -1,0 +1,68 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Task
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Task
+    plural:                Tasks
+    route_prefix:          task
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _new:     { label: "Tạo mới Công việc" }
+        _edit:    { label: "Sửa" }
+        _delete:  { label: "Xóa" }
+        _list:    { label: "Danh sách" }
+        _save:    { label: "Ghi" }
+      
+      fields:
+        task_name:
+          label: Tên công việc
+        task_description:
+          label: Mô tả công việc
+          attributes: { rows: 5, cols: 80 }
+        piriority:
+          label: Độ ưu tiên
+        assigned_to:
+          label: Người xử lý
+          help: Nhập tên người được giao xử lý
+        remind_1st_at:
+          label: Nhắc lần 1 lúc
+          help: Hiển thị màn hình nhắc việc trên web tại thời điểm (mặc định sao 10 phút)
+        createdBy:
+          label: Người tạo
+        created_at:
+          label: Ngày tạo
+          date_format: yyyy/MM/dd hh:mm:ss 
+        reminder_email1:
+          label: Email thông báo lần 1
+          help: Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 1
+        reminder_email2:
+          label: Email thông báo lần 2
+          help: Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 2
+          
+      list:    
+        layout:  stacked # View all data on one cell
+        title: "CÔNG VIỆC TRONG NGÀY"
+        display: [=task_name, _createdBy, task_description, _piriority, created_at, assigned_to]
+        sort: [piriority, asc]
+        max_per_page:  20
+        batch_actions: {}
+        object_actions: {}
+        
+      filter:
+        class: false
+        
+      form: ~
+#        display: 
+#          "Thông tin công việc": [task_name, task_description, piriority]
+#          "Giao việc": [assigned_to, remind_1st_at]
+      edit:    
+        title: "Xem yêu cầu công việc: %%task_name%%"
+      
+      new:
+        title: Thêm mới yêu cầu công việc

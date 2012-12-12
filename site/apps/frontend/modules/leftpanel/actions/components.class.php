@@ -1,10 +1,21 @@
 <?php
 
+class leftpanelComponents extends sfComponents {
 
-class leftpanelComponents extends sfComponents
-{
-  public function executeTask(sfWebRequest $request)
-  {
-    
-  }
+    /**
+     * 
+     * @param sfWebRequest $request
+     */
+    public function executeTask(sfWebRequest $request) {
+        
+    }
+
+    /**
+     * 
+     * @param sfWebRequest $request
+     */
+    public function executeHome(sfWebRequest $request) {
+        
+    }
+
 }

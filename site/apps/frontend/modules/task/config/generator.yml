@@ -56,8 +56,8 @@ generator:
           _edit: ~
           viewComment:   { label: Xem, action: viewComment }
         
-      filter:
-        class: false
+      filter: 
+        display: [task_name, assigned_to, created_at]
         
       form: ~
 #        display: 

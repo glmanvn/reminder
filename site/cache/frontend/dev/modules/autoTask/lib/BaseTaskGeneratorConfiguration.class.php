@@ -72,7 +72,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getFilterDisplay()
   {
-    return array();
+    return array(  0 => 'task_name',  1 => 'assigned_to',  2 => 'created_at',);
   }
 
   public function getFormDisplay()
@@ -247,7 +247,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function hasFilterForm()
   {
-    return false;
+    return true;
   }
 
   /**
