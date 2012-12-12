@@ -47,7 +47,7 @@ generator:
           
       list:    
         #layout:  stacked # View all data on one cell
-        title: "Yêu cầu công việc"
+        title: "Danh sách công việc"
         display: [=task_name, _createdBy, task_description, _priority, created_at, assigned_to]
 #        sort: [priority, asc]
         max_per_page:  20
@@ -57,8 +57,7 @@ generator:
           viewComment:   { label: Xem, action: viewComment }
         
       filter: 
-        class: false
-#        display: [task_name, assigned_to, created_at]
+        display: [assigned_to, created_at]
         
       form: ~
 #        display: 

@@ -21,7 +21,11 @@ if ($completedAt) {
         <img src="/images/stars/star_<?php echo $priority; ?>.png" alt="<?php echo $arrPriorities[$priority]; ?>" />
     </div>
     <div class="grid_6">
-        <h5><p style="padding-top: 10px; font-weight: bold;"><?php echo $Task->getTaskName(); ?></p></h5>
+        <h5><p style="padding-top: 10px; font-weight: bold;">
+            <a href="<?php echo url_for('task/viewComment').'?id='.$Task->getId() ?>" >
+                <?php echo $Task->getTaskName(); ?>
+            </a>
+        </p></h5>
     </div>
     <div class="grid_2">
         <p style="padding-top: 10px;"><?php echo $Task->getAssignedTo(); ?></p>

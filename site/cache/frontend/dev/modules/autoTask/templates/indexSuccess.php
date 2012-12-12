@@ -2,7 +2,7 @@
 <?php include_partial('task/assets') ?>
 
 <div id="sf_admin_container">
-  <h1><?php echo __('Yêu cầu công việc', array(), 'messages') ?></h1>
+  <h1><?php echo __('Danh sách công việc', array(), 'messages') ?></h1>
 
   <?php include_partial('task/flashes') ?>
 
@@ -10,6 +10,9 @@
     <?php include_partial('task/list_header', array('pager' => $pager)) ?>
   </div>
 
+  <div id="sf_admin_bar">
+    <?php include_partial('task/filters', array('form' => $filters, 'configuration' => $configuration)) ?>
+  </div>
 
   <div id="sf_admin_content">
     <?php include_partial('task/list', array('pager' => $pager, 'sort' => $sort, 'helper' => $helper)) ?>

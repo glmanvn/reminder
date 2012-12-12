@@ -57,7 +57,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListTitle()
   {
-    return 'Yêu cầu công việc';
+    return 'Danh sách công việc';
   }
 
   public function getEditTitle()
@@ -72,7 +72,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getFilterDisplay()
   {
-    return array();
+    return array(  0 => 'assigned_to',  1 => 'created_at',);
   }
 
   public function getFormDisplay()
@@ -247,7 +247,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function hasFilterForm()
   {
-    return false;
+    return true;
   }
 
   /**

@@ -59,7 +59,7 @@
             </fieldset>
             <fieldset id="sf_fieldset_none">
                 <div class="sf_admin_form_row">
-                    <h1>Thông tin bổ sung</h1>
+                    <h4>Thông tin bổ sung</h4>
                 </div>
                 <?php foreach ($taskComments as $comment): ?>
                     <?php if ($comment) { ?>
