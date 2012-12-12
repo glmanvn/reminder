@@ -10,7 +10,7 @@
       </thead>
       <tfoot>
         <tr>
-          <th colspan="2">
+          <th colspan="1">
             <?php if ($pager->haveToPaginate()): ?>
               <?php include_partial('dashboard/pagination', array('pager' => $pager)) ?>
             <?php endif; ?>

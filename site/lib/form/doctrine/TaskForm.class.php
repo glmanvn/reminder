@@ -32,12 +32,12 @@ class TaskForm extends BaseTaskForm {
         );
         
         $arrPriorities = sfConfig::get('app_task_prioryties', 
-                array(0 => 'Thường', 1 => 'Gấp', 2 => 'Khẩn cấp'));
+            array(1 => 'Không gấp', 2 => 'Bình thường', 3 => 'Cần sớm', 4 => 'Gấp', 5 => 'Khẩn cấp'));
         $this->widgetSchema['priority'] = new sfWidgetFormChoice(array(
             'choices' => $arrPriorities,
             'expanded' => true,
         ));
-        $this->setDefault('priority', 0);
+        $this->setDefault('priority', 2); // Binh thuong
         
         $years = range(date('Y'), date('Y') + 5);
         $years_list = array_combine($years, $years);

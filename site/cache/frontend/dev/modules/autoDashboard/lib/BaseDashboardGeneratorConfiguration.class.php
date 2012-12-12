@@ -47,7 +47,7 @@ abstract class BaseDashboardGeneratorConfiguration extends sfModelGeneratorConfi
 
   public function getListParams()
   {
-    return '%%_taskIcon%% - %%_taskOverview%%';
+    return '%%_taskOverview%%';
   }
 
   public function getListLayout()
@@ -92,7 +92,7 @@ abstract class BaseDashboardGeneratorConfiguration extends sfModelGeneratorConfi
 
   public function getListDisplay()
   {
-    return array(  0 => '_taskIcon',  1 => '_taskOverview',);
+    return array(  0 => '_taskOverview',);
   }
 
   public function getFieldsDefault()
@@ -115,8 +115,7 @@ abstract class BaseDashboardGeneratorConfiguration extends sfModelGeneratorConfi
       'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Ngày tạo',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),
       'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'is_deleted' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
-      'taskIcon' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => '',),
-      'taskOverview' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => '',),
+      'taskOverview' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'DASHBOARD',),
     );
   }
 
@@ -268,12 +267,12 @@ abstract class BaseDashboardGeneratorConfiguration extends sfModelGeneratorConfi
 
   public function getPagerMaxPerPage()
   {
-    return 20;
+    return 10;
   }
 
   public function getDefaultSort()
   {
-    return array('priority', 'asc');
+    return array('priority', 'desc');
   }
 
   public function getTableMethod()
