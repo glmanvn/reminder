@@ -31,17 +31,31 @@ if ($completedAt) {
     </div>
 </div>
 <div class="grid_12">
-    <?php echo $Task->getTaskDescription();?>
+    <?php echo $Task->getTaskDescription(); ?>
 </div>
 <div class="clearfix">&nbsp;</div>
 <div class="grid_12">
     <div class="grid_4" style="padding-left: 0px; margin: 0;">
-        <div class="content"><strong>Reminder 1st:</strong> <?php echo $Task->remind_1st_at ? $Task->remind_1st_at : "&nbsp;"; ?></div>
+        <div class="content">
+            <strong>Reminder 1st:</strong> &nbsp;
+            <?php echo $Task->remind_1st_at ? $Task->remind_1st_at : "&nbsp;"; ?>
+        </div>
     </div>
     <div class="grid_4">
-        <div class="content"><strong>Reminder 2rd: </strong><?php echo $Task->remind_2rd_at ? $Task->remind_2rd_at : "&nbsp;"; ?></div>
+        <div class="content">
+            <strong>Reminder 2rd: </strong>&nbsp;
+            <?php echo $Task->remind_2rd_at ? $Task->remind_2rd_at : "&nbsp;"; ?>
+        </div>
     </div>
     <div class="grid_4">
-        <div class="content"><strong>Reminder 3th: </strong><?php echo $Task->remind_3th_at ? $Task->remind_3th_at : "&nbsp;"; ?></div>
+        <div class="content">
+            <strong>Reminder 3th: </strong>&nbsp;
+            <?php echo $Task->remind_3th_at ? $Task->remind_3th_at : "&nbsp;"; ?>
+        </div>
     </div>
+</div>
+<hr style="width: 99%;">
+<div class="grid_12" style="text-align: right; padding: 0;">
+    <input type="button" value="Gia hạn" />
+    <input type="button" value="Hoàn thành" />
 </div>
