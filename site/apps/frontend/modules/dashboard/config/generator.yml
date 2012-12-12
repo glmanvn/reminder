@@ -25,7 +25,7 @@ generator:
         task_description:
           label: Mô tả công việc
           attributes: { rows: 5, cols: 80 }
-        piriority:
+        priority:
           label: Độ ưu tiên
         assigned_to:
           label: Người xử lý
@@ -33,8 +33,10 @@ generator:
         remind_1st_at:
           label: Nhắc lần 1 lúc
           help: Hiển thị màn hình nhắc việc trên web tại thời điểm (mặc định sao 10 phút)
-        createdBy:
-          label: Người tạo
+        taskIcon:
+          label: ""
+        taskOverview:
+          label: ""
         created_at:
           label: Ngày tạo
           date_format: yyyy/MM/dd hh:mm:ss 
@@ -48,8 +50,8 @@ generator:
       list:    
         layout:  stacked # View all data on one cell
         title: "CÔNG VIỆC TRONG NGÀY"
-        display: [=task_name, _createdBy, task_description, _piriority, created_at, assigned_to]
-        sort: [piriority, asc]
+        display: [_taskIcon, _taskOverview]
+        sort: [priority, asc]
         max_per_page:  20
         batch_actions: {}
         object_actions: {}
@@ -59,7 +61,7 @@ generator:
         
       form: ~
 #        display: 
-#          "Thông tin công việc": [task_name, task_description, piriority]
+#          "Thông tin công việc": [task_name, task_description, priority]
 #          "Giao việc": [assigned_to, remind_1st_at]
       edit:    
         title: "Xem yêu cầu công việc: %%task_name%%"

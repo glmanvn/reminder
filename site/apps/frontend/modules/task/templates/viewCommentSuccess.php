@@ -25,7 +25,7 @@
                 <div class="sf_admin_form_row">
                     <label id="bold">Độ ưu tiên</label>
                     <div class="content">
-                        <?php include_partial("piriority", array('Task' => $task)); ?> 
+                        <?php include_partial("priority", array('Task' => $task)); ?> 
                     </div>
                 </div>
                 <div class="sf_admin_form_row">

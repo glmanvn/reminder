@@ -10,3 +10,10 @@ all:
     1st_after: 10
 #    email1: anld@isoftco.com
     email2: anld.agrib@gmail.com
+  task:
+    prioryties:
+      1: Không gấp
+      2: Bình thường
+      3: Cần sớm
+      4: Gấp
+      5: Khẩn cấp

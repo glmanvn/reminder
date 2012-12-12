@@ -31,11 +31,13 @@ class TaskForm extends BaseTaskForm {
                 $this['is_deleted']
         );
         
-        $this->widgetSchema['piriority'] = new sfWidgetFormChoice(array(
-            'choices' => array(0 => 'Thường', 1 => 'Gấp', 2 => 'Khẩn cấp'),
+        $arrPriorities = sfConfig::get('app_task_prioryties', 
+                array(0 => 'Thường', 1 => 'Gấp', 2 => 'Khẩn cấp'));
+        $this->widgetSchema['priority'] = new sfWidgetFormChoice(array(
+            'choices' => $arrPriorities,
             'expanded' => true,
         ));
-        $this->setDefault('piriority', 0);
+        $this->setDefault('priority', 0);
         
         $years = range(date('Y'), date('Y') + 5);
         $years_list = array_combine($years, $years);

@@ -47,7 +47,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListParams()
   {
-    return '%%=task_name%% - %%_createdBy%% - %%task_description%% - %%_piriority%% - %%created_at%% - %%assigned_to%%';
+    return '%%=task_name%% - %%_createdBy%% - %%task_description%% - %%_priority%% - %%created_at%% - %%assigned_to%%';
   }
 
   public function getListLayout()
@@ -72,7 +72,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getFilterDisplay()
   {
-    return array(  0 => 'task_name',  1 => 'assigned_to',  2 => 'created_at',);
+    return array();
   }
 
   public function getFormDisplay()
@@ -92,7 +92,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListDisplay()
   {
-    return array(  0 => '=task_name',  1 => '_createdBy',  2 => 'task_description',  3 => '_piriority',  4 => 'created_at',  5 => 'assigned_to',);
+    return array(  0 => '=task_name',  1 => '_createdBy',  2 => 'task_description',  3 => '_priority',  4 => 'created_at',  5 => 'assigned_to',);
   }
 
   public function getFieldsDefault()
@@ -102,7 +102,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
       'user_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
       'task_name' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Tên công việc',),
       'task_description' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Mô tả công việc',  'attributes' =>   array(    'rows' => 5,    'cols' => 80,  ),),
-      'piriority' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Độ ưu tiên',),
+      'priority' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Độ ưu tiên',),
       'assigned_to' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Người xử lý',  'help' => 'Nhập tên người được giao xử lý',),
       'reminded_count' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'remind_1st_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Nhắc lần 1 lúc',  'help' => 'Hiển thị màn hình nhắc việc trên web tại thời điểm (mặc định sao 10 phút)',),
@@ -126,7 +126,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
       'user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
-      'piriority' => array(),
+      'priority' => array(),
       'assigned_to' => array(),
       'reminded_count' => array(),
       'remind_1st_at' => array(),
@@ -149,7 +149,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
       'user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
-      'piriority' => array(),
+      'priority' => array(),
       'assigned_to' => array(),
       'reminded_count' => array(),
       'remind_1st_at' => array(),
@@ -172,7 +172,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
       'user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
-      'piriority' => array(),
+      'priority' => array(),
       'assigned_to' => array(),
       'reminded_count' => array(),
       'remind_1st_at' => array(),
@@ -195,7 +195,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
       'user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
-      'piriority' => array(),
+      'priority' => array(),
       'assigned_to' => array(),
       'reminded_count' => array(),
       'remind_1st_at' => array(),
@@ -218,7 +218,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
       'user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
-      'piriority' => array(),
+      'priority' => array(),
       'assigned_to' => array(),
       'reminded_count' => array(),
       'remind_1st_at' => array(),
@@ -247,7 +247,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function hasFilterForm()
   {
-    return true;
+    return false;
   }
 
   /**
@@ -272,7 +272,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getDefaultSort()
   {
-    return array('piriority', 'asc');
+    return array(null, null);
   }
 
   public function getTableMethod()

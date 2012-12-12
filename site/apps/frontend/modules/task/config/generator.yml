@@ -25,7 +25,7 @@ generator:
         task_description:
           label: Mô tả công việc
           attributes: { rows: 5, cols: 80 }
-        piriority:
+        priority:
           label: Độ ưu tiên
         assigned_to:
           label: Người xử lý
@@ -48,8 +48,8 @@ generator:
       list:    
         #layout:  stacked # View all data on one cell
         title: "Yêu cầu công việc"
-        display: [=task_name, _createdBy, task_description, _piriority, created_at, assigned_to]
-        sort: [piriority, asc]
+        display: [=task_name, _createdBy, task_description, _priority, created_at, assigned_to]
+#        sort: [priority, asc]
         max_per_page:  20
         batch_actions: {}
         object_actions:
@@ -57,11 +57,12 @@ generator:
           viewComment:   { label: Xem, action: viewComment }
         
       filter: 
-        display: [task_name, assigned_to, created_at]
+        class: false
+#        display: [task_name, assigned_to, created_at]
         
       form: ~
 #        display: 
-#          "Thông tin công việc": [task_name, task_description, piriority]
+#          "Thông tin công việc": [task_name, task_description, priority]
 #          "Giao việc": [assigned_to, remind_1st_at]
       edit:    
         title: "Xem yêu cầu công việc: %%task_name%%"

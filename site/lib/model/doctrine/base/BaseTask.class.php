@@ -8,7 +8,7 @@
  * @property integer $user_id
  * @property string $task_name
  * @property string $task_description
- * @property integer $piriority
+ * @property integer $priority
  * @property string $assigned_to
  * @property integer $reminded_count
  * @property timestamp $remind_1st_at
@@ -24,7 +24,7 @@
  * @method integer             getUserId()           Returns the current record's "user_id" value
  * @method string              getTaskName()         Returns the current record's "task_name" value
  * @method string              getTaskDescription()  Returns the current record's "task_description" value
- * @method integer             getPiriority()        Returns the current record's "piriority" value
+ * @method integer             getPriority()         Returns the current record's "priority" value
  * @method string              getAssignedTo()       Returns the current record's "assigned_to" value
  * @method integer             getRemindedCount()    Returns the current record's "reminded_count" value
  * @method timestamp           getRemind1stAt()      Returns the current record's "remind_1st_at" value
@@ -39,7 +39,7 @@
  * @method Task                setUserId()           Sets the current record's "user_id" value
  * @method Task                setTaskName()         Sets the current record's "task_name" value
  * @method Task                setTaskDescription()  Sets the current record's "task_description" value
- * @method Task                setPiriority()        Sets the current record's "piriority" value
+ * @method Task                setPriority()         Sets the current record's "priority" value
  * @method Task                setAssignedTo()       Sets the current record's "assigned_to" value
  * @method Task                setRemindedCount()    Sets the current record's "reminded_count" value
  * @method Task                setRemind1stAt()      Sets the current record's "remind_1st_at" value
@@ -74,7 +74,7 @@ abstract class BaseTask extends sfDoctrineRecord
         $this->hasColumn('task_description', 'string', null, array(
              'type' => 'string',
              ));
-        $this->hasColumn('piriority', 'integer', null, array(
+        $this->hasColumn('priority', 'integer', null, array(
              'type' => 'integer',
              'notnull' => true,
              'default' => 1,

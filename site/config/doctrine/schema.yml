@@ -13,7 +13,7 @@ Task:
       notnull: true
     task_description:
       type: string
-    piriority:
+    priority:
       type: integer
       notnull: true
       default: 1
