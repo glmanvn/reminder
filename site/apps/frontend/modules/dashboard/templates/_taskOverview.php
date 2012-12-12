@@ -34,7 +34,7 @@ if ($completedAt) {
     <?php echo $Task->getTaskDescription(); ?>
 </div>
 <div class="clearfix">&nbsp;</div>
-<div class="grid_12">
+<div class="grid_12" style="padding-bottom: 3px;">
     <div class="grid_4" style="padding-left: 0px; margin: 0;">
         <div class="content">
             <strong>Reminder 1st:</strong> &nbsp;
@@ -54,8 +54,8 @@ if ($completedAt) {
         </div>
     </div>
 </div>
-<hr style="width: 99%;">
-<div class="grid_12" style="text-align: right; padding: 0;">
+<hr style="width: 99%; margin: 0;">
+<div class="grid_12" style="text-align: right; padding: 5px;">
     <input type="button" value="Gia hạn" />
     <input type="button" value="Hoàn thành" />
 </div>

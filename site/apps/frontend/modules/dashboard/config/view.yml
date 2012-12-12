@@ -3,17 +3,3 @@ default:
   theme: admin
   components:
     sidebar: [leftpanel, task]
-viewCommentSuccess:
-  layout: layout
-  theme: admin
-  non_verbose_templates: true
-  stylesheets: 
-    - style.css
-    - reset.css
-    - text.css
-    - layout.css
-    - nav.css
-    - grid.css
-    - formalize.css
-    - main.css
-    - admin_default.css
