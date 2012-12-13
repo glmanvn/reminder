@@ -2,8 +2,8 @@ all:
   mailer:
     class: sfMailer
     param:
-      logging: true
-      charset: UTF-8
+      logging: true           #%SF_LOGGING_ENABLED%
+      charset: utf-8          #%SF_CHARSET%
       delivery_strategy: realtime
       transport:
         class: Swift_SmtpTransport

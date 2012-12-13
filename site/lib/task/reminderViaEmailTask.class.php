@@ -50,26 +50,19 @@ EOF;
         $reminderTasks;
         try {
             $this->file_logger->info('Inquiry task for reminder at: ' . $nowTime);
-            $reminderTasks = Doctrine::getTable('Task')->getTaskNeedRemindedOnTime($nowTime);
+            $reminderTasks = Doctrine::getTable('Task')->findTaskNeedRemindedOnTime($nowTime);
         } catch (Exception $ex) {
-            $this->file_logger->err($ex->getMessage());
+            $this->file_logger->err($ex->getTraceAsString());
         }
-        if ($reminderTasks) {
+        if (sizeof($reminderTasks) > 0) {
             foreach ($reminderTasks as $task) {
                 if ($task) {
                     $siteName = sfConfig::get('app_website_name');
-                    
-                    $this->logSection("CONSL", "*** Reminder for: " . $siteName);
-                    
                     $noreplyEmail = sfConfig::get('app_emails_dont_reply');
-                    $this->logSection("CONSL", "*** Email from: " . $noreplyEmail);
-                    
                     $subject = sfConfig::get('app_emails_reminder_subject');
                     $taskName = $task->getTaskName();
                     $taskDescription = $task->getTaskDescription();
-
                     $assignTo = $task->getAssignedTo();
-
                     $emailBody = <<<BODY
 Hello,
 Công việc sau cần hoàn thành ngay:
@@ -109,21 +102,18 @@ BODY;
                             // Log
                             $this->file_logger->info('Updated next reminder (2rd) at:' . $task->remind_2rd_at);
                         }
-                        if (isset($emailTo)) {
+                        if (isset($emailTo) && sizeof($emailTo) > 0) {
                             $message = $this->getMailer()->compose($noreplyEmail, $emailTo, $subject, $emailBody);
                             $this->getMailer()->send($message);
                             $this->file_logger->info('Sent reminder email to :' . implode( "," ,$emailTo));
-                            
-                            print_r($emailTo);
-                            $this->logSection("CNSL", implode($emailTo));
                         }
                     } catch (Exception $ex) {
-                        $this->file_logger->err($ex->getMessage());
+                        $this->file_logger->err($ex->getTraceAsString());
                     }
                 }
             }
         } else {
-            $this->logSection('reminderViaEmailTask', 'There is no task for reminder.');
+            $this->file_logger->info('There is no task for reminder.');
         }
         $this->file_logger->info('reminderViaEmailTask completed at: ' . date("Y-m-d H:i:s"));
     }

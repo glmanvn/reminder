@@ -17,3 +17,6 @@ viewCommentSuccess:
     - formalize.css
     - main.css
     - admin_default.css
+reminderPopupSuccess:
+  layout: layoutNoNav
+  

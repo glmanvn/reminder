@@ -1,3 +1,12 @@
+task_taskalert:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Task
+    module:               taskalert
+    prefix_path:          /taskalert
+    column:               id
+    with_wildcard_routes: true
+
 task_dashboard:
   class: sfDoctrineRouteCollection
   options:

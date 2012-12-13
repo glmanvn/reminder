@@ -85,4 +85,46 @@ class taskActions extends autoTaskActions {
         }
     }
 
+    /**
+     * 
+     * @param type $request
+     */
+    public function executeAlert(sfWebRequest $request) {
+        $user = $this->getUser(); /* @var $user myUser */
+        if (!$user) {
+            $returnData = array('status' => 'time-out');
+        } else {
+            $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
+            if ($request->getMethod() == sfWebRequest::POST) {
+                // TODO: Check task for reminder
+                $reminderCount = TaskTable::getInstance()->countTaskNeedRemindedOnTime(date("Y-m-d H:i"), $guard_user->getId());
+
+                $this->getResponse()->setContentType("application/json; charset=utf-8");
+                if ($reminderCount > 0) {
+                    $returnData = array('status' => 'success', 'count' => $reminderCount);
+                    $output = '[["title", "My basic letter"], ["name", "Mr Brown"]]';
+                } else {
+                    $returnData = array('status' => 'no-result');
+                }
+            }
+        }
+        $this->renderText(json_encode($returnData));
+        return sfView::NONE;
+    }
+
+    /**
+     * 
+     * @param type $request
+     */
+    public function executeReminderPopup(sfWebRequest $request) {
+        $user = $this->getUser(); /* @var $user myUser */
+        if ($user) {
+            $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
+            $reminderTasks = Doctrine::getTable('Task')->findTaskNeedRemindedOnTime(date("Y-m-d H:i"), $guard_user->getId());
+            
+            
+        }
+    }
+
 }
+

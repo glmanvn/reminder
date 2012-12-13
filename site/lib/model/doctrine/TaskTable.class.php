@@ -19,7 +19,7 @@ class TaskTable extends Doctrine_Table {
     /***
      * 
      */
-    public function getTaskNeedRemindedOnTime($nowTime) {
+    private function createQueryForReminderOnTime($nowTime = '', $userId = 0) {
         $query = Doctrine_Query::create()
                 ->select('*')
                 ->from('Task')
@@ -30,7 +30,24 @@ class TaskTable extends Doctrine_Table {
                         array($nowTime, $nowTime, $nowTime))
                 ->orderBy('priority DESC')
         ;
+        if($userId){
+            $query->addWhere('user_id = ?', $userId);
+        }
+        return $query;
+    }
+    /***
+     * 
+     */
+    public function findTaskNeedRemindedOnTime($nowTime, $userId = 0) {
+        $query = $this->createQueryForReminderOnTime($nowTime, $userId);
         return $query->execute();
     }
 
+    /***
+     * 
+     */
+    public function countTaskNeedRemindedOnTime($nowTime, $userId = 0) {
+        $query = $this->createQueryForReminderOnTime($nowTime, $userId);
+        return $query->count();
+    }
 }
