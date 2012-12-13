@@ -2,4 +2,20 @@
 # http://www.symfony-project.org/reference/1_4/en/11-App
 
 # default values
-#all:
+all:
+  website:
+    name:     "Diamond Bay Resort"
+    base_url: "http://reminider.local"
+  emails:
+    dont_reply: admin@diamond.com
+    reminder_subject: Công việc cần hoàn thành ngay
+    
+  sf_guard_plugin:
+    routes_register: false
+  
+  reminder:
+    1st_after: 10
+    2rd_after: 15
+    3th_after: 15
+    email1: anld@isoftco.com
+    email2: anld.agrib@gmail.com

@@ -8,8 +8,11 @@ all:
   
   reminder:
     1st_after: 10
-#    email1: anld@isoftco.com
+    2rd_after: 15
+    3th_after: 15
+    email1: anld@isoftco.com
     email2: anld.agrib@gmail.com
+    
   task:
     prioryties:
       1: Không gấp

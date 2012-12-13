@@ -18,6 +18,7 @@ generator:
         _delete:  { label: "Xóa" }
         _list:    { label: "Danh sách" }
         _save:    { label: "Ghi" }
+        _save_and_add: { label: "Ghi và tiếp tục" }
       
       fields:
         task_name:
@@ -48,7 +49,7 @@ generator:
       list:    
         #layout:  stacked # View all data on one cell
         title: "Danh sách công việc"
-        display: [=task_name, _createdBy, task_description, _priority, created_at, assigned_to]
+        display: [=task_name, _createdBy, _priority, created_at, assigned_to]
 #        sort: [priority, asc]
         max_per_page:  20
         batch_actions: {}
@@ -57,7 +58,8 @@ generator:
           viewComment:   { label: Xem, action: viewComment }
         
       filter: 
-        display: [assigned_to, created_at]
+        class: false
+#        display: [assigned_to, created_at]
         
       form: ~
 #        display: 
