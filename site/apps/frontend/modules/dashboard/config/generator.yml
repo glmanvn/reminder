@@ -50,7 +50,7 @@ generator:
         title: "CÔNG VIỆC TRONG NGÀY"
         display: [_taskOverview]
         sort: [priority, desc]
-        max_per_page:  5
+        max_per_page:  3
         batch_actions: {}
         object_actions: {}
         

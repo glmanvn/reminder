@@ -6,7 +6,8 @@
 
 $priority = $Task->getPriority() ? $Task->getPriority() : "1";
 
-$arrPriorities = sfConfig::get('app_task_prioryties', array(1 => 'Không gấp', 2 => 'Bình thường', 3 => 'Cần sớm', 4 => 'Gấp', 5 => 'Khẩn cấp'));
+$arrPriorities = sfConfig::get('app_task_prioryties', 
+    array(1 => 'Không gấp', 2 => 'Bình thường', 3 => 'Cần sớm', 4 => 'Gấp', 5 => 'Khẩn cấp'));
 
 $completedAt = $Task->getCompletedAt();
 $taskStatus = "";
@@ -64,7 +65,7 @@ if ($completedAt) {
         </div>
     </div>
     <div class="grid_8" style="text-align: right;">
-        <input type="button" value="Gia hạn" />
-        <input type="button" value="Hoàn thành" />
+        <input type="button" value="Gia hạn" onclick="openExtendDl(<?php echo $Task->getId();?>, '10');" />
+        <input type="button" value="Hoàn thành" onclick="openCompleteDl(<?php echo $Task->getId();?>, '<?php echo $Task->getAssignedTo();?>');" />
     </div>
 </div>

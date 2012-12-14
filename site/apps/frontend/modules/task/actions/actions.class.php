@@ -1,4 +1,6 @@
-<?php //
+<?php
+
+//
 
 require_once dirname(__FILE__) . '/../lib/taskGeneratorConfiguration.class.php';
 require_once dirname(__FILE__) . '/../lib/taskGeneratorHelper.class.php';
@@ -73,14 +75,7 @@ class taskActions extends autoTaskActions {
 
                 $tcmnt->setComment($taskComment);
 
-                $message = Swift_Message::newInstance()
-                        ->setFrom('bounced.bob@gmail.com')
-                        ->setTo('anld@isoftco.com')
-                        ->setSubject('Subject for testing')
-                        ->setBody('Body')
-                ;
-
-                $this->getMailer()->send($message);
+                $tcmnt->save();
             }
             $this->redirect('task/viewComment?id=' . $taskId);
         } else {
@@ -124,10 +119,69 @@ class taskActions extends autoTaskActions {
         if ($user) {
             $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
             $reminderTasks = Doctrine::getTable('Task')->findTaskNeedRemindedOnTime(date("Y-m-d H:i"), $guard_user->getId());
-            
-            
         }
     }
 
+    /**
+     * 
+     * @param type $request
+     */
+    public function executeExtend(sfWebRequest $request) {
+        if ($request->getMethod() == sfWebRequest::POST) {
+            $user = $this->getUser(); /* @var $user myUser */
+            if (!$user) {
+                $returnData = array('status' => 'time-out');
+            } else {
+                $taskId = $request->getParameter('taskId', 0);
+                $afterMin = $request->getParameter('afterMin', 10);
+                if(!is_numeric($afterMin) || $afterMin <= 0){
+                    $afterMin = 10; // default 1 minites
+                }
+                $nextRemindAt = date('Y-m-d H:i', strtotime('+'.$afterMin.' minutes'));
+                $now = date('Y-m-d H:i');
+                $task = TaskTable::getInstance()->findOneBy('id', $taskId);
+                if($task){
+                    $reminder1St = $task->remind_1st_at ? date("Y-m-d H:i", strtotime($task->remind_1st_at)) : "";
+                    $reminder2rd = $task->remind_2rd_at ? date("Y-m-d H:i", strtotime($task->remind_2rd_at)) : "";
+                    //$reminder3th = $task->remind_3th_at ? date_format($task->remind_3th_at, 'Y-m-d H:i') : "";
+                    if($reminder1St){
+                        if($reminder1St > $now) {
+                            $task->remind_1st_at = $nextRemindAt;
+                        }else if($reminder2rd) {
+                            if($reminder2rd > $now) {
+                                $task->remind_2rd_at = $nextRemindAt;
+                            }else{
+                                $task->remind_3th_at = $nextRemindAt;
+                            }
+                        }else{
+                            $task->remind_2rd_at = $nextRemindAt;
+                        }
+                    }
+                    $task->save();
+                    $returnData = array('status' => 'success');
+                }
+            }
+            $this->renderText(json_encode($returnData));
+        }
+        return sfView::NONE;
+    }
+
+    /**
+     * 
+     * @param type $request
+     */
+    public function executeCompleted(sfWebRequest $request) {
+        if ($request->getMethod() == sfWebRequest::POST) {
+            $user = $this->getUser(); /* @var $user myUser */
+            if (!$user) {
+                $returnData = array('status' => 'time-out');
+            } else {
+                $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
+            }
+            $this->renderText(json_encode($returnData));
+        }
+        return sfView::NONE;
+    }
+    
 }
 

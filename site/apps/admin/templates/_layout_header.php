@@ -26,10 +26,6 @@
   <!-- <link rel="stylesheet" href="/css/style.css?v=2"> -->
   <?php include_stylesheets() ?>
 
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-  <script>window.jQuery || document.write("<script src='/js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
-
   <?php include_javascripts() ?>
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
@@ -39,6 +35,5 @@
   <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen" /><![endif]-->   
   
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body>
