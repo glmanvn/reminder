@@ -10,5 +10,5 @@
 
 <ul>
   <li><?php echo link_to('Tạo mới Ticket', 'task/new') ?></li>
-  <li><?php echo link_to('Danh sách', 'task/index') ?></li>
+  <li><?php echo link_to('Danh sách', 'task/index?page=1') ?></li>
 </ul>

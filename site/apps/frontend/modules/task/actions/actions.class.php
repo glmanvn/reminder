@@ -1,4 +1,4 @@
-<?php
+<?php //
 
 require_once dirname(__FILE__) . '/../lib/taskGeneratorConfiguration.class.php';
 require_once dirname(__FILE__) . '/../lib/taskGeneratorHelper.class.php';
