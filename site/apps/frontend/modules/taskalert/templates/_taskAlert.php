@@ -62,7 +62,9 @@ if ($completedAt) {
         </div>
     </div>
     <div class="grid_8" style="text-align: right;">
-        <input type="button" value="Gia hạn" />
-        <input type="button" value="Hoàn thành" />
+        <?php if(!$completedAt): ?>
+        <input type="button" value="Gia hạn" onclick="openExtendDl(<?php echo $Task->getId();?>, '10');" />
+        <input type="button" value="Hoàn thành" onclick="openCompleteDl(<?php echo $Task->getId();?>, '<?php echo $Task->getAssignedTo();?>');" />
+        <?php endif; ?>
     </div>
 </div>

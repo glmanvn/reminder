@@ -176,7 +176,18 @@ class taskActions extends autoTaskActions {
             if (!$user) {
                 $returnData = array('status' => 'time-out');
             } else {
-                $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
+                $taskId = $request->getParameter('taskId', 0);
+                $completedBy = $request->getParameter('completedBy', '');
+                
+                $task = TaskTable::getInstance()->findOneBy('id', $taskId);
+                if($task){
+                    if(!$completedBy) $completedBy = $task->getAssignedTo();
+                    $task->setCompletedAt(date('Y-m-d H:i:s'));
+                    $task->setCompletedBy($completedBy);
+                    
+                    $task->save();
+                    $returnData = array('status' => 'success');
+                }
             }
             $this->renderText(json_encode($returnData));
         }

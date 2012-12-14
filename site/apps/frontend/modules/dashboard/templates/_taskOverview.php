@@ -12,7 +12,7 @@ $arrPriorities = sfConfig::get('app_task_prioryties',
 $completedAt = $Task->getCompletedAt();
 $taskStatus = "";
 if ($completedAt) {
-    $taskStatus = "<font color='blue';>[" . $completedAt . "] <br> " . $Task->getCompletedBy() . "</font>";
+    $taskStatus = "<font color='blue';>Hoàn thành lúc [" . $completedAt . "] bởi " . $Task->getCompletedBy() . "</font>";
 } else {
     $taskStatus = "<strong><font color='red';>Chưa hoàn thành!</font></strong>";
 }
@@ -58,14 +58,15 @@ if ($completedAt) {
 </div>
 <hr style="width: 99%; margin: 0;">
 <div class="grid_12" style="padding: 5px 5px 5px 0px;">
-    <div class="grid_4" style="padding-left: 0px; margin: 0;">
-        <div class="content">
-            <strong>Trạng thái: </strong>&nbsp;
-            <?php echo $taskStatus; ?>
+    <div class="grid_8" style="padding-left: 0px; margin: 0;">
+        <div>
+            <strong>Trạng thái: </strong>&nbsp;<?php echo $taskStatus; ?>
         </div>
     </div>
-    <div class="grid_8" style="text-align: right;">
+    <div class="grid_4" style="text-align: right;">
+        <?php if (!$completedAt): ?>
         <input type="button" value="Gia hạn" onclick="openExtendDl(<?php echo $Task->getId();?>, '10');" />
         <input type="button" value="Hoàn thành" onclick="openCompleteDl(<?php echo $Task->getId();?>, '<?php echo $Task->getAssignedTo();?>');" />
+        <?php endif;?>
     </div>
 </div>

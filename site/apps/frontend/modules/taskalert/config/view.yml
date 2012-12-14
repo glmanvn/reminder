@@ -1,3 +1,9 @@
 default:
   layout: layoutNoNav
   theme: admin
+  
+  javascripts: 
+    - jquery/jquery-1.8.0.min.js
+    - jquery/jquery-ui-1.8.23.custom.min.js
+  stylesheets:
+    - jquery_ui/jquery-ui-1.8.23.custom.css
