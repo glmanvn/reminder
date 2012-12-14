@@ -12,6 +12,6 @@ abstract class BaseDashboardGeneratorHelper extends sfModelGeneratorHelper
 {
   public function getUrlForAction($action)
   {
-    return 'list' == $action ? 'task' : 'task_'.$action;
+    return 'list' == $action ? 'task_dashboard' : 'task_dashboard_'.$action;
   }
 }

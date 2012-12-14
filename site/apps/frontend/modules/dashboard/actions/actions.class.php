@@ -22,10 +22,12 @@ class dashboardActions extends autoDashboardActions {
         // TODO: Tim task do chinh User login tao
         $user = $this->getUser(); /* @var $user myUser */
         $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
-        
+
         return parent::buildQuery()
             ->where('user_id = ' . $guard_user->getId())
+            ->addWhere('is_deleted=0 AND completed_at IS NULL')
             ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
+            ->orderBy('priority DESC')
         ;
     }
 

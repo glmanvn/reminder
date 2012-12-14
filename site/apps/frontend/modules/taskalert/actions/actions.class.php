@@ -26,8 +26,8 @@ class taskalertActions extends autoTaskalertActions {
         $nowTime = date("Y-m-d H:i");
         $query = parent::buildQuery()
                 ->where('user_id = ' . $guard_user->getId())
-                ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
                 ->addWhere('is_deleted=0 AND completed_at IS NULL')
+                ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
                 ->addWhere("(DATE_FORMAT(remind_1st_at, '%Y-%m-%d %H:%i') = ?)
                     OR (DATE_FORMAT(remind_2rd_at, '%Y-%m-%d %H:%i') = ?)
                     OR (DATE_FORMAT(remind_3th_at, '%Y-%m-%d %H:%i') = ?)", array($nowTime, $nowTime, $nowTime))

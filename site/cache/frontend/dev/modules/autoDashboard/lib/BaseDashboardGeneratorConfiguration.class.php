@@ -267,7 +267,7 @@ abstract class BaseDashboardGeneratorConfiguration extends sfModelGeneratorConfi
 
   public function getPagerMaxPerPage()
   {
-    return 10;
+    return 5;
   }
 
   public function getDefaultSort()

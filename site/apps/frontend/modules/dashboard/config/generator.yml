@@ -7,7 +7,7 @@ generator:
     with_show:             false
     singular:              Task
     plural:                Tasks
-    route_prefix:          task
+    route_prefix:          task_dashboard
     with_doctrine_route:   true
     actions_base_class:    sfActions
 
@@ -50,7 +50,7 @@ generator:
         title: "CÔNG VIỆC TRONG NGÀY"
         display: [_taskOverview]
         sort: [priority, desc]
-        max_per_page:  10
+        max_per_page:  5
         batch_actions: {}
         object_actions: {}
         

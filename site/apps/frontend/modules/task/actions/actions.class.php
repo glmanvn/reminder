@@ -24,8 +24,11 @@ class taskActions extends autoTaskActions {
         $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
 
         $query = parent::buildQuery()
-                ->where('user_id = ' . $guard_user->getId());
-//            ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'));
+                ->where('is_deleted=0')
+                ->addWhere('user_id = ' . $guard_user->getId())
+                ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
+                ->orderBy('priority DESC')
+        ;
 
         return $query;
     }

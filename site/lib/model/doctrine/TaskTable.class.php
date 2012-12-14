@@ -24,6 +24,7 @@ class TaskTable extends Doctrine_Table {
                 ->select('*')
                 ->from('Task')
                 ->where('is_deleted=0 AND completed_at IS NULL')
+                ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
                 ->addWhere("(DATE_FORMAT(remind_1st_at, '%Y-%m-%d %H:%i') = ?)
                     OR (DATE_FORMAT(remind_2rd_at, '%Y-%m-%d %H:%i') = ?)
                     OR (DATE_FORMAT(remind_3th_at, '%Y-%m-%d %H:%i') = ?)", 

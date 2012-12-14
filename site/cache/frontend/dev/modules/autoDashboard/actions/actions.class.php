@@ -91,7 +91,7 @@ abstract class autoDashboardActions extends sfActions
       $this->getUser()->setFlash('notice', 'The item was deleted successfully.');
     }
 
-    $this->redirect('@task');
+    $this->redirect('@task_dashboard');
   }
 
 
@@ -124,13 +124,13 @@ abstract class autoDashboardActions extends sfActions
       {
         $this->getUser()->setFlash('notice', $notice.' You can add another one below.');
 
-        $this->redirect('@task_new');
+        $this->redirect('@task_dashboard_new');
       }
       else
       {
         $this->getUser()->setFlash('notice', $notice);
 
-        $this->redirect(array('sf_route' => 'task_edit', 'sf_subject' => $Task));
+        $this->redirect(array('sf_route' => 'task_dashboard_edit', 'sf_subject' => $Task));
       }
     }
     else

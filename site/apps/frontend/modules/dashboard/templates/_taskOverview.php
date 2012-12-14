@@ -20,18 +20,15 @@ if ($completedAt) {
     <div class="grid_2" style="padding-left: 0px; margin: 0;">
         <img src="/images/stars/star_<?php echo $priority; ?>.png" alt="<?php echo $arrPriorities[$priority]; ?>" />
     </div>
-    <div class="grid_6">
+    <div class="grid_8">
         <h5><p style="padding-top: 10px; font-weight: bold;">
-            <a href="<?php echo url_for('task/viewComment').'?id='.$Task->getId() ?>" >
-                <?php echo $Task->getTaskName(); ?>
-            </a>
-        </p></h5>
+                <a href="<?php echo url_for('task/viewComment') . '?id=' . $Task->getId() ?>" >
+                    <?php echo $Task->getTaskName(); ?>
+                </a>
+            </p></h5>
     </div>
     <div class="grid_2">
         <p style="padding-top: 10px;"><?php echo $Task->getAssignedTo(); ?></p>
-    </div>
-    <div class="grid_2">
-        <p style="padding-top: 10px;"><?php echo $taskStatus; ?></p>
     </div>
 </div>
 <div class="grid_12">
@@ -41,25 +38,33 @@ if ($completedAt) {
 <div class="grid_12" style="padding-bottom: 3px;">
     <div class="grid_4" style="padding-left: 0px; margin: 0;">
         <div class="content">
-            <strong>Reminder 1st:</strong> &nbsp;
+            <strong>Remind 1st:</strong> &nbsp;
             <?php echo $Task->remind_1st_at ? $Task->remind_1st_at : "&nbsp;"; ?>
         </div>
     </div>
     <div class="grid_4">
         <div class="content">
-            <strong>Reminder 2rd: </strong>&nbsp;
+            <strong>Remind 2rd: </strong>&nbsp;
             <?php echo $Task->remind_2rd_at ? $Task->remind_2rd_at : "&nbsp;"; ?>
         </div>
     </div>
     <div class="grid_4">
         <div class="content">
-            <strong>Reminder 3th: </strong>&nbsp;
+            <strong>Remind 3th: </strong>&nbsp;
             <?php echo $Task->remind_3th_at ? $Task->remind_3th_at : "&nbsp;"; ?>
         </div>
     </div>
 </div>
 <hr style="width: 99%; margin: 0;">
-<div class="grid_12" style="text-align: right; padding: 5px;">
-    <input type="button" value="Gia hạn" />
-    <input type="button" value="Hoàn thành" />
+<div class="grid_12" style="padding: 5px 5px 5px 0px;">
+    <div class="grid_4" style="padding-left: 0px; margin: 0;">
+        <div class="content">
+            <strong>Trạng thái: </strong>&nbsp;
+            <?php echo $taskStatus; ?>
+        </div>
+    </div>
+    <div class="grid_8" style="text-align: right;">
+        <input type="button" value="Gia hạn" />
+        <input type="button" value="Hoàn thành" />
+    </div>
 </div>
