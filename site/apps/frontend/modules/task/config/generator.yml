@@ -28,6 +28,8 @@ generator:
           attributes: { rows: 5, cols: 80 }
         priority:
           label: Độ ưu tiên
+        statusMin:
+          label: Trạng thái
         assigned_to:
           label: Người xử lý
           help: Nhập tên người được giao xử lý
@@ -49,7 +51,7 @@ generator:
       list:    
         #layout:  stacked # View all data on one cell
         title: "Danh sách công việc"
-        display: [=task_name, _createdBy, _priority, created_at, assigned_to]
+        display: [=task_name, _createdBy, created_at, assigned_to, _priority, _statusMin]
 #        sort: [priority, asc]
         max_per_page:  20
         batch_actions: {}

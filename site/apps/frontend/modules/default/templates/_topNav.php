@@ -23,7 +23,7 @@
                     $return = eval(data);
                     if($return.status == 'success')
                     {
-                        showPopup('/taskalert/index', 'Reminder task', 700, 400);
+                        showPopup('/taskalert/index?page=1', 'Reminder task', 700, 400);
                     }
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
