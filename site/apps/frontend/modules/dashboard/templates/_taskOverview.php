@@ -60,7 +60,8 @@ if ($completedAt) {
 <div class="grid_12" style="padding: 5px 5px 5px 0px;">
     <div class="grid_8" style="padding-left: 0px; margin: 0;">
         <div>
-            <strong>Trạng thái: </strong>&nbsp;<?php echo $taskStatus; ?>
+            <strong>Trạng thái: </strong>&nbsp;<?php echo $taskStatus; ?> &nbsp;&nbsp;
+            <strong>Ngày tạo: </strong>&nbsp;<?php echo $Task->getCreatedAt(); ?>
         </div>
     </div>
     <div class="grid_4" style="text-align: right;">
