@@ -26,7 +26,7 @@ class dashboardActions extends autoDashboardActions {
         return parent::buildQuery()
             ->where('user_id = ' . $guard_user->getId())
             ->addWhere('is_deleted = 0')
-            ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
+//            ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
             ->orderBy('completed_at, priority DESC')
         ;
     }
