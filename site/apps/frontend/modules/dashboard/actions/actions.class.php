@@ -31,4 +31,19 @@ class dashboardActions extends autoDashboardActions {
         ;
     }
 
+    /***
+     * 
+     */
+    public function executeEdit(sfWebRequest $request)
+    {
+        $this->forward404();
+    }
+    
+    /***
+     * 
+     */
+    public function executeDelete(sfWebRequest $request)
+    {
+        $this->forward404();
+    }
 }

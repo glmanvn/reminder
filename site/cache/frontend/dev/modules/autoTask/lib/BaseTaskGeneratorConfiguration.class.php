@@ -32,7 +32,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListObjectActions()
   {
-    return array(  '_edit' => NULL,  'viewComment' =>   array(    'label' => 'Xem',    'action' => 'viewComment',  ),);
+    return array(  '_edit' =>   array(    'credentials' => 'admin',  ),  'viewComment' =>   array(    'label' => 'Xem',    'action' => 'viewComment',  ),);
   }
 
   public function getListActions()
@@ -62,17 +62,17 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getEditTitle()
   {
-    return 'Xem yêu cầu công việc: %%task_name%%';
+    return 'XEM/SỬA NỘI DUNG CÔNG VIỆC: ';
   }
 
   public function getNewTitle()
   {
-    return 'Thêm mới yêu cầu công việc';
+    return 'THÊM MỚI CÔNG VIỆC';
   }
 
   public function getFilterDisplay()
   {
-    return array();
+    return array(  0 => 'assigned_to',  1 => 'created_at',);
   }
 
   public function getFormDisplay()

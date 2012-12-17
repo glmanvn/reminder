@@ -58,19 +58,20 @@ generator:
         max_per_page:  20
         batch_actions: {}
         object_actions:
-          _edit: ~
+          _edit: 
+            credentials: admin
           viewComment:   { label: Xem, action: viewComment }
         
       filter: 
         class: false
-#        display: [assigned_to, created_at]
+        display: [assigned_to, created_at]
         
       form: ~
 #        display: 
 #          "Thông tin công việc": [task_name, task_description, priority]
 #          "Giao việc": [assigned_to, remind_1st_at]
       edit:    
-        title: "Xem yêu cầu công việc: %%task_name%%"
+        title: "XEM/SỬA NỘI DUNG CÔNG VIỆC: "%%task_name%%"
       
       new:
-        title: Thêm mới yêu cầu công việc
+        title: THÊM MỚI CÔNG VIỆC

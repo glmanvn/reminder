@@ -15,6 +15,34 @@ require_once dirname(__FILE__) . '/../lib/taskGeneratorHelper.class.php';
  */
 class taskActions extends autoTaskActions {
 
+    /***
+     * 
+     */
+    public function executeEdit(sfWebRequest $request)
+    {
+        $user = $this->getUser(); /* @var $user myUser */
+        $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
+        if(!$guard_user->getIsSuperAdmin()){
+            $this->forward404('Have no permission.');
+        }else{
+            parent::executeEdit($request);
+        }
+    }
+    
+     /***
+     * 
+     */
+    public function executeDelete(sfWebRequest $request)
+    {
+        $user = $this->getUser(); /* @var $user myUser */
+        $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
+        if(!$guard_user->getIsSuperAdmin()){
+            $this->forward404('Have no permission.');
+        }else{
+            parent::executeDelete($request);
+        }
+    }
+    
     /**
      * Build custom query
      * 

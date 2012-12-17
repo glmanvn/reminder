@@ -36,4 +36,19 @@ class taskalertActions extends autoTaskalertActions {
         return $query;
     }
 
+    /***
+     * 
+     */
+    public function executeEdit(sfWebRequest $request)
+    {
+        $this->forward404();
+    }
+    
+    /***
+     * 
+     */
+    public function executeDelete(sfWebRequest $request)
+    {
+        $this->forward404();
+    }
 }
