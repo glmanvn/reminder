@@ -1,0 +1,3 @@
+<td colspan="6">
+  <?php echo __('%%taskName%% - %%createdBy%% - %%created_at%% - %%assigned_to%% - %%priority%% - %%statusMin%%', array('%%taskName%%' => get_partial('task/taskName', array('type' => 'list', 'Task' => $Task)), '%%createdBy%%' => get_partial('task/createdBy', array('type' => 'list', 'Task' => $Task)), '%%created_at%%' => false !== strtotime($Task->getCreatedAt()) ? format_date($Task->getCreatedAt(), "yyyy/MM/dd hh:mm:ss") : '&nbsp;', '%%assigned_to%%' => $Task->getAssignedTo(), '%%priority%%' => get_partial('task/priority', array('type' => 'list', 'Task' => $Task)), '%%statusMin%%' => get_partial('task/statusMin', array('type' => 'list', 'Task' => $Task))), 'messages') ?>
+</td>
