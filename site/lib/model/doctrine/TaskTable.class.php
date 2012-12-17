@@ -24,7 +24,7 @@ class TaskTable extends Doctrine_Table {
                 ->select('*')
                 ->from('Task')
                 ->where('is_deleted=0 AND completed_at IS NULL')
-                ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
+//                ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
                 ->addWhere("(DATE_FORMAT(remind_1st_at, '%Y-%m-%d %H:%i') = ?)
                     OR (DATE_FORMAT(remind_2rd_at, '%Y-%m-%d %H:%i') = ?)
                     OR (DATE_FORMAT(remind_3th_at, '%Y-%m-%d %H:%i') = ?)", 
@@ -47,8 +47,21 @@ class TaskTable extends Doctrine_Table {
     /***
      * 
      */
-    public function countTaskNeedRemindedOnTime($nowTime, $userId = 0) {
-        $query = $this->createQueryForReminderOnTime($nowTime, $userId);
+    public function countTaskNeedReminded($nowTime, $userId = 0) {
+        $query = Doctrine_Query::create()
+                ->select('*')
+                ->from('Task')
+                ->where('is_deleted=0 AND completed_at IS NULL')
+                ->addWhere("(DATE_FORMAT(remind_1st_at, '%Y-%m-%d %H:%i') <= ? AND remind_2rd_at IS NULL)
+                    OR (DATE_FORMAT(remind_2rd_at, '%Y-%m-%d %H:%i') <= ? AND remind_3th_at IS NULL)
+                    OR (DATE_FORMAT(remind_3th_at, '%Y-%m-%d %H:%i') <= ?)", 
+                        array($nowTime, $nowTime, $nowTime))
+                ->orderBy('priority DESC')
+        ;
+        if($userId){
+            $query->addWhere('user_id = ?', $userId);
+        }
+        
         return $query->count();
     }
 }

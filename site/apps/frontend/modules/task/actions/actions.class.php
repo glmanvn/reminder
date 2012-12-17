@@ -123,12 +123,11 @@ class taskActions extends autoTaskActions {
             $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
             if ($request->getMethod() == sfWebRequest::POST) {
                 // TODO: Check task for reminder
-                $reminderCount = TaskTable::getInstance()->countTaskNeedRemindedOnTime(date("Y-m-d H:i"), $guard_user->getId());
+                $reminderCount = TaskTable::getInstance()->countTaskNeedReminded(date("Y-m-d H:i"), $guard_user->getId());
 
                 $this->getResponse()->setContentType("application/json; charset=utf-8");
                 if ($reminderCount > 0) {
                     $returnData = array('status' => 'success', 'count' => $reminderCount);
-                    $output = '[["title", "My basic letter"], ["name", "Mr Brown"]]';
                 } else {
                     $returnData = array('status' => 'no-result');
                 }
