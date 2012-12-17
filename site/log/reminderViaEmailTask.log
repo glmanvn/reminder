@@ -1,131 +1,14 @@
-Dec 13 07:45:28 symfony [err] You must have at least one component specified in your from.
-Dec 13 07:47:09 symfony [info] reminderViaEmailTask completed at: 2012-12-13 07:47:09
-Dec 13 07:47:57 symfony [info] reminderViaEmailTask completed at: 2012-12-13 07:47:57
-Dec 13 13:57:15 symfony [info] Start the reminderViaEmailTask at: 2012-12-13 13:57:15
-Dec 13 13:57:15 symfony [info] Inquiry task for reminder at: 2012-12-13 13:57
-Dec 13 13:59:03 symfony [info] Start the reminderViaEmailTask at: 2012-12-13 13:59:03
-Dec 13 13:59:03 symfony [info] Inquiry task for reminder at: 2012-12-13 13:59
-Dec 13 13:59:51 symfony [info] Start the reminderViaEmailTask at: 2012-12-13 13:59:51
-Dec 13 13:59:51 symfony [info] Inquiry task for reminder at: 2012-12-13 13:59
-Dec 13 14:00:01 symfony [info] Start the reminderViaEmailTask at: 2012-12-13 14:00:01
-Dec 13 14:00:01 symfony [info] Inquiry task for reminder at: 2012-12-13 14:00
-Dec 13 14:04:03 symfony [info] =========== Start at: 2012-12-13 14:04:03===========
-Dec 13 14:04:03 symfony [info] Inquiry task for reminder at: 2012-12-13 14:04
-Dec 13 14:04:03 symfony [info] Updated next reminder (2rd) at:1970-01-01 07:00
-Dec 13 14:04:08 symfony [err] Cannot send message without a sender address
-Dec 13 14:04:08 symfony [info] Updated next reminder (2rd) at:1970-01-01 07:00
-Dec 13 14:04:08 symfony [err] Cannot send message without a sender address
-Dec 13 14:04:08 symfony [info] Updated next reminder (3th) at:2012-12-13 14:19
-Dec 13 14:04:08 symfony [err] Cannot send message without a sender address
-Dec 13 14:04:08 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:04:08
-Dec 13 14:06:19 symfony [info] =========== Start at: 2012-12-13 14:06:19===========
-Dec 13 14:06:19 symfony [info] Inquiry task for reminder at: 2012-12-13 14:06
-Dec 13 14:06:19 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:06:19
-Dec 13 14:06:37 symfony [info] =========== Start at: 2012-12-13 14:06:37===========
-Dec 13 14:06:37 symfony [info] Inquiry task for reminder at: 2012-12-13 14:06
-Dec 13 14:06:37 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:06:37
-Dec 13 14:08:08 symfony [info] =========== Start at: 2012-12-13 14:08:08===========
-Dec 13 14:08:08 symfony [info] Inquiry task for reminder at: 2012-12-13 14:08
-Dec 13 14:08:08 symfony [info] Updated next reminder (2rd) at:2012-12-13 14:23
-Dec 13 14:08:12 symfony [err] Cannot send message without a sender address
-Dec 13 14:08:12 symfony [info] Updated next reminder (3th) at:2012-12-13 14:23
-Dec 13 14:08:12 symfony [err] Cannot send message without a sender address
-Dec 13 14:08:12 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:08:12
-Dec 13 14:13:06 symfony [info] =========== Start at: 2012-12-13 14:13:06===========
-Dec 13 14:13:06 symfony [info] Inquiry task for reminder at: 2012-12-13 14:13
-Dec 13 14:13:06 symfony [info] Updated next reminder (2rd) at:2012-12-13 14:28
-Dec 13 14:13:10 symfony [info] Sent reminder email to :
-Dec 13 14:13:10 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:13:10
-Dec 13 14:15:51 symfony [info] =========== Start at: 2012-12-13 14:15:51===========
-Dec 13 14:15:51 symfony [info] Inquiry task for reminder at: 2012-12-13 14:15
-Dec 13 14:15:51 symfony [info] Updated next reminder (2rd) at:2012-12-13 14:30
-Dec 13 14:15:55 symfony [info] Sent reminder email to :
-Dec 13 14:15:55 symfony [info] Updated next reminder (3th) at:2012-12-13 14:30
-Dec 13 14:15:55 symfony [info] Sent reminder email to :anld@isoftco.com
-Dec 13 14:15:55 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:15:55
-Dec 13 14:19:34 symfony [info] =========== Start at: 2012-12-13 14:19:34===========
-Dec 13 14:19:34 symfony [info] Inquiry task for reminder at: 2012-12-13 14:19
-Dec 13 14:19:34 symfony [info] Updated next reminder (2rd) at:2012-12-13 14:34
-Dec 13 14:19:38 symfony [info] Sent reminder email to :
-Dec 13 14:19:38 symfony [info] Updated next reminder (3th) at:2012-12-13 14:34
-Dec 13 14:19:38 symfony [info] Sent reminder email to :anld@isoftco.com
-Dec 13 14:19:38 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:19:38
-Dec 13 14:21:13 symfony [info] =========== Start at: 2012-12-13 14:21:13===========
-Dec 13 14:21:13 symfony [info] Inquiry task for reminder at: 2012-12-13 14:21
-Dec 13 14:21:14 symfony [info] Updated next reminder (3th) at:2012-12-13 14:36
-Dec 13 14:21:17 symfony [info] Sent reminder email to :anld@isoftco.com
-Dec 13 14:21:17 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:21:17
-Dec 13 14:22:13 symfony [info] =========== Start at: 2012-12-13 14:22:13===========
-Dec 13 14:22:13 symfony [info] Inquiry task for reminder at: 2012-12-13 14:22
-Dec 13 14:22:17 symfony [info] Sent reminder email to :anld@isoftco.comanld.agrib@gmail.com
-Dec 13 14:22:17 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:22:17
-Dec 13 14:22:51 symfony [info] =========== Start at: 2012-12-13 14:22:51===========
-Dec 13 14:22:51 symfony [info] Inquiry task for reminder at: 2012-12-13 14:22
-Dec 13 14:22:51 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:22:51
-Dec 13 14:23:09 symfony [info] =========== Start at: 2012-12-13 14:23:09===========
-Dec 13 14:23:09 symfony [info] Inquiry task for reminder at: 2012-12-13 14:23
-Dec 13 14:23:14 symfony [info] Sent reminder email to :anld@isoftco.com,anld.agrib@gmail.com
-Dec 13 14:23:14 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:23:14
-Dec 13 14:23:56 symfony [info] =========== Start at: 2012-12-13 14:23:56===========
-Dec 13 14:23:56 symfony [info] Inquiry task for reminder at: 2012-12-13 14:23
-Dec 13 14:24:00 symfony [info] Sent reminder email to :anld@isoftco.com,anld.agrib@gmail.com
-Dec 13 14:24:00 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:24:00
-Dec 13 14:25:23 symfony [info] =========== Start at: 2012-12-13 14:25:23===========
-Dec 13 14:25:23 symfony [info] Inquiry task for reminder at: 2012-12-13 14:25
-Dec 13 14:25:23 symfony [info] Updated next reminder (2rd) at:2012-12-13 14:40
-Dec 13 14:25:27 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to ""
-Dec 13 14:25:27 symfony [info] Sent reminder email to :
-Dec 13 14:25:27 symfony [info] Updated next reminder (3th) at:2012-12-13 14:40
-Dec 13 14:25:27 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to "anld@isoftco.com"
-Dec 13 14:25:27 symfony [info] Sent reminder email to :anld@isoftco.com
-Dec 13 14:25:27 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to "anld@isoftco.com, anld.agrib@gmail.com"
-Dec 13 14:25:27 symfony [info] Sent reminder email to :anld@isoftco.com,anld.agrib@gmail.com
-Dec 13 14:25:27 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:25:27
-Dec 13 14:28:01 symfony [info] =========== Start at: 2012-12-13 14:28:01===========
-Dec 13 14:28:01 symfony [info] Inquiry task for reminder at: 2012-12-13 14:28
-Dec 13 14:28:01 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:28:01
-Dec 13 14:31:25 symfony [info] =========== Start at: 2012-12-13 14:31:25===========
-Dec 13 14:31:25 symfony [info] Inquiry task for reminder at: 2012-12-13 14:31
-Dec 13 14:31:25 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:31:25
-Dec 13 14:32:02 symfony [info] =========== Start at: 2012-12-13 14:32:02===========
-Dec 13 14:32:02 symfony [info] Inquiry task for reminder at: 2012-12-13 14:32
-Dec 13 14:32:03 symfony [info] Updated next reminder (2rd) at:2012-12-13 14:47
-Dec 13 14:32:07 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to ""
-Dec 13 14:32:07 symfony [info] Sent reminder email to :
-Dec 13 14:32:07 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to "anld@isoftco.com, anld.agrib@gmail.com"
-Dec 13 14:32:07 symfony [info] Sent reminder email to :anld@isoftco.com,anld.agrib@gmail.com
-Dec 13 14:32:07 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:32:07
-Dec 13 14:32:36 symfony [info] =========== Start at: 2012-12-13 14:32:36===========
-Dec 13 14:32:36 symfony [info] Inquiry task for reminder at: 2012-12-13 14:32
-Dec 13 14:32:36 symfony [info] Updated next reminder (3th) at:2012-12-13 14:47
-Dec 13 14:32:40 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to "anld@isoftco.com"
-Dec 13 14:32:40 symfony [info] Sent reminder email to :anld@isoftco.com
-Dec 13 14:32:40 symfony [info] Updated next reminder (3th) at:2012-12-13 14:47
-Dec 13 14:32:40 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to "anld@isoftco.com"
-Dec 13 14:32:40 symfony [info] Sent reminder email to :anld@isoftco.com
-Dec 13 14:32:40 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to "anld@isoftco.com, anld.agrib@gmail.com"
-Dec 13 14:32:40 symfony [info] Sent reminder email to :anld@isoftco.com,anld.agrib@gmail.com
-Dec 13 14:32:40 symfony [info] reminderViaEmailTask completed at: 2012-12-13 14:32:40
-Dec 14 06:01:24 symfony [info] =========== Start at: 2012-12-14 06:01:24===========
-Dec 14 06:01:24 symfony [info] Inquiry task for reminder at: 2012-12-14 06:01
-Dec 14 06:01:24 symfony [info] reminderViaEmailTask completed at: 2012-12-14 06:01:24
-Dec 14 06:02:45 symfony [info] =========== Start at: 2012-12-14 06:02:45===========
-Dec 14 06:02:45 symfony [info] Inquiry task for reminder at: 2012-12-14 06:02
-Dec 14 06:02:45 symfony [info] There is no task for reminder.
-Dec 14 06:02:45 symfony [info] reminderViaEmailTask completed at: 2012-12-14 06:02:45
-Dec 14 06:07:24 symfony [info] =========== Start at: 2012-12-14 06:07:24===========
-Dec 14 06:07:24 symfony [info] Inquiry task for reminder at: 2012-12-14 06:07
-Dec 14 06:07:24 symfony [info] Updated next reminder (2rd) at:2012-12-14 06:22
-Dec 14 06:07:28 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to ""
-Dec 14 06:07:28 symfony [info] Sent reminder email to :
-Dec 14 06:07:28 symfony [info] reminderViaEmailTask completed at: 2012-12-14 06:07:28
-Dec 14 06:09:52 symfony [info] =========== Start at: 2012-12-14 06:09:52===========
-Dec 14 06:09:52 symfony [info] Inquiry task for reminder at: 2012-12-14 06:09
-Dec 14 06:09:52 symfony [info] Updated next reminder (2rd) at:2012-12-14 06:24
-Dec 14 06:09:52 symfony [info] reminderViaEmailTask completed at: 2012-12-14 06:09:52
-Dec 14 06:10:24 symfony [info] =========== Start at: 2012-12-14 06:10:24===========
-Dec 14 06:10:24 symfony [info] Inquiry task for reminder at: 2012-12-14 06:10
-Dec 14 06:10:24 symfony [info] Updated next reminder (3th) at:2012-12-14 06:25
-Dec 14 06:10:27 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to "anldisoftco@isoftco.com"
-Dec 14 06:10:27 symfony [info] Sent reminder email to :anldisoftco@isoftco.com
-Dec 14 06:10:27 symfony [info] reminderViaEmailTask completed at: 2012-12-14 06:10:27
+Dec 15 23:39:59 symfony [info] =========== Start at: 2012-12-15 23:39:59===========
+Dec 15 23:39:59 symfony [info] Inquiry task for reminder at: 2012-12-15 23:39
+Dec 15 23:39:59 symfony [info] There is no task for reminder.
+Dec 15 23:39:59 symfony [info] reminderViaEmailTask completed at: 2012-12-15 23:39:59
+Dec 17 11:19:02 symfony [info] =========== Start at: 2012-12-17 11:19:02===========
+Dec 17 11:19:02 symfony [info] Inquiry task for reminder at: 2012-12-17 11:19
+Dec 17 11:19:03 symfony [info] Updated next reminder (2rd) at:2012-12-17 11:34
+Dec 17 11:19:03 symfony [info] reminderViaEmailTask completed at: 2012-12-17 11:19:03
+Dec 17 11:22:11 symfony [info] =========== Start at: 2012-12-17 11:22:11===========
+Dec 17 11:22:11 symfony [info] Inquiry task for reminder at: 2012-12-17 11:22
+Dec 17 11:22:12 symfony [info] Updated next reminder (3th) at:2012-12-17 11:37
+Dec 17 11:22:13 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Công việc cần hoàn thành ngay" to "anld@isoftco.com"
+Dec 17 11:22:13 symfony [info] Sent reminder email to :anld@isoftco.com
+Dec 17 11:22:13 symfony [info] reminderViaEmailTask completed at: 2012-12-17 11:22:13

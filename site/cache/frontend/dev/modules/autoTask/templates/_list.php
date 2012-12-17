@@ -11,7 +11,7 @@
       </thead>
       <tfoot>
         <tr>
-          <th colspan="6">
+          <th colspan="7">
             <?php if ($pager->haveToPaginate()): ?>
               <?php include_partial('task/pagination', array('pager' => $pager)) ?>
             <?php endif; ?>

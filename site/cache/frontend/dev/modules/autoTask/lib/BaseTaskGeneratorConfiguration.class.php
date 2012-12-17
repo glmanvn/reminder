@@ -47,7 +47,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListParams()
   {
-    return '%%=task_name%% - %%_createdBy%% - %%_priority%% - %%created_at%% - %%assigned_to%%';
+    return '%%_taskName%% - %%_createdBy%% - %%created_at%% - %%assigned_to%% - %%_priority%% - %%_statusMin%%';
   }
 
   public function getListLayout()
@@ -57,7 +57,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListTitle()
   {
-    return 'Danh sách công việc';
+    return 'DANH SÁCH CÔNG VIỆC';
   }
 
   public function getEditTitle()
@@ -92,7 +92,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListDisplay()
   {
-    return array(  0 => '=task_name',  1 => '_createdBy',  2 => '_priority',  3 => 'created_at',  4 => 'assigned_to',);
+    return array(  0 => '_taskName',  1 => '_createdBy',  2 => 'created_at',  3 => 'assigned_to',  4 => '_priority',  5 => '_statusMin',);
   }
 
   public function getFieldsDefault()
@@ -115,6 +115,8 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
       'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Ngày tạo',  'date_format' => 'yyyy/MM/dd hh:mm:ss',),
       'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'is_deleted' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
+      'taskName' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Tên công việc',),
+      'statusMin' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Trạng thái',),
       'createdBy' => array(  'is_link' => false,  'is_real' => false,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Người tạo',),
     );
   }

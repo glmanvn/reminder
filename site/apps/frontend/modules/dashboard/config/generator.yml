@@ -47,10 +47,10 @@ generator:
           
       list:    
         layout:  stacked # View all data on one cell
-        title: "CÔNG VIỆC TRONG NGÀY"
+        title: "CÔNG VIỆC CẦN THEO DÕI"
         display: [_taskOverview]
         sort: [priority, desc]
-        max_per_page:  3
+        max_per_page:  10
         batch_actions: {}
         object_actions: {}
         

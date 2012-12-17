@@ -1,0 +1,11 @@
+default:
+  is_secure: true
+
+#activate:
+#  is_secure: false
+#
+#preActivate:
+#  is_secure: false
+#
+#resendActivation:
+#  is_secure: false

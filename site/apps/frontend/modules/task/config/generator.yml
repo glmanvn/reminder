@@ -23,6 +23,8 @@ generator:
       fields:
         task_name:
           label: Tên công việc
+        taskName:
+          label: Tên công việc
         task_description:
           label: Mô tả công việc
           attributes: { rows: 5, cols: 80 }
@@ -50,8 +52,8 @@ generator:
           
       list:    
         #layout:  stacked # View all data on one cell
-        title: "Danh sách công việc"
-        display: [=task_name, _createdBy, created_at, assigned_to, _priority, _statusMin]
+        title: "DANH SÁCH CÔNG VIỆC"
+        display: [_taskName, _createdBy, created_at, assigned_to, _priority, _statusMin]
 #        sort: [priority, asc]
         max_per_page:  20
         batch_actions: {}

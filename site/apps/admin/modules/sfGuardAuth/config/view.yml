@@ -1,3 +1,4 @@
-#signinSuccess:
-#  layout: fb_layout
-#stylesheets: [reset.css, fluid.css, login.css]
+stylesheets: [reset.css, fluid.css, login.css]
+
+signinSuccess:
+  layout: layoutNoNav

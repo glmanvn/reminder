@@ -8,8 +8,8 @@ all:
       transport:
         class: Swift_SmtpTransport
         param:
-          host: smtp.gmail.com
-          port: 465
-          encryption: ssl
-          username: bounced.bob@gmail.com
-          password: bouncybouncy
+          host: mail.diamondbayresort.vn
+          port: 25
+          encryption: ~
+          username: dbreminder@diamondbayresort.vn
+          password: db@re

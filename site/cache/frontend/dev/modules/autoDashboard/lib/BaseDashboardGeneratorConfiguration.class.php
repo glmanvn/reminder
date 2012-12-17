@@ -57,7 +57,7 @@ abstract class BaseDashboardGeneratorConfiguration extends sfModelGeneratorConfi
 
   public function getListTitle()
   {
-    return 'CÔNG VIỆC TRONG NGÀY';
+    return 'CÔNG VIỆC CẦN THEO DÕI';
   }
 
   public function getEditTitle()
@@ -267,7 +267,7 @@ abstract class BaseDashboardGeneratorConfiguration extends sfModelGeneratorConfi
 
   public function getPagerMaxPerPage()
   {
-    return 3;
+    return 10;
   }
 
   public function getDefaultSort()
