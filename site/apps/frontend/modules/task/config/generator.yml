@@ -51,15 +51,15 @@ generator:
           help: Địa chỉ email để gửi cảnh báo nếu task bị chậm lần 2
           
       list:    
-        #layout:  stacked # View all data on one cell
         title: "DANH SÁCH CÔNG VIỆC"
         display: [_taskName, _createdBy, created_at, assigned_to, _priority, _statusMin]
-#        sort: [priority, asc]
+        sort: [priority, asc]
         max_per_page:  20
-        batch_actions: {}
+        batch_actions: 
+          reassign: {label: Chuyển giao, action: reAssign}
         object_actions:
-          _edit: 
-            credentials: admin
+#          _edit: 
+#            credentials: admin
           viewComment:   { label: Xem, action: viewComment }
         
       filter: 

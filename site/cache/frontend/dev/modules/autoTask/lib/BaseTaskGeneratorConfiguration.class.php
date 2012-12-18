@@ -32,7 +32,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListObjectActions()
   {
-    return array(  '_edit' =>   array(    'credentials' => 'admin',  ),  'viewComment' =>   array(    'label' => 'Xem',    'action' => 'viewComment',  ),);
+    return array(  'viewComment' =>   array(    'label' => 'Xem',    'action' => 'viewComment',  ),);
   }
 
   public function getListActions()
@@ -42,7 +42,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getListBatchActions()
   {
-    return array();
+    return array(  'reassign' =>   array(    'label' => 'Chuyển giao',    'action' => 'reAssign',  ),);
   }
 
   public function getListParams()
@@ -100,6 +100,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
     return array(
       'id' => array(  'is_link' => true,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'user_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
+      'follow_user_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'task_name' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Tên công việc',),
       'task_description' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Mô tả công việc',  'attributes' =>   array(    'rows' => 5,    'cols' => 80,  ),),
       'priority' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Độ ưu tiên',),
@@ -126,6 +127,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
     return array(
       'id' => array(),
       'user_id' => array(),
+      'follow_user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
       'priority' => array(),
@@ -149,6 +151,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
     return array(
       'id' => array(),
       'user_id' => array(),
+      'follow_user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
       'priority' => array(),
@@ -172,6 +175,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
     return array(
       'id' => array(),
       'user_id' => array(),
+      'follow_user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
       'priority' => array(),
@@ -195,6 +199,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
     return array(
       'id' => array(),
       'user_id' => array(),
+      'follow_user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
       'priority' => array(),
@@ -218,6 +223,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
     return array(
       'id' => array(),
       'user_id' => array(),
+      'follow_user_id' => array(),
       'task_name' => array(),
       'task_description' => array(),
       'priority' => array(),
@@ -274,7 +280,7 @@ abstract class BaseTaskGeneratorConfiguration extends sfModelGeneratorConfigurat
 
   public function getDefaultSort()
   {
-    return array(null, null);
+    return array('priority', 'asc');
   }
 
   public function getTableMethod()

@@ -14,6 +14,7 @@ abstract class BaseTaskFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'user_id'          => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => true)),
+      'follow_user_id'   => new sfWidgetFormFilterInput(),
       'task_name'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'task_description' => new sfWidgetFormFilterInput(),
       'priority'         => new sfWidgetFormFilterInput(array('with_empty' => false)),
@@ -33,6 +34,7 @@ abstract class BaseTaskFormFilter extends BaseFormFilterDoctrine
 
     $this->setValidators(array(
       'user_id'          => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('User'), 'column' => 'id')),
+      'follow_user_id'   => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'task_name'        => new sfValidatorPass(array('required' => false)),
       'task_description' => new sfValidatorPass(array('required' => false)),
       'priority'         => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
@@ -69,6 +71,7 @@ abstract class BaseTaskFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'               => 'Number',
       'user_id'          => 'ForeignKey',
+      'follow_user_id'   => 'Number',
       'task_name'        => 'Text',
       'task_description' => 'Text',
       'priority'         => 'Number',

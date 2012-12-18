@@ -14,35 +14,34 @@ require_once dirname(__FILE__) . '/../lib/taskGeneratorHelper.class.php';
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 class taskActions extends autoTaskActions {
-
-    /***
+    /*     * *
      * 
      */
-    public function executeEdit(sfWebRequest $request)
-    {
+
+    public function executeEdit(sfWebRequest $request) {
         $user = $this->getUser(); /* @var $user myUser */
         $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
-        if(!$guard_user->getIsSuperAdmin()){
+        if (!$guard_user->getIsSuperAdmin()) {
             $this->forward404('Have no permission.');
-        }else{
+        } else {
             parent::executeEdit($request);
         }
     }
-    
-     /***
+
+    /*     * *
      * 
      */
-    public function executeDelete(sfWebRequest $request)
-    {
+
+    public function executeDelete(sfWebRequest $request) {
         $user = $this->getUser(); /* @var $user myUser */
         $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
-        if(!$guard_user->getIsSuperAdmin()){
+        if (!$guard_user->getIsSuperAdmin()) {
             $this->forward404('Have no permission.');
-        }else{
+        } else {
             parent::executeDelete($request);
         }
     }
-    
+
     /**
      * Build custom query
      * 
@@ -161,26 +160,26 @@ class taskActions extends autoTaskActions {
             } else {
                 $taskId = $request->getParameter('taskId', 0);
                 $afterMin = $request->getParameter('afterMin', 10);
-                if(!is_numeric($afterMin) || $afterMin <= 0){
+                if (!is_numeric($afterMin) || $afterMin <= 0) {
                     $afterMin = 10; // default 1 minites
                 }
-                $nextRemindAt = date('Y-m-d H:i', strtotime('+'.$afterMin.' minutes'));
+                $nextRemindAt = date('Y-m-d H:i', strtotime('+' . $afterMin . ' minutes'));
                 $now = date('Y-m-d H:i');
                 $task = TaskTable::getInstance()->findOneBy('id', $taskId);
-                if($task){
+                if ($task) {
                     $reminder1St = $task->remind_1st_at ? date("Y-m-d H:i", strtotime($task->remind_1st_at)) : "";
                     $reminder2rd = $task->remind_2rd_at ? date("Y-m-d H:i", strtotime($task->remind_2rd_at)) : "";
                     //$reminder3th = $task->remind_3th_at ? date_format($task->remind_3th_at, 'Y-m-d H:i') : "";
-                    if($reminder1St){
-                        if($reminder1St > $now) {
+                    if ($reminder1St) {
+                        if ($reminder1St > $now) {
                             $task->remind_1st_at = $nextRemindAt;
-                        }else if($reminder2rd) {
-                            if($reminder2rd > $now) {
+                        } else if ($reminder2rd) {
+                            if ($reminder2rd > $now) {
                                 $task->remind_2rd_at = $nextRemindAt;
-                            }else{
+                            } else {
                                 $task->remind_3th_at = $nextRemindAt;
                             }
-                        }else{
+                        } else {
                             $task->remind_2rd_at = $nextRemindAt;
                         }
                     }
@@ -205,13 +204,14 @@ class taskActions extends autoTaskActions {
             } else {
                 $taskId = $request->getParameter('taskId', 0);
                 $completedBy = $request->getParameter('completedBy', '');
-                
+
                 $task = TaskTable::getInstance()->findOneBy('id', $taskId);
-                if($task){
-                    if(!$completedBy) $completedBy = $task->getAssignedTo();
+                if ($task) {
+                    if (!$completedBy)
+                        $completedBy = $task->getAssignedTo();
                     $task->setCompletedAt(date('Y-m-d H:i:s'));
                     $task->setCompletedBy($completedBy);
-                    
+
                     $task->save();
                     $returnData = array('status' => 'success');
                 }
@@ -220,6 +220,29 @@ class taskActions extends autoTaskActions {
         }
         return sfView::NONE;
     }
-    
+
+    /**
+     * 
+     * @param sfWebRequest $request
+     */
+    public function executeBatchReAssign(sfWebRequest $request) {
+        $userId = $request->getParameter('userId', 100);
+        $ids = $request->getParameter('ids');
+
+        $tasks = Doctrine_Query::create()
+                        ->from('Task t')
+                        ->whereIn('t.id', $ids)->execute();
+        if ($tasks && sizeof($tasks) > 0) {
+            foreach ($tasks as $task) {
+                $task->setFollowUserId($userId);
+                $task->save();
+            }
+            
+            $this->getUser()->setFlash('notice', 'The selected jobs have been extended successfully.');
+        }
+
+        $this->redirect('task/index');
+    }
+
 }
 

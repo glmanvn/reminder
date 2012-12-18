@@ -8,6 +8,9 @@ Task:
     user_id:
       type: integer
       notnull: true
+    follow_user_id:
+      type: integer
+      notnull: false
     task_name:
       type: string(150)
       notnull: true
@@ -51,6 +54,9 @@ Task:
       class: sfGuardUser
       local: user_id
       
+    FollowUser:
+      class: sfGuardUser
+      local: user_id
 #    TaskComments:
 #      class: TaskComment
 #      foreignAlias: TaskComments

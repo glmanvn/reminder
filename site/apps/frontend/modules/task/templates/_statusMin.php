@@ -7,9 +7,9 @@
 $completedAt = $Task->getCompletedAt();
 
 if($completedAt){
-    echo "<font color='blue';>Đã hoàn thành</font>";
+    echo "<font color='blue';>Hoàn thành</font>";
 }else{
-    echo "<font color='red';>Chưa hoàn thành!</font>";
+    echo "<font color='red';>Đang thực hiện!</font>";
 }
 
 ?>

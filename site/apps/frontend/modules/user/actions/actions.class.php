@@ -45,4 +45,11 @@ class userActions extends sfActions {
         return 'Form';
     }
 
+    /**
+     * 
+     * @param type $request
+     */
+    function executeSelectOneUser($request) {
+        
+    }
 }
