@@ -59,8 +59,11 @@ if ($completedAt) {
 <hr style="width: 99%; margin: 0;">
 <div class="grid_12" style="padding: 5px 5px 5px 0px;">
     <div class="grid_8" style="padding-left: 0px; margin: 0;">
-        <div>
+        <div class="grid_4" style="padding-left: 0px; margin: 0;">
             <strong>Trạng thái: </strong>&nbsp;<?php echo $taskStatus; ?> &nbsp;&nbsp;
+            
+        </div>
+        <div class="grid_4" style="padding-left: 0px; margin: 0;">
             <strong>Ngày tạo: </strong>&nbsp;<?php echo $Task->getCreatedAt(); ?>
         </div>
     </div>
