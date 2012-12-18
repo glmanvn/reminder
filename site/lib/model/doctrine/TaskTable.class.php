@@ -32,7 +32,7 @@ class TaskTable extends Doctrine_Table {
                 ->orderBy('priority DESC')
         ;
         if($userId){
-            $query->addWhere('user_id = ?', $userId);
+            $query->addWhere('user_id = ? OR follow_user_id = ?', array($userId, $userId));
         }
         return $query;
     }
@@ -59,7 +59,7 @@ class TaskTable extends Doctrine_Table {
                 ->orderBy('priority DESC')
         ;
         if($userId){
-            $query->addWhere('user_id = ?', $userId);
+            $query->addWhere('user_id = ? OR follow_user_id = ?', array($userId, $userId));
         }
         
         return $query->count();

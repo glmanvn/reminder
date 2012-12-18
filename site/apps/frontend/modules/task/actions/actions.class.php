@@ -54,7 +54,7 @@ class taskActions extends autoTaskActions {
 
         $query = parent::buildQuery()
                 ->where('is_deleted=0')
-                ->addWhere('user_id = ' . $guard_user->getId())
+                ->where('user_id = ? OR follow_user_id = ?', array($guard_user->getId(), $guard_user->getId()))
 //                ->addWhere("DATE_FORMAT(created_at, '%Y/%m/%d') = ?", date('Y/m/d'))
                 ->orderBy('completed_at, priority DESC')
         ;
@@ -238,7 +238,7 @@ class taskActions extends autoTaskActions {
                 $task->save();
             }
             
-            $this->getUser()->setFlash('notice', 'The selected jobs have been extended successfully.');
+            $this->getUser()->setFlash('notice', 'Đã chuyển giao công việc.');
         }
 
         $this->redirect('task/index');

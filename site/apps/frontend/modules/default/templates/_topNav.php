@@ -32,7 +32,7 @@
             });
         }
 
-        setInterval(startPoll, 120000); /*Make next polling request after X seconds, 1000 ~ 1s*/
+        setInterval(startPoll, 60000); /*Make next polling request after X seconds, 1000 ~ 1s*/
     });
     
 </script>

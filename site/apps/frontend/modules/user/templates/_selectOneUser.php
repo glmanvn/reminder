@@ -2,7 +2,10 @@
     // open dialog
     function selectUser(userId, userName)
     {
-        $('#<?php echo ?>).dialog('open');
+        $('#<?php echo $field1;?>').val(userId);
+        $('#<?php echo $field2;?>').val(userName);
+        
+        $( "#divSelectUser" ).dialog("close");
     }
     
     // page load
@@ -51,7 +54,7 @@
                             <td><?php echo $user->getFirstName() . ' ' . $user->getLastName(); ?></td>
                             <td><?php echo $user->getEmailAddress(); ?></td>
                             <td><?php echo $user->getLastLogin(); ?></td>
-                            <td><input id="btSelect" type="button" class="btn-orange" value="Chọn" /></td>
+                            <td><input id="btSelect" type="button" class="btn-orange" value="Chọn" onclick="selectUser(<?php echo $user->getId() ?>, '<?php echo $user->getFirstName() . ' ' . $user->getLastName(); ?>');" /></td>
                         </tr>
                     <?php endforeach; ?>
                 </table>
