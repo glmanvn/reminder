@@ -12,7 +12,9 @@ class sfGuardUserForm extends PluginsfGuardUserForm {
 
     public function configure() {
         unset(
-                $this['groups_list'], $this['permissions_list']
+                $this['groups_list'], 
+                $this['permissions_list'],
+                $this['follow_user_id']
         );
     }
 
