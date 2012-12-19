@@ -3,6 +3,13 @@
 
 # default values
 all:
+  website:
+    name:     "Diamond Bay Resort"
+    base_url: "http://reminider.local"
+  emails:
+    dont_reply: dbreminder@diamondbayresort.vn
+    reminder_subject: Công việc cần hoàn thành ngay
+    
   sf_guard_plugin:
     routes_register: false
   
