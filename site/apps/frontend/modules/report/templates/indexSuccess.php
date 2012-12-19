@@ -20,6 +20,7 @@
         $( "#createdFrom" ).datepicker( "option", "dateFormat", 'yy-mm-dd');
         $( "#createdFrom" ).datepicker("setDate", '<?php echo $createdFrom; ?>');
         $( "#createdTo" ).datepicker( "option", "dateFormat", 'yy-mm-dd');
+        $( "#createdTo" ).datepicker( "setDate", '<?php echo $createdTo; ?>');
     });
 </script>
 

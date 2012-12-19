@@ -25,7 +25,7 @@ class reportActions extends sfActions
       
       $page = $request->getParameter('page', 1);
       $this->page = $page;
-      $maxPerPage = 5;
+      $maxPerPage = 20;
       $this->maxPerPage = $maxPerPage;
 
       $pager = TaskTable::getInstance()->getTaskReportingPager($page, $maxPerPage, 

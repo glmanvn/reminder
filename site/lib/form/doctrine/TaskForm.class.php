@@ -28,7 +28,8 @@ class TaskForm extends BaseTaskForm {
                 $this['completed_at'],
                 $this['created_at'], 
                 $this['updated_at'],
-                $this['is_deleted']
+                $this['is_deleted'],
+                $this['follow_user_id']
         );
         
         $arrPriorities = sfConfig::get('app_task_prioryties', 

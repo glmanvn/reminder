@@ -34,6 +34,14 @@ class dashboardActions extends autoDashboardActions {
     /***
      * 
      */
+    public function executeNew(sfWebRequest $request)
+    {
+        $this->redirect('task/new');
+    }
+    
+    /***
+     * 
+     */
     public function executeEdit(sfWebRequest $request)
     {
         $this->forward404();
