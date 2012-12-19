@@ -64,7 +64,7 @@ generator:
         
       filter: 
         class: false
-        display: [assigned_to, created_at]
+#        display: [assigned_to, created_at]
         
       form: ~
 #        display: 

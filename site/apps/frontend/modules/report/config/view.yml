@@ -1,0 +1,19 @@
+default:
+  layout: layoutNoLeft
+  theme: admin
+  stylesheets: 
+    - style.css
+    - reset.css
+    - text.css
+    - layout.css
+    - nav.css
+    - grid.css
+    - formalize.css
+    - main.css
+    - admin_default.css
+    - jquery_ui/jquery.ui.all.css
+  javascripts:
+    - jquery/jquery-1.8.0.min.js
+    - jquery_ui/jquery.ui.core.js
+    - jquery_ui/jquery.ui.widget.js
+    - jquery_ui/jquery.ui.datepicker.js

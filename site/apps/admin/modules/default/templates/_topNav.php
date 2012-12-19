@@ -9,9 +9,7 @@
         <li><?php echo link_to('Trang chủ', '@homepage') ?></li>
         <li class="<?php if ($sf_request->getParameter('module') == 'sfGuardUser') echo 'current' ?>">
             <a href="<?php echo url_for('sfGuardUser/index') ?>">Người sử dụng</a></li>
-        <li class="<?php if ($sf_request->getParameter('module') == 'report') echo 'current' ?>">
-            <a href="<?php echo url_for('report/index') ?>">Báo cáo</a>
-        </li>
+        
         <li class="<?php if ($sf_request->getParameter('module') == 'signout') echo 'current' ?>" style="float: right;">
             <a href="<?php echo url_for('@sf_guard_signout') ?>">Logout</a>
         </li>

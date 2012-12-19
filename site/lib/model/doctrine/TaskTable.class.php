@@ -64,4 +64,41 @@ class TaskTable extends Doctrine_Table {
         
         return $query->count();
     }
+
+    /***
+     * Bao cao
+     */
+    public function getTaskReportingPager($page, $maxPerPage, $userName, $createdFrom, $createdTo, $taskStatus) {
+        $class = 'Task';
+        $query = Doctrine_Query::create()
+                ->select('t.*, tc.*')
+                ->from('Task t, t.User u, t.TaskComments tc')
+                ->where('t.is_deleted = 0')
+                ->orderBy('t.created_at DESC, priority')
+        ;
+
+        if ($userName) {
+            $query->addWhere('(u.username LIKE ? OR concat(u.first_name, " ", u.last_name) LIKE ? OR concat(u.first_name, " ", u.last_name) LIKE ?)', 
+                array("%$userName%", "%$userName%", "%$userName%"));
+        }
+        if($createdFrom){
+            $query->addWhere('(t.created_at >= ?)', $createdFrom);
+        }
+        if($createdTo){
+            $query->addWhere('(t.created_at <= ?)', $createdTo);
+        }
+
+        if($taskStatus == 0){ // Chua hoan thanh
+            $query->addWhere('(t.completed_at IS NULL)');
+        }else if($taskStatus == 1){ // Hoan thanh
+            $query->addWhere('(t.completed_at IS NOT NULL)');
+        }
+        
+        $pager = new sfDoctrinePager($class, $maxPerPage);
+        $pager->setPage($page);
+        $pager->setQuery($query);
+        $pager->init();
+
+        return $pager;
+    }
 }
