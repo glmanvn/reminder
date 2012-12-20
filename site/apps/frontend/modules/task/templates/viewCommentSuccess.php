@@ -23,6 +23,10 @@
                     </div>
                 </div>
                 <div class="sf_admin_form_row">
+                    <label id="bold">Người xử lý</label>
+                    <div class="content"><?php echo $task->getAssignedTo(); ?></div>
+                </div>
+                <div class="sf_admin_form_row">
                     <label id="bold">Độ ưu tiên</label>
                     <div class="content">
                         <?php include_partial("priority", array('Task' => $task)); ?> 
@@ -52,7 +56,7 @@
                         <label id="bold">Nhắc việc lần 3</label>
                         <div class="content">
                             <?php echo $task->remind_3th_at ? $task->remind_3th_at : "&nbsp;"; ?>
-                            <?php echo $task->getReminderEmail2() ? " - email to: " . $task->getReminderEmail2() : "&nbsp;"; ?>
+                            <?php echo $task->getReminderEmail2() ? " - email to: " . $task->getReminderEmail1() . ', ' . $task->getReminderEmail2() : "&nbsp;"; ?>
                         </div>
                     </div>
                 <?php } ?>

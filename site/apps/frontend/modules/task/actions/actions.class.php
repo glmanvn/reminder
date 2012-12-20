@@ -22,7 +22,7 @@ class taskActions extends autoTaskActions {
         $user = $this->getUser(); /* @var $user myUser */
         $guard_user = $user->getGuardUser(); /* @var $guard_user sfGuardUser */
         if (!$guard_user->getIsSuperAdmin()) {
-            $this->forward404('Have no permission.');
+            $this->redirect('task/viewComment?id='.$request->getParameter('id'));
         } else {
             parent::executeEdit($request);
         }

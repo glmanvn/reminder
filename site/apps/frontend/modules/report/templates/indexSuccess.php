@@ -78,8 +78,11 @@
                         <tr>
                             <th style="width: 20%;">Tên công việc</th>
                             <th style="width: 10%;">Người tạo</th>
+                            <th style="width: 10%;">Người thực hiện</th>
+                            <th style="width: 10%;">Người hoàn thành</th>
                             <th style="width: 5%;">Trạng thái</th>
-                            <th style="width: 65%;">Mô tả</th>
+                            <th style="width: 5%;">Time</th>
+                            <th style="width: 45%;">Mô tả</th>
                         </tr>
                     </thead>
                     <?php foreach ($pager->getResults() as $task): /* @var $task Task */ ?>
@@ -90,7 +93,16 @@
                                 <?php include_partial("createdBy", array('Task' => $task)); ?> 
                             </td>
                             <td style="white-space: nowrap;">
+                                <?php echo $task->getAssignedTo(); ?></td>
+                            </td>
+                            <td style="white-space: nowrap;">
+                                <?php echo $task->getCompletedBy(); ?></td>
+                            </td>
+                            <td style="white-space: nowrap;">
                                 <?php include_partial("statusMin", array('Task' => $task)); ?> 
+                            </td>
+                            <td style="white-space: nowrap;">
+                                <?php include_partial("duration", array('Task' => $task)); ?> 
                             </td>
                             <td>
                                 <?php echo $task->getTaskDescription(); ?>
